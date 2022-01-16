@@ -17,7 +17,7 @@ Then you can visually create your own data visualizations and interactive dasboa
 
 `docker pull gooddata/gooddata-cn-ce`
 
-2. Install dbd to your computer (make sure that you have Python 3.8+ installed on your computer)
+2. Install [dbd](https://github.com/zsvoboda/dbd) to your computer (make sure that you have Python 3.8+ installed)
 
 `pip3 install dbd`
 
