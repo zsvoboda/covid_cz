@@ -1,7 +1,13 @@
 # Czech Republic COVID-19 data 
-This example downloads the complete COVID-19 tracking data from the [Czech Ministry of Health site](https://onemocneni-aktualne.mzcr.cz/api/v2/covid-19) and transform it to a simple analytical data model.  
+This project downloads the complete COVID-19 tracking data from the [Czech Ministry of Health site](https://onemocneni-aktualne.mzcr.cz/api/v2/covid-19) and transform it to a simple analytical data model.  
 
 ![COVID CZ data model](https://raw.githubusercontent.com/zsvoboda/dbd/master/img/covid.cz.datamodel.png)
+
+You'll get this initial COVID-19 dasboard out of the box. 
+
+![COVID CZ Dashboard](https://raw.githubusercontent.com/zsvoboda/covid_cz/main/img/covid.cz.dashboard.png)
+
+Then you can visually create your own data visualizations and interactive dasboards. You should be able to complete this in less than 15 minutes. 
 
 # Steps
 
