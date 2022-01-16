@@ -1,0 +1,25 @@
+table:
+  columns:
+    obec_kod:
+      type: CHAR(6)
+    obec_kod2:
+      type: CHAR(6)
+    obec:
+      type: VARCHAR(50)
+    pocet_obyvatel:
+      type: DECIMAL(13,0)
+    kum_pacient_prvni_zaznam:
+      type: DECIMAL(13,0)
+    pocet_muzi:
+      type: DECIMAL(13,0)
+    pocet_zeny:
+      type: DECIMAL(13,0)
+    vek_prumer:
+      type: DECIMAL(5,2)
+    vek_prumer_zeny:
+      type: DECIMAL(5,2)
+    vek_prumer_muzi:
+      type: DECIMAL(5,2)
+process:
+  materialization: table
+  mode: drop

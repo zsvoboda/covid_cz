@@ -1,0 +1,38 @@
+table:
+  columns:
+    datum:
+      type: DATE
+    pacient_prvni_zaznam:
+      type: DECIMAL(13,0)
+    kum_pacient_prvni_zaznam:
+      type: DECIMAL(13,0)
+    pocet_hosp:
+      type: DECIMAL(13,0)
+    stav_bez_priznaku:
+      type: DECIMAL(13,0)
+    stav_lehky:
+      type: DECIMAL(13,0)
+    stav_stredni:
+      type: DECIMAL(13,0)
+    stav_tezky:
+      type: DECIMAL(13,0)
+    jip:
+      type: DECIMAL(13,0)
+    kyslik:
+      type: DECIMAL(13,0)
+    hfno:
+      type: DECIMAL(13,0)
+    upv:
+      type: DECIMAL(13,0)
+    ecmo:
+      type: DECIMAL(13,0)
+    tezky_upv_ecmo:
+      type: DECIMAL(13,0)
+    umrti:
+      type: DECIMAL(13,0)
+    kum_umrti:
+      type: DECIMAL(13,0)
+process:
+  materialization: table
+  mode: drop
+

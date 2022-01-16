@@ -1,0 +1,14 @@
+{
+    "data": {
+      "id": "covid.cz",
+      "type": "dataSource",
+      "attributes": {
+        "name": "COVID CZ DB connection",
+        "type": "POSTGRESQL",
+        "url": "jdbc:postgresql://{{ds_host}}/demo",
+        "schema": "dwh",
+        "username": "{{ds_user}}",
+        "password": "{{ds_pass}}"
+      }
+    }
+  }

@@ -1,0 +1,1086 @@
+{
+    "ldm": {
+        "datasets": [
+            {
+                "attributes": [
+                    {
+                        "description": "City id",
+                        "id": "city_id",
+                        "labels": [
+                            {
+                                "description": "City id",
+                                "id": "city_id",
+                                "primary": true,
+                                "sourceColumn": "city_id",
+                                "tags": [
+                                    "City"
+                                ],
+                                "title": "City id"
+                            }
+                        ],
+                        "tags": [
+                            "City"
+                        ],
+                        "title": "City id"
+                    },
+                    {
+                        "description": "City latitude",
+                        "id": "city_latitude",
+                        "labels": [
+                            {
+                                "description": "City latitude",
+                                "id": "city_latitude",
+                                "primary": true,
+                                "sourceColumn": "city_latitude",
+                                "tags": [
+                                    "City"
+                                ],
+                                "title": "City latitude"
+                            }
+                        ],
+                        "tags": [
+                            "City"
+                        ],
+                        "title": "City latitude"
+                    },
+                    {
+                        "description": "City longitude",
+                        "id": "city_longitude",
+                        "labels": [
+                            {
+                                "description": "City longitude",
+                                "id": "city_longitude",
+                                "primary": true,
+                                "sourceColumn": "city_longitude",
+                                "tags": [
+                                    "City"
+                                ],
+                                "title": "City longitude"
+                            }
+                        ],
+                        "tags": [
+                            "City"
+                        ],
+                        "title": "City longitude"
+                    },
+                    {
+                        "description": "City name",
+                        "id": "city_name",
+                        "labels": [
+                            {
+                                "description": "City name",
+                                "id": "city_name",
+                                "primary": true,
+                                "sourceColumn": "city_name",
+                                "tags": [
+                                    "City"
+                                ],
+                                "title": "City name"
+                            }
+                        ],
+                        "tags": [
+                            "City"
+                        ],
+                        "title": "City name"
+                    }
+                ],
+                "dataSourceTableId": {
+                    "dataSourceId": "covid.cz",
+                    "id": "city",
+                    "type": "dataSource"
+                },
+                "description": "",
+                "facts": [],
+                "grain": [
+                    {
+                        "id": "city_id",
+                        "type": "attribute"
+                    }
+                ],
+                "id": "city",
+                "references": [
+                    {
+                        "identifier": {
+                            "id": "district",
+                            "type": "dataset"
+                        },
+                        "multivalue": false,
+                        "sourceColumns": [
+                            "district_id"
+                        ]
+                    }
+                ],
+                "tags": [
+                    "City"
+                ],
+                "title": "City"
+            },
+            {
+                "attributes": [
+                    {
+                        "description": "Country id",
+                        "id": "country_id",
+                        "labels": [
+                            {
+                                "description": "Country id",
+                                "id": "country_id",
+                                "primary": true,
+                                "sourceColumn": "country_id",
+                                "tags": [
+                                    "Country"
+                                ],
+                                "title": "Country id"
+                            }
+                        ],
+                        "tags": [
+                            "Country"
+                        ],
+                        "title": "Country id"
+                    },
+                    {
+                        "description": "Country name",
+                        "id": "country_name",
+                        "labels": [
+                            {
+                                "description": "Country name",
+                                "id": "country_name",
+                                "primary": true,
+                                "sourceColumn": "country_name",
+                                "tags": [
+                                    "Country"
+                                ],
+                                "title": "Country name"
+                            }
+                        ],
+                        "tags": [
+                            "Country"
+                        ],
+                        "title": "Country name"
+                    }
+                ],
+                "dataSourceTableId": {
+                    "dataSourceId": "covid.cz",
+                    "id": "country",
+                    "type": "dataSource"
+                },
+                "description": "",
+                "facts": [],
+                "grain": [
+                    {
+                        "id": "country_id",
+                        "type": "attribute"
+                    }
+                ],
+                "id": "country",
+                "references": [],
+                "tags": [
+                    "Country"
+                ],
+                "title": "Country"
+            },
+            {
+                "attributes": [
+                    {
+                        "description": "County id",
+                        "id": "county_id",
+                        "labels": [
+                            {
+                                "description": "County id",
+                                "id": "county_id",
+                                "primary": true,
+                                "sourceColumn": "county_id",
+                                "tags": [
+                                    "County"
+                                ],
+                                "title": "County id"
+                            }
+                        ],
+                        "tags": [
+                            "County"
+                        ],
+                        "title": "County id"
+                    },
+                    {
+                        "description": "County name",
+                        "id": "county_name",
+                        "labels": [
+                            {
+                                "description": "County name",
+                                "id": "county_name",
+                                "primary": true,
+                                "sourceColumn": "county_name",
+                                "tags": [
+                                    "County"
+                                ],
+                                "title": "County name"
+                            }
+                        ],
+                        "tags": [
+                            "County"
+                        ],
+                        "title": "County name"
+                    }
+                ],
+                "dataSourceTableId": {
+                    "dataSourceId": "covid.cz",
+                    "id": "county",
+                    "type": "dataSource"
+                },
+                "description": "",
+                "facts": [],
+                "grain": [
+                    {
+                        "id": "county_id",
+                        "type": "attribute"
+                    }
+                ],
+                "id": "county",
+                "references": [
+                    {
+                        "identifier": {
+                            "id": "country",
+                            "type": "dataset"
+                        },
+                        "multivalue": false,
+                        "sourceColumns": [
+                            "country_id"
+                        ]
+                    }
+                ],
+                "tags": [
+                    "County"
+                ],
+                "title": "County"
+            },
+            {
+                "attributes": [
+                    {
+                        "description": "Covid event cnt",
+                        "id": "covid_event_cnt",
+                        "labels": [
+                            {
+                                "description": "Covid event cnt",
+                                "id": "covid_event_cnt",
+                                "primary": true,
+                                "sourceColumn": "covid_event_cnt",
+                                "tags": [
+                                    "Covid event"
+                                ],
+                                "title": "Covid event cnt"
+                            }
+                        ],
+                        "tags": [
+                            "Covid event"
+                        ],
+                        "title": "Covid event cnt"
+                    },
+                    {
+                        "description": "Covid event id",
+                        "id": "covid_event_id",
+                        "labels": [
+                            {
+                                "description": "Covid event id",
+                                "id": "covid_event_id",
+                                "primary": true,
+                                "sourceColumn": "covid_event_id",
+                                "tags": [
+                                    "Covid event"
+                                ],
+                                "title": "Covid event id"
+                            }
+                        ],
+                        "tags": [
+                            "Covid event"
+                        ],
+                        "title": "Covid event id"
+                    },
+                    {
+                        "description": "Covid event person age",
+                        "id": "covid_event_person_age",
+                        "labels": [
+                            {
+                                "description": "Covid event person age",
+                                "id": "covid_event_person_age",
+                                "primary": true,
+                                "sourceColumn": "covid_event_person_age",
+                                "tags": [
+                                    "Covid event"
+                                ],
+                                "title": "Covid event person age"
+                            }
+                        ],
+                        "tags": [
+                            "Covid event"
+                        ],
+                        "title": "Covid event person age"
+                    },
+                    {
+                        "description": "Covid event person age num",
+                        "id": "covid_event_person_age_num",
+                        "labels": [
+                            {
+                                "description": "Covid event person age num",
+                                "id": "covid_event_person_age_num",
+                                "primary": true,
+                                "sourceColumn": "covid_event_person_age_num",
+                                "tags": [
+                                    "Covid event"
+                                ],
+                                "title": "Covid event person age num"
+                            }
+                        ],
+                        "tags": [
+                            "Covid event"
+                        ],
+                        "title": "Covid event person age num"
+                    },
+                    {
+                        "description": "Covid event person gender",
+                        "id": "covid_event_person_gender",
+                        "labels": [
+                            {
+                                "description": "Covid event person gender",
+                                "id": "covid_event_person_gender",
+                                "primary": true,
+                                "sourceColumn": "covid_event_person_gender",
+                                "tags": [
+                                    "Covid event"
+                                ],
+                                "title": "Covid event person gender"
+                            }
+                        ],
+                        "tags": [
+                            "Covid event"
+                        ],
+                        "title": "Covid event person gender"
+                    },
+                    {
+                        "description": "Covid event type",
+                        "id": "covid_event_type",
+                        "labels": [
+                            {
+                                "description": "Covid event type",
+                                "id": "covid_event_type",
+                                "primary": true,
+                                "sourceColumn": "covid_event_type",
+                                "tags": [
+                                    "Covid event"
+                                ],
+                                "title": "Covid event type"
+                            }
+                        ],
+                        "tags": [
+                            "Covid event"
+                        ],
+                        "title": "Covid event type"
+                    }
+                ],
+                "dataSourceTableId": {
+                    "dataSourceId": "covid.cz",
+                    "id": "covid_event",
+                    "type": "dataSource"
+                },
+                "description": "",
+                "facts": [],
+                "grain": [
+                    {
+                        "id": "covid_event_id",
+                        "type": "attribute"
+                    }
+                ],
+                "id": "covid_event",
+                "references": [
+                    {
+                        "identifier": {
+                            "id": "date",
+                            "type": "dataset"
+                        },
+                        "multivalue": false,
+                        "sourceColumns": [
+                            "covid_event_date"
+                        ]
+                    },
+                    {
+                        "identifier": {
+                            "id": "district",
+                            "type": "dataset"
+                        },
+                        "multivalue": false,
+                        "sourceColumns": [
+                            "district_id"
+                        ]
+                    }
+                ],
+                "tags": [
+                    "Covid event"
+                ],
+                "title": "Covid event"
+            },
+            {
+                "attributes": [
+                    {
+                        "description": "Covid hospitalisation admissions",
+                        "id": "covid_hospitalisation_admissions",
+                        "labels": [
+                            {
+                                "description": "Covid hospitalisation admissions",
+                                "id": "covid_hospitalisation_admissions",
+                                "primary": true,
+                                "sourceColumn": "covid_hospitalisation_admissions",
+                                "tags": [
+                                    "Covid hospitalisation"
+                                ],
+                                "title": "Covid hospitalisation admissions"
+                            }
+                        ],
+                        "tags": [
+                            "Covid hospitalisation"
+                        ],
+                        "title": "Covid hospitalisation admissions"
+                    },
+                    {
+                        "description": "Covid hospitalisation current",
+                        "id": "covid_hospitalisation_current",
+                        "labels": [
+                            {
+                                "description": "Covid hospitalisation current",
+                                "id": "covid_hospitalisation_current",
+                                "primary": true,
+                                "sourceColumn": "covid_hospitalisation_current",
+                                "tags": [
+                                    "Covid hospitalisation"
+                                ],
+                                "title": "Covid hospitalisation current"
+                            }
+                        ],
+                        "tags": [
+                            "Covid hospitalisation"
+                        ],
+                        "title": "Covid hospitalisation current"
+                    },
+                    {
+                        "description": "Covid hospitalisation deaths",
+                        "id": "covid_hospitalisation_deaths",
+                        "labels": [
+                            {
+                                "description": "Covid hospitalisation deaths",
+                                "id": "covid_hospitalisation_deaths",
+                                "primary": true,
+                                "sourceColumn": "covid_hospitalisation_deaths",
+                                "tags": [
+                                    "Covid hospitalisation"
+                                ],
+                                "title": "Covid hospitalisation deaths"
+                            }
+                        ],
+                        "tags": [
+                            "Covid hospitalisation"
+                        ],
+                        "title": "Covid hospitalisation deaths"
+                    },
+                    {
+                        "description": "Covid hospitalisation ecmo",
+                        "id": "covid_hospitalisation_ecmo",
+                        "labels": [
+                            {
+                                "description": "Covid hospitalisation ecmo",
+                                "id": "covid_hospitalisation_ecmo",
+                                "primary": true,
+                                "sourceColumn": "covid_hospitalisation_ecmo",
+                                "tags": [
+                                    "Covid hospitalisation"
+                                ],
+                                "title": "Covid hospitalisation ecmo"
+                            }
+                        ],
+                        "tags": [
+                            "Covid hospitalisation"
+                        ],
+                        "title": "Covid hospitalisation ecmo"
+                    },
+                    {
+                        "description": "Covid hospitalisation ecmo ventilation",
+                        "id": "covid_hospitalisation_ecmo_ventilation",
+                        "labels": [
+                            {
+                                "description": "Covid hospitalisation ecmo ventilation",
+                                "id": "covid_hospitalisation_ecmo_ventilation",
+                                "primary": true,
+                                "sourceColumn": "covid_hospitalisation_ecmo_ventilation",
+                                "tags": [
+                                    "Covid hospitalisation"
+                                ],
+                                "title": "Covid hospitalisation ecmo ventilation"
+                            }
+                        ],
+                        "tags": [
+                            "Covid hospitalisation"
+                        ],
+                        "title": "Covid hospitalisation ecmo ventilation"
+                    },
+                    {
+                        "description": "Covid hospitalisation hfno",
+                        "id": "covid_hospitalisation_hfno",
+                        "labels": [
+                            {
+                                "description": "Covid hospitalisation hfno",
+                                "id": "covid_hospitalisation_hfno",
+                                "primary": true,
+                                "sourceColumn": "covid_hospitalisation_hfno",
+                                "tags": [
+                                    "Covid hospitalisation"
+                                ],
+                                "title": "Covid hospitalisation hfno"
+                            }
+                        ],
+                        "tags": [
+                            "Covid hospitalisation"
+                        ],
+                        "title": "Covid hospitalisation hfno"
+                    },
+                    {
+                        "description": "Covid hospitalisation id",
+                        "id": "covid_hospitalisation_id",
+                        "labels": [
+                            {
+                                "description": "Covid hospitalisation id",
+                                "id": "covid_hospitalisation_id",
+                                "primary": true,
+                                "sourceColumn": "covid_hospitalisation_id",
+                                "tags": [
+                                    "Covid hospitalisation"
+                                ],
+                                "title": "Covid hospitalisation id"
+                            }
+                        ],
+                        "tags": [
+                            "Covid hospitalisation"
+                        ],
+                        "title": "Covid hospitalisation id"
+                    },
+                    {
+                        "description": "Covid hospitalisation intensive care",
+                        "id": "covid_hospitalisation_intensive_care",
+                        "labels": [
+                            {
+                                "description": "Covid hospitalisation intensive care",
+                                "id": "covid_hospitalisation_intensive_care",
+                                "primary": true,
+                                "sourceColumn": "covid_hospitalisation_intensive_care",
+                                "tags": [
+                                    "Covid hospitalisation"
+                                ],
+                                "title": "Covid hospitalisation intensive care"
+                            }
+                        ],
+                        "tags": [
+                            "Covid hospitalisation"
+                        ],
+                        "title": "Covid hospitalisation intensive care"
+                    },
+                    {
+                        "description": "Covid hospitalisation light symptoms",
+                        "id": "covid_hospitalisation_light_symptoms",
+                        "labels": [
+                            {
+                                "description": "Covid hospitalisation light symptoms",
+                                "id": "covid_hospitalisation_light_symptoms",
+                                "primary": true,
+                                "sourceColumn": "covid_hospitalisation_light_symptoms",
+                                "tags": [
+                                    "Covid hospitalisation"
+                                ],
+                                "title": "Covid hospitalisation light symptoms"
+                            }
+                        ],
+                        "tags": [
+                            "Covid hospitalisation"
+                        ],
+                        "title": "Covid hospitalisation light symptoms"
+                    },
+                    {
+                        "description": "Covid hospitalisation medium symptoms",
+                        "id": "covid_hospitalisation_medium_symptoms",
+                        "labels": [
+                            {
+                                "description": "Covid hospitalisation medium symptoms",
+                                "id": "covid_hospitalisation_medium_symptoms",
+                                "primary": true,
+                                "sourceColumn": "covid_hospitalisation_medium_symptoms",
+                                "tags": [
+                                    "Covid hospitalisation"
+                                ],
+                                "title": "Covid hospitalisation medium symptoms"
+                            }
+                        ],
+                        "tags": [
+                            "Covid hospitalisation"
+                        ],
+                        "title": "Covid hospitalisation medium symptoms"
+                    },
+                    {
+                        "description": "Covid hospitalisation no symptoms",
+                        "id": "covid_hospitalisation_no_symptoms",
+                        "labels": [
+                            {
+                                "description": "Covid hospitalisation no symptoms",
+                                "id": "covid_hospitalisation_no_symptoms",
+                                "primary": true,
+                                "sourceColumn": "covid_hospitalisation_no_symptoms",
+                                "tags": [
+                                    "Covid hospitalisation"
+                                ],
+                                "title": "Covid hospitalisation no symptoms"
+                            }
+                        ],
+                        "tags": [
+                            "Covid hospitalisation"
+                        ],
+                        "title": "Covid hospitalisation no symptoms"
+                    },
+                    {
+                        "description": "Covid hospitalisation oxygen",
+                        "id": "covid_hospitalisation_oxygen",
+                        "labels": [
+                            {
+                                "description": "Covid hospitalisation oxygen",
+                                "id": "covid_hospitalisation_oxygen",
+                                "primary": true,
+                                "sourceColumn": "covid_hospitalisation_oxygen",
+                                "tags": [
+                                    "Covid hospitalisation"
+                                ],
+                                "title": "Covid hospitalisation oxygen"
+                            }
+                        ],
+                        "tags": [
+                            "Covid hospitalisation"
+                        ],
+                        "title": "Covid hospitalisation oxygen"
+                    },
+                    {
+                        "description": "Covid hospitalisation severe symptoms",
+                        "id": "covid_hospitalisation_severe_symptoms",
+                        "labels": [
+                            {
+                                "description": "Covid hospitalisation severe symptoms",
+                                "id": "covid_hospitalisation_severe_symptoms",
+                                "primary": true,
+                                "sourceColumn": "covid_hospitalisation_severe_symptoms",
+                                "tags": [
+                                    "Covid hospitalisation"
+                                ],
+                                "title": "Covid hospitalisation severe symptoms"
+                            }
+                        ],
+                        "tags": [
+                            "Covid hospitalisation"
+                        ],
+                        "title": "Covid hospitalisation severe symptoms"
+                    },
+                    {
+                        "description": "Covid hospitalisation ventilation",
+                        "id": "covid_hospitalisation_ventilation",
+                        "labels": [
+                            {
+                                "description": "Covid hospitalisation ventilation",
+                                "id": "covid_hospitalisation_ventilation",
+                                "primary": true,
+                                "sourceColumn": "covid_hospitalisation_ventilation",
+                                "tags": [
+                                    "Covid hospitalisation"
+                                ],
+                                "title": "Covid hospitalisation ventilation"
+                            }
+                        ],
+                        "tags": [
+                            "Covid hospitalisation"
+                        ],
+                        "title": "Covid hospitalisation ventilation"
+                    }
+                ],
+                "dataSourceTableId": {
+                    "dataSourceId": "covid.cz",
+                    "id": "covid_hospitalisation",
+                    "type": "dataSource"
+                },
+                "description": "",
+                "facts": [],
+                "grain": [
+                    {
+                        "id": "covid_hospitalisation_id",
+                        "type": "attribute"
+                    }
+                ],
+                "id": "covid_hospitalisation",
+                "references": [
+                    {
+                        "identifier": {
+                            "id": "country",
+                            "type": "dataset"
+                        },
+                        "multivalue": false,
+                        "sourceColumns": [
+                            "country_id"
+                        ]
+                    },
+                    {
+                        "identifier": {
+                            "id": "date",
+                            "type": "dataset"
+                        },
+                        "multivalue": false,
+                        "sourceColumns": [
+                            "covid_hospitalisation_date"
+                        ]
+                    }
+                ],
+                "tags": [
+                    "Covid hospitalisation"
+                ],
+                "title": "Covid hospitalisation"
+            },
+            {
+                "attributes": [
+                    {
+                        "description": "Covid testing id",
+                        "id": "covid_testing_id",
+                        "labels": [
+                            {
+                                "description": "Covid testing id",
+                                "id": "covid_testing_id",
+                                "primary": true,
+                                "sourceColumn": "covid_testing_id",
+                                "tags": [
+                                    "Covid testing"
+                                ],
+                                "title": "Covid testing id"
+                            }
+                        ],
+                        "tags": [
+                            "Covid testing"
+                        ],
+                        "title": "Covid testing id"
+                    },
+                    {
+                        "description": "Covid testing type ag",
+                        "id": "covid_testing_type_ag",
+                        "labels": [
+                            {
+                                "description": "Covid testing type ag",
+                                "id": "covid_testing_type_ag",
+                                "primary": true,
+                                "sourceColumn": "covid_testing_type_ag",
+                                "tags": [
+                                    "Covid testing"
+                                ],
+                                "title": "Covid testing type ag"
+                            }
+                        ],
+                        "tags": [
+                            "Covid testing"
+                        ],
+                        "title": "Covid testing type ag"
+                    },
+                    {
+                        "description": "Covid testing type pcr",
+                        "id": "covid_testing_type_pcr",
+                        "labels": [
+                            {
+                                "description": "Covid testing type pcr",
+                                "id": "covid_testing_type_pcr",
+                                "primary": true,
+                                "sourceColumn": "covid_testing_type_pcr",
+                                "tags": [
+                                    "Covid testing"
+                                ],
+                                "title": "Covid testing type pcr"
+                            }
+                        ],
+                        "tags": [
+                            "Covid testing"
+                        ],
+                        "title": "Covid testing type pcr"
+                    }
+                ],
+                "dataSourceTableId": {
+                    "dataSourceId": "covid.cz",
+                    "id": "covid_testing",
+                    "type": "dataSource"
+                },
+                "description": "",
+                "facts": [],
+                "grain": [
+                    {
+                        "id": "covid_testing_id",
+                        "type": "attribute"
+                    }
+                ],
+                "id": "covid_testing",
+                "references": [
+                    {
+                        "identifier": {
+                            "id": "country",
+                            "type": "dataset"
+                        },
+                        "multivalue": false,
+                        "sourceColumns": [
+                            "country_id"
+                        ]
+                    },
+                    {
+                        "identifier": {
+                            "id": "date",
+                            "type": "dataset"
+                        },
+                        "multivalue": false,
+                        "sourceColumns": [
+                            "covid_testing_date"
+                        ]
+                    }
+                ],
+                "tags": [
+                    "Covid testing"
+                ],
+                "title": "Covid testing"
+            },
+            {
+                "attributes": [
+                    {
+                        "description": "City population",
+                        "id": "city_population",
+                        "labels": [
+                            {
+                                "description": "City population",
+                                "id": "city_population",
+                                "primary": true,
+                                "sourceColumn": "city_population",
+                                "tags": [
+                                    "Demography"
+                                ],
+                                "title": "City population"
+                            }
+                        ],
+                        "tags": [
+                            "Demography"
+                        ],
+                        "title": "City population"
+                    },
+                    {
+                        "description": "City population female",
+                        "id": "city_population_female",
+                        "labels": [
+                            {
+                                "description": "City population female",
+                                "id": "city_population_female",
+                                "primary": true,
+                                "sourceColumn": "city_population_female",
+                                "tags": [
+                                    "Demography"
+                                ],
+                                "title": "City population female"
+                            }
+                        ],
+                        "tags": [
+                            "Demography"
+                        ],
+                        "title": "City population female"
+                    },
+                    {
+                        "description": "City population male",
+                        "id": "city_population_male",
+                        "labels": [
+                            {
+                                "description": "City population male",
+                                "id": "city_population_male",
+                                "primary": true,
+                                "sourceColumn": "city_population_male",
+                                "tags": [
+                                    "Demography"
+                                ],
+                                "title": "City population male"
+                            }
+                        ],
+                        "tags": [
+                            "Demography"
+                        ],
+                        "title": "City population male"
+                    },
+                    {
+                        "description": "Demography id",
+                        "id": "demography_id",
+                        "labels": [
+                            {
+                                "description": "Demography id",
+                                "id": "demography_id",
+                                "primary": true,
+                                "sourceColumn": "demography_id",
+                                "tags": [
+                                    "Demography"
+                                ],
+                                "title": "Demography id"
+                            }
+                        ],
+                        "tags": [
+                            "Demography"
+                        ],
+                        "title": "Demography id"
+                    }
+                ],
+                "dataSourceTableId": {
+                    "dataSourceId": "covid.cz",
+                    "id": "demography",
+                    "type": "dataSource"
+                },
+                "description": "",
+                "facts": [
+                    {
+                        "description": "City average age",
+                        "id": "city_average_age",
+                        "sourceColumn": "city_average_age",
+                        "tags": [
+                            "Demography"
+                        ],
+                        "title": "City average age"
+                    },
+                    {
+                        "description": "City average age female",
+                        "id": "city_average_age_female",
+                        "sourceColumn": "city_average_age_female",
+                        "tags": [
+                            "Demography"
+                        ],
+                        "title": "City average age female"
+                    },
+                    {
+                        "description": "City average age male",
+                        "id": "city_average_age_male",
+                        "sourceColumn": "city_average_age_male",
+                        "tags": [
+                            "Demography"
+                        ],
+                        "title": "City average age male"
+                    }
+                ],
+                "grain": [
+                    {
+                        "id": "demography_id",
+                        "type": "attribute"
+                    }
+                ],
+                "id": "demography",
+                "references": [
+                    {
+                        "identifier": {
+                            "id": "city",
+                            "type": "dataset"
+                        },
+                        "multivalue": false,
+                        "sourceColumns": [
+                            "city_id"
+                        ]
+                    }
+                ],
+                "tags": [
+                    "Demography"
+                ],
+                "title": "Demography"
+            },
+            {
+                "attributes": [
+                    {
+                        "description": "District id",
+                        "id": "district_id",
+                        "labels": [
+                            {
+                                "description": "District id",
+                                "id": "district_id",
+                                "primary": true,
+                                "sourceColumn": "district_id",
+                                "tags": [
+                                    "District"
+                                ],
+                                "title": "District id"
+                            }
+                        ],
+                        "tags": [
+                            "District"
+                        ],
+                        "title": "District id"
+                    },
+                    {
+                        "description": "District name",
+                        "id": "district_name",
+                        "labels": [
+                            {
+                                "description": "District name",
+                                "id": "district_name",
+                                "primary": true,
+                                "sourceColumn": "district_name",
+                                "tags": [
+                                    "District"
+                                ],
+                                "title": "District name"
+                            }
+                        ],
+                        "tags": [
+                            "District"
+                        ],
+                        "title": "District name"
+                    }
+                ],
+                "dataSourceTableId": {
+                    "dataSourceId": "covid.cz",
+                    "id": "district",
+                    "type": "dataSource"
+                },
+                "description": "",
+                "facts": [],
+                "grain": [
+                    {
+                        "id": "district_id",
+                        "type": "attribute"
+                    }
+                ],
+                "id": "district",
+                "references": [
+                    {
+                        "identifier": {
+                            "id": "county",
+                            "type": "dataset"
+                        },
+                        "multivalue": false,
+                        "sourceColumns": [
+                            "county_id"
+                        ]
+                    }
+                ],
+                "tags": [
+                    "District"
+                ],
+                "title": "District"
+            }
+        ],
+        "dateInstances": [
+            {
+                "description": "",
+                "granularities": [
+                    "DAY",
+                    "WEEK",
+                    "MONTH",
+                    "QUARTER",
+                    "YEAR"
+                ],
+                "granularitiesFormatting": {
+                    "titleBase": "Date",
+                    "titlePattern": "%titleBase - %granularityTitle"
+                },
+                "id": "date",
+                "tags": [
+                    "Date"
+                ],
+                "title": "Date"
+            }
+        ]
+    }
+}

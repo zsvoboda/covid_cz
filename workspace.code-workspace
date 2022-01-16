@@ -1,0 +1,21 @@
+{
+	"folders": [
+		{
+			"path": "."
+		}
+	],
+    "settings": {
+        "rest-client.environmentVariables": {
+            "$shared": {
+                "cnceToken": "YWRtaW46Ym9vdHN0cmFwOmFkbWluMTIz",
+                "ds_user": "demouser",
+                "ds_pass": "demopass",
+            },
+            "GoodData.CN CE": {
+                "endpoint": "http://localhost:3000",
+                "token": "{{$shared cnceToken}}",
+                "ds_host": "localhost:5432"
+            }
+        }
+    }
+}
