@@ -3,6 +3,8 @@ This project downloads the complete COVID-19 tracking data from the [Czech Minis
 
 ![COVID CZ data model](https://raw.githubusercontent.com/zsvoboda/dbd/master/img/covid.cz.datamodel.png)
 
+The data are loaded to Postgres database that is part of GoodData.CN Docker image. This project contains declarative definitions of GoodData metrics, insights, and dashboards that you can import to your local GoodData.CN Docker container. 
+
 You'll get this initial COVID-19 dasboard out of the box. 
 
 ![COVID CZ Dashboard](https://raw.githubusercontent.com/zsvoboda/covid_cz/main/img/covid.cz.dashboard.png)
