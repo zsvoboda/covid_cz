@@ -5,7 +5,7 @@
                 "content": {
                     "filterContextRef": {
                         "identifier": {
-                            "id": "6be0e790-304b-4efb-822c-879157d8eb42",
+                            "id": "75e4d6fc-1894-4ccc-b519-86c34898d338",
                             "type": "filterContext"
                         }
                     },
@@ -24,7 +24,7 @@
                                         },
                                         "widget": {
                                             "type": "insight",
-                                            "title": "kpi_infections",
+                                            "title": "KPI Infections",
                                             "description": "",
                                             "ignoreDashboardFilters": [],
                                             "dateDataSet": {
@@ -35,7 +35,7 @@
                                             },
                                             "insight": {
                                                 "identifier": {
-                                                    "id": "ca3fcd9d-aef7-4160-9e80-860d6728372b",
+                                                    "id": "41da25cd-c7dd-49ea-82bf-01f94211cc9d",
                                                     "type": "visualizationObject"
                                                 }
                                             },
@@ -52,7 +52,7 @@
                                         },
                                         "widget": {
                                             "type": "insight",
-                                            "title": "kpi_deaths",
+                                            "title": "KPI Deaths",
                                             "description": "",
                                             "ignoreDashboardFilters": [],
                                             "dateDataSet": {
@@ -63,7 +63,40 @@
                                             },
                                             "insight": {
                                                 "identifier": {
-                                                    "id": "9306b5c8-2916-411b-b2d2-82c44090ee31",
+                                                    "id": "385125ee-0e35-483f-9dc9-be4fdf54fdd3",
+                                                    "type": "visualizationObject"
+                                                }
+                                            },
+                                            "drills": [],
+                                            "properties": {}
+                                        }
+                                    }
+                                ]
+                            },
+                            {
+                                "type": "IDashboardLayoutSection",
+                                "items": [
+                                    {
+                                        "type": "IDashboardLayoutItem",
+                                        "size": {
+                                            "xl": {
+                                                "gridWidth": 12
+                                            }
+                                        },
+                                        "widget": {
+                                            "type": "insight",
+                                            "title": "Trends",
+                                            "description": "",
+                                            "ignoreDashboardFilters": [],
+                                            "dateDataSet": {
+                                                "identifier": {
+                                                    "id": "date",
+                                                    "type": "dataset"
+                                                }
+                                            },
+                                            "insight": {
+                                                "identifier": {
+                                                    "id": "46bddcda-1b2a-4c21-ac2d-931d32a8e267",
                                                     "type": "visualizationObject"
                                                 }
                                             },
@@ -81,12 +114,12 @@
                                         "size": {
                                             "xl": {
                                                 "gridWidth": 12,
-                                                "gridHeight": 30
+                                                "gridHeight": 40
                                             }
                                         },
                                         "widget": {
                                             "type": "insight",
-                                            "title": "Infections by month",
+                                            "title": "Infections and Deaths by District",
                                             "description": "",
                                             "ignoreDashboardFilters": [],
                                             "dateDataSet": {
@@ -97,7 +130,36 @@
                                             },
                                             "insight": {
                                                 "identifier": {
-                                                    "id": "0157260e-e764-4779-80bf-8e695207e3ad",
+                                                    "id": "b741860b-61e6-416c-a77b-3a8cd0e5c89a",
+                                                    "type": "visualizationObject"
+                                                }
+                                            },
+                                            "drills": [],
+                                            "properties": {}
+                                        }
+                                    },
+                                    {
+                                        "type": "IDashboardLayoutItem",
+                                        "size": {
+                                            "xl": {
+                                                "gridWidth": 12,
+                                                "gridHeight": 40
+                                            }
+                                        },
+                                        "widget": {
+                                            "type": "insight",
+                                            "title": "Deaths per capita",
+                                            "description": "",
+                                            "ignoreDashboardFilters": [],
+                                            "dateDataSet": {
+                                                "identifier": {
+                                                    "id": "date",
+                                                    "type": "dataset"
+                                                }
+                                            },
+                                            "insight": {
+                                                "identifier": {
+                                                    "id": "5ffa5395-fe21-465a-8bda-fa990e52cd23",
                                                     "type": "visualizationObject"
                                                 }
                                             },
@@ -112,7 +174,7 @@
                     "version": "2"
                 },
                 "description": "",
-                "id": "b9dbc440-08e5-4919-b51c-2a1e998ecd58",
+                "id": "d372f61e-7a73-4047-8d77-7578763ee3e1",
                 "title": "Overview"
             }
         ],
@@ -121,6 +183,14 @@
             {
                 "content": {
                     "filters": [
+                        {
+                            "dateFilter": {
+                                "from": "-12",
+                                "to": "-1",
+                                "granularity": "GDC.time.month",
+                                "type": "relative"
+                            }
+                        },
                         {
                             "attributeFilter": {
                                 "displayForm": {
@@ -133,7 +203,7 @@
                                 "attributeElements": {
                                     "uris": []
                                 },
-                                "localIdentifier": "ef6c7d8b23a34edd9b814681c5082091",
+                                "localIdentifier": "3e1adb6eca22408f9a1161636a98b088",
                                 "filterElementsBy": []
                             }
                         }
@@ -141,7 +211,7 @@
                     "version": "2"
                 },
                 "description": "",
-                "id": "6be0e790-304b-4efb-822c-879157d8eb42",
+                "id": "75e4d6fc-1894-4ccc-b519-86c34898d338",
                 "title": "filterContext"
             }
         ],
@@ -149,7 +219,7 @@
             {
                 "content": {
                     "format": "[>=1000000000000]#,,,,.0 T;\n[>=1000000000]#,,,.0 B;\n[>=1000000]#,,.0 M;\n[>=1000]#,.0 K;\n[>=0]#,##0;\n[<=-1000000000000]-#,,,,.0 T;\n[<=-1000000000]-#,,,.0 B;\n[<=-1000000]-#,,.0 M;\n[<=-1000]-#,.0 K;\n[<0]-#,##0",
-                    "maql": "SELECT COUNT({label/covid_event_id}) \nWHERE {label/covid_event_type} IN (\"D\")"
+                    "maql": "SELECT SUM({fact/covid_event_cnt})\n    WHERE {label/covid_event_type} = \"D\""
                 },
                 "description": "",
                 "id": "deaths",
@@ -157,12 +227,30 @@
             },
             {
                 "content": {
+                    "format": "#,##0.00%",
+                    "maql": "SELECT {metric/deaths} / {metric/population} \nBY {label/district_id}, ALL OTHER "
+                },
+                "description": "",
+                "id": "deaths_per_capita",
+                "title": "Deaths per capita (%)"
+            },
+            {
+                "content": {
                     "format": "[>=1000000000000]#,,,,.0 T;\n[>=1000000000]#,,,.0 B;\n[>=1000000]#,,.0 M;\n[>=1000]#,.0 K;\n[>=0]#,##0;\n[<=-1000000000000]-#,,,,.0 T;\n[<=-1000000000]-#,,,.0 B;\n[<=-1000000]-#,,.0 M;\n[<=-1000]-#,.0 K;\n[<0]-#,##0",
-                    "maql": "SELECT COUNT({label/covid_event_id}) \nWHERE {label/covid_event_type} IN (\"I\")"
+                    "maql": "SELECT SUM({fact/covid_event_cnt})\n    WHERE {label/covid_event_type} = \"I\""
                 },
                 "description": "",
                 "id": "infections",
                 "title": "Infections"
+            },
+            {
+                "content": {
+                    "format": "[>=1000000000000][green]#,,,,.0 T;\n[>=1000000000][green]#,,,.0 B;\n[>=1000000][green]#,,.0 M;\n[>=1000][black]#,.0 K;\n[>=0][black]#,##0;\n[<=-1000000000000][red]-#,,,,.0 T;\n[<=-1000000000][red]-#,,,.0 B;\n[<=-1000000][red]-#,,.0 M;\n[<=-1000][red]-#,.0 K;\n[<0][black]-#,##0",
+                    "maql": "SELECT SUM({fact/city_population})"
+                },
+                "description": "",
+                "id": "population",
+                "title": "Population"
             }
         ],
         "visualizationObjects": [
@@ -173,7 +261,79 @@
                             "items": [
                                 {
                                     "measure": {
-                                        "localIdentifier": "09a43357b957404a935cc67835be6977",
+                                        "localIdentifier": "01fae5e4dd95434baa40cf1a857bd84c",
+                                        "definition": {
+                                            "measureDefinition": {
+                                                "item": {
+                                                    "identifier": {
+                                                        "id": "deaths",
+                                                        "type": "metric"
+                                                    }
+                                                },
+                                                "filters": []
+                                            }
+                                        },
+                                        "title": "Deaths"
+                                    }
+                                }
+                            ],
+                            "localIdentifier": "measures"
+                        }
+                    ],
+                    "filters": [],
+                    "sorts": [],
+                    "properties": {},
+                    "visualizationUrl": "local:headline",
+                    "version": "2"
+                },
+                "description": "KPI Deaths",
+                "id": "385125ee-0e35-483f-9dc9-be4fdf54fdd3",
+                "title": "KPI Deaths"
+            },
+            {
+                "content": {
+                    "buckets": [
+                        {
+                            "items": [
+                                {
+                                    "measure": {
+                                        "localIdentifier": "5f9f7f590dab41dd9dd61dc51d1c777b",
+                                        "definition": {
+                                            "measureDefinition": {
+                                                "item": {
+                                                    "identifier": {
+                                                        "id": "infections",
+                                                        "type": "metric"
+                                                    }
+                                                },
+                                                "filters": []
+                                            }
+                                        },
+                                        "title": "Infections"
+                                    }
+                                }
+                            ],
+                            "localIdentifier": "measures"
+                        }
+                    ],
+                    "filters": [],
+                    "sorts": [],
+                    "properties": {},
+                    "visualizationUrl": "local:headline",
+                    "version": "2"
+                },
+                "description": "KPI Infections",
+                "id": "41da25cd-c7dd-49ea-82bf-01f94211cc9d",
+                "title": "KPI Infections"
+            },
+            {
+                "content": {
+                    "buckets": [
+                        {
+                            "items": [
+                                {
+                                    "measure": {
+                                        "localIdentifier": "f78453068ecc484cad26e53796dd06e2",
                                         "definition": {
                                             "measureDefinition": {
                                                 "item": {
@@ -195,7 +355,7 @@
                             "items": [
                                 {
                                     "measure": {
-                                        "localIdentifier": "3b6a34b078f845f591091e99d6220d7a",
+                                        "localIdentifier": "6b8629046a7044bdab88873462002e47",
                                         "definition": {
                                             "measureDefinition": {
                                                 "item": {
@@ -217,7 +377,7 @@
                             "items": [
                                 {
                                     "attribute": {
-                                        "localIdentifier": "d4a14cf75416434793f341fcf588bfa1",
+                                        "localIdentifier": "91753ad244ef425da90448d59e64c6ba",
                                         "displayForm": {
                                             "identifier": {
                                                 "id": "date.month",
@@ -239,7 +399,7 @@
                             "secondaryChartType": "line",
                             "secondary_yaxis": {
                                 "measures": [
-                                    "3b6a34b078f845f591091e99d6220d7a"
+                                    "6b8629046a7044bdab88873462002e47"
                                 ]
                             }
                         }
@@ -247,9 +407,9 @@
                     "visualizationUrl": "local:combo2",
                     "version": "2"
                 },
-                "description": "Infections by month",
-                "id": "0157260e-e764-4779-80bf-8e695207e3ad",
-                "title": "Infections by month"
+                "description": "Trends",
+                "id": "46bddcda-1b2a-4c21-ac2d-931d32a8e267",
+                "title": "Trends"
             },
             {
                 "content": {
@@ -258,7 +418,60 @@
                             "items": [
                                 {
                                     "measure": {
-                                        "localIdentifier": "1bed19292d374141a96cecbe6c2d1735",
+                                        "localIdentifier": "5256d16d610342b09dd927e81b878045",
+                                        "definition": {
+                                            "measureDefinition": {
+                                                "item": {
+                                                    "identifier": {
+                                                        "id": "deaths_per_capita",
+                                                        "type": "metric"
+                                                    }
+                                                },
+                                                "computeRatio": false,
+                                                "filters": []
+                                            }
+                                        },
+                                        "title": "Deaths per capita (%)"
+                                    }
+                                }
+                            ],
+                            "localIdentifier": "measures"
+                        },
+                        {
+                            "items": [
+                                {
+                                    "attribute": {
+                                        "localIdentifier": "a82b6e38728c448789b293b6e37d94c8",
+                                        "displayForm": {
+                                            "identifier": {
+                                                "id": "district_name",
+                                                "type": "label"
+                                            }
+                                        }
+                                    }
+                                }
+                            ],
+                            "localIdentifier": "view"
+                        }
+                    ],
+                    "filters": [],
+                    "sorts": [],
+                    "properties": {},
+                    "visualizationUrl": "local:bar",
+                    "version": "2"
+                },
+                "description": "Deaths per capita",
+                "id": "5ffa5395-fe21-465a-8bda-fa990e52cd23",
+                "title": "Deaths per capita"
+            },
+            {
+                "content": {
+                    "buckets": [
+                        {
+                            "items": [
+                                {
+                                    "measure": {
+                                        "localIdentifier": "bcb39dc50a7c4a7e8439e64cbebafe6f",
                                         "definition": {
                                             "measureDefinition": {
                                                 "item": {
@@ -275,26 +488,12 @@
                                 }
                             ],
                             "localIdentifier": "measures"
-                        }
-                    ],
-                    "filters": [],
-                    "sorts": [],
-                    "properties": {},
-                    "visualizationUrl": "local:headline",
-                    "version": "2"
-                },
-                "description": "kpi_deaths",
-                "id": "9306b5c8-2916-411b-b2d2-82c44090ee31",
-                "title": "kpi_deaths"
-            },
-            {
-                "content": {
-                    "buckets": [
+                        },
                         {
                             "items": [
                                 {
                                     "measure": {
-                                        "localIdentifier": "9a26a7e850e74dccb989ca5dfeb69b35",
+                                        "localIdentifier": "d4bb6a4532f44648ac07391a1f79e03d",
                                         "definition": {
                                             "measureDefinition": {
                                                 "item": {
@@ -310,18 +509,45 @@
                                     }
                                 }
                             ],
-                            "localIdentifier": "measures"
+                            "localIdentifier": "secondary_measures"
+                        },
+                        {
+                            "items": [
+                                {
+                                    "attribute": {
+                                        "localIdentifier": "464d6629cb584e7b8534beca9a393c0c",
+                                        "displayForm": {
+                                            "identifier": {
+                                                "id": "district_name",
+                                                "type": "label"
+                                            }
+                                        }
+                                    }
+                                }
+                            ],
+                            "localIdentifier": "view"
                         }
                     ],
                     "filters": [],
                     "sorts": [],
-                    "properties": {},
-                    "visualizationUrl": "local:headline",
+                    "properties": {
+                        "controls": {
+                            "dualAxis": true,
+                            "primaryChartType": "column",
+                            "secondaryChartType": "line",
+                            "secondary_yaxis": {
+                                "measures": [
+                                    "d4bb6a4532f44648ac07391a1f79e03d"
+                                ]
+                            }
+                        }
+                    },
+                    "visualizationUrl": "local:combo2",
                     "version": "2"
                 },
-                "description": "kpi_infections",
-                "id": "ca3fcd9d-aef7-4160-9e80-860d6728372b",
-                "title": "kpi_infections"
+                "description": "Infections and Deaths by District",
+                "id": "b741860b-61e6-416c-a77b-3a8cd0e5c89a",
+                "title": "Infections and Deaths by District"
             }
         ]
     }
