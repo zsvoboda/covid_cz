@@ -1,7 +1,7 @@
 # Czech Republic COVID-19 data 
 This project downloads the complete COVID-19 tracking data from the [Czech Ministry of Health site](https://onemocneni-aktualne.mzcr.cz/api/v2/covid-19) and transform it to a simple analytical data model.  
 
-![COVID CZ data model](https://raw.githubusercontent.com/zsvoboda/dbd/master/img/covid.cz.datamodel.png)
+![COVID CZ data model](https://raw.githubusercontent.com/zsvoboda/covid_cz/main/img/pdm.png)
 
 The data are loaded to Postgres database that is part of GoodData.CN Docker image. This project contains declarative definitions of GoodData metrics, insights, and dashboards that you can import to your local GoodData.CN Docker container. 
 
