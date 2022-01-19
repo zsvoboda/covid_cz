@@ -19,12 +19,12 @@
                                         "type": "IDashboardLayoutItem",
                                         "size": {
                                             "xl": {
-                                                "gridWidth": 4
+                                                "gridWidth": 3
                                             }
                                         },
                                         "widget": {
                                             "type": "insight",
-                                            "title": "KPI Infections",
+                                            "title": "Total infections",
                                             "description": "",
                                             "ignoreDashboardFilters": [],
                                             "dateDataSet": {
@@ -47,12 +47,12 @@
                                         "type": "IDashboardLayoutItem",
                                         "size": {
                                             "xl": {
-                                                "gridWidth": 4
+                                                "gridWidth": 3
                                             }
                                         },
                                         "widget": {
                                             "type": "insight",
-                                            "title": "KPI Deaths",
+                                            "title": "Total deaths",
                                             "description": "",
                                             "ignoreDashboardFilters": [],
                                             "dateDataSet": {
@@ -75,12 +75,40 @@
                                         "type": "IDashboardLayoutItem",
                                         "size": {
                                             "xl": {
-                                                "gridWidth": 4
+                                                "gridWidth": 3
                                             }
                                         },
                                         "widget": {
                                             "type": "insight",
-                                            "title": "KPI Death per capita",
+                                            "title": "Infections per capita",
+                                            "description": "",
+                                            "ignoreDashboardFilters": [],
+                                            "dateDataSet": {
+                                                "identifier": {
+                                                    "id": "date",
+                                                    "type": "dataset"
+                                                }
+                                            },
+                                            "insight": {
+                                                "identifier": {
+                                                    "id": "b7c11bb1-a982-41e2-b0dc-df678860d3de",
+                                                    "type": "visualizationObject"
+                                                }
+                                            },
+                                            "drills": [],
+                                            "properties": {}
+                                        }
+                                    },
+                                    {
+                                        "type": "IDashboardLayoutItem",
+                                        "size": {
+                                            "xl": {
+                                                "gridWidth": 3
+                                            }
+                                        },
+                                        "widget": {
+                                            "type": "insight",
+                                            "title": "Deaths per capita",
                                             "description": "",
                                             "ignoreDashboardFilters": [],
                                             "dateDataSet": {
@@ -332,12 +360,57 @@
             },
             {
                 "content": {
+                    "format": "#,##0.00000%",
+                    "maql": "SELECT {metric/deaths_per_day} / (SELECT SUM({metric/population} ) BY {label/district_id} ALL OTHER )\nBY {label/district_id}, {label/date.day}, ALL OTHER "
+                },
+                "description": "",
+                "id": "deaths_per_capita_2",
+                "title": "Deaths per day and capita (%)"
+            },
+            {
+                "content": {
+                    "format": "#,##0",
+                    "maql": "SELECT AVG(SELECT{metric/deaths} BY {label/date.day}, {label/district_id} ALL OTHER )"
+                },
+                "description": "",
+                "id": "deaths_per_day",
+                "title": "Deaths per day"
+            },
+            {
+                "content": {
+                    "format": "#,##0.00000%",
+                    "maql": "SELECT {metric/infections_per_day} / (SELECT SUM({metric/population} ) BY {label/district_id} ALL OTHER )\nBY {label/district_id}, {label/date.day}, ALL OTHER "
+                },
+                "description": "",
+                "id": "deaths_per_day_and_capita",
+                "title": "Infections per day and capita (%)"
+            },
+            {
+                "content": {
                     "format": "[>=1000000000000]#,,,,.0 T;\n[>=1000000000]#,,,.0 B;\n[>=1000000]#,,.0 M;\n[>=1000]#,.0 K;\n[>=0]#,##0;\n[<=-1000000000000]-#,,,,.0 T;\n[<=-1000000000]-#,,,.0 B;\n[<=-1000000]-#,,.0 M;\n[<=-1000]-#,.0 K;\n[<0]-#,##0",
                     "maql": "SELECT SUM({fact/covid_event_cnt})\n    WHERE {label/covid_event_type} = \"I\""
                 },
                 "description": "",
                 "id": "infections",
                 "title": "Infections"
+            },
+            {
+                "content": {
+                    "format": "#,##0.00%",
+                    "maql": "SELECT {metric/infections} / (SELECT SUM({metric/population} ) BY {label/district_id} ALL OTHER )\nBY {label/district_id}, {label/date.day}, ALL OTHER "
+                },
+                "description": "",
+                "id": "infections_per_capita",
+                "title": "Infections per capita (%)"
+            },
+            {
+                "content": {
+                    "format": "#,##0",
+                    "maql": "SELECT AVG(SELECT {metric/infections} BY {label/date.day}, {label/district_id} ALL OTHER )"
+                },
+                "description": "",
+                "id": "infections_per_day",
+                "title": "Infections per day"
             },
             {
                 "content": {
@@ -838,6 +911,42 @@
                 "description": "Infections and Deaths by District",
                 "id": "b741860b-61e6-416c-a77b-3a8cd0e5c89a",
                 "title": "Infections and Deaths by District"
+            },
+            {
+                "content": {
+                    "buckets": [
+                        {
+                            "items": [
+                                {
+                                    "measure": {
+                                        "localIdentifier": "881924576df64fc98d5e8d4590e8124a",
+                                        "definition": {
+                                            "measureDefinition": {
+                                                "item": {
+                                                    "identifier": {
+                                                        "id": "infections_per_capita",
+                                                        "type": "metric"
+                                                    }
+                                                },
+                                                "filters": []
+                                            }
+                                        },
+                                        "title": "Infections per capita (%)"
+                                    }
+                                }
+                            ],
+                            "localIdentifier": "measures"
+                        }
+                    ],
+                    "filters": [],
+                    "sorts": [],
+                    "properties": {},
+                    "visualizationUrl": "local:headline",
+                    "version": "2"
+                },
+                "description": "KPI infections per capita",
+                "id": "b7c11bb1-a982-41e2-b0dc-df678860d3de",
+                "title": "KPI infections per capita"
             },
             {
                 "content": {
