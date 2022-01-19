@@ -309,6 +309,24 @@
                     "filters": [
                         {
                             "dateFilter": {
+                                "from": "0",
+                                "to": "0",
+                                "granularity": "GDC.time.month",
+                                "type": "relative"
+                            }
+                        }
+                    ],
+                    "version": "2"
+                },
+                "description": "",
+                "id": "20c903f7-3374-4b79-bdc4-ad0b9ce7d73e",
+                "title": "filterContext"
+            },
+            {
+                "content": {
+                    "filters": [
+                        {
+                            "dateFilter": {
                                 "from": "-12",
                                 "to": "-1",
                                 "granularity": "GDC.time.month",
@@ -423,6 +441,72 @@
             }
         ],
         "visualizationObjects": [
+            {
+                "content": {
+                    "buckets": [
+                        {
+                            "items": [
+                                {
+                                    "measure": {
+                                        "localIdentifier": "857e837b5c3a48469e28ee182c5a613f",
+                                        "definition": {
+                                            "measureDefinition": {
+                                                "item": {
+                                                    "identifier": {
+                                                        "id": "deaths_per_capita_2",
+                                                        "type": "metric"
+                                                    }
+                                                },
+                                                "computeRatio": false,
+                                                "filters": []
+                                            }
+                                        },
+                                        "title": "Deaths per day and capita (%)"
+                                    }
+                                }
+                            ],
+                            "localIdentifier": "measures"
+                        },
+                        {
+                            "items": [
+                                {
+                                    "attribute": {
+                                        "localIdentifier": "6c994be91a77413b93c228b4b0051d3f",
+                                        "displayForm": {
+                                            "identifier": {
+                                                "id": "county_name",
+                                                "type": "label"
+                                            }
+                                        }
+                                    }
+                                }
+                            ],
+                            "localIdentifier": "view"
+                        }
+                    ],
+                    "filters": [
+                        {
+                            "absoluteDateFilter": {
+                                "dataSet": {
+                                    "identifier": {
+                                        "id": "date",
+                                        "type": "dataset"
+                                    }
+                                },
+                                "from": "2021-04-01",
+                                "to": "2021-09-30"
+                            }
+                        }
+                    ],
+                    "sorts": [],
+                    "properties": {},
+                    "visualizationUrl": "local:treemap",
+                    "version": "2"
+                },
+                "description": "Deaths per day and capita by county",
+                "id": "206d6459-8d29-4833-a7e7-6514c1a16d8c",
+                "title": "Deaths per day and capita by county"
+            },
             {
                 "content": {
                     "buckets": [
