@@ -1,0 +1,1890 @@
+{
+    "workspaceDataFilters": [
+        {
+            "columnName": "wdf__county_id",
+            "id": "county",
+            "title": "County",
+            "workspace": {
+                "id": "covid.cz",
+                "type": "workspace"
+            },
+            "workspaceDataFilterSettings": [
+                {
+                    "filterValues": [
+                        "CZ010"
+                    ],
+                    "id": "CZ010",
+                    "title": "Hlavní město Praha",
+                    "workspace": {
+                        "id": "covid.cz_cz010",
+                        "type": "workspace"
+                    }
+                },
+                {
+                    "filterValues": [
+                        "CZ020"
+                    ],
+                    "id": "CZ020",
+                    "title": "Středočeský kraj",
+                    "workspace": {
+                        "id": "covid.cz_cz020",
+                        "type": "workspace"
+                    }
+                },
+                {
+                    "filterValues": [
+                        "CZ031"
+                    ],
+                    "id": "CZ031",
+                    "title": "Jihočeský kraj",
+                    "workspace": {
+                        "id": "covid.cz_cz031",
+                        "type": "workspace"
+                    }
+                },
+                {
+                    "filterValues": [
+                        "CZ032"
+                    ],
+                    "id": "CZ032",
+                    "title": "Plzeňský kraj",
+                    "workspace": {
+                        "id": "covid.cz_cz032",
+                        "type": "workspace"
+                    }
+                },
+                {
+                    "filterValues": [
+                        "CZ041"
+                    ],
+                    "id": "CZ041",
+                    "title": "Karlovarský kraj",
+                    "workspace": {
+                        "id": "covid.cz_cz041",
+                        "type": "workspace"
+                    }
+                },
+                {
+                    "filterValues": [
+                        "CZ042"
+                    ],
+                    "id": "CZ042",
+                    "title": "Ústecký kraj",
+                    "workspace": {
+                        "id": "covid.cz_cz042",
+                        "type": "workspace"
+                    }
+                },
+                {
+                    "filterValues": [
+                        "CZ051"
+                    ],
+                    "id": "CZ051",
+                    "title": "Liberecký kraj",
+                    "workspace": {
+                        "id": "covid.cz_cz051",
+                        "type": "workspace"
+                    }
+                },
+                {
+                    "filterValues": [
+                        "CZ052"
+                    ],
+                    "id": "CZ052",
+                    "title": "Královéhradecký kraj",
+                    "workspace": {
+                        "id": "covid.cz_cz052",
+                        "type": "workspace"
+                    }
+                },
+                {
+                    "filterValues": [
+                        "CZ053"
+                    ],
+                    "id": "CZ053",
+                    "title": "Pardubický kraj",
+                    "workspace": {
+                        "id": "covid.cz_cz053",
+                        "type": "workspace"
+                    }
+                },
+                {
+                    "filterValues": [
+                        "CZ063"
+                    ],
+                    "id": "CZ063",
+                    "title": "Kraj Vysočina",
+                    "workspace": {
+                        "id": "covid.cz_cz063",
+                        "type": "workspace"
+                    }
+                },
+                {
+                    "filterValues": [
+                        "CZ064"
+                    ],
+                    "id": "CZ064",
+                    "title": "Jihomoravský kraj",
+                    "workspace": {
+                        "id": "covid.cz_cz064",
+                        "type": "workspace"
+                    }
+                },
+                {
+                    "filterValues": [
+                        "CZ071"
+                    ],
+                    "id": "CZ071",
+                    "title": "Olomoucký kraj",
+                    "workspace": {
+                        "id": "covid.cz_cz071",
+                        "type": "workspace"
+                    }
+                },
+                {
+                    "filterValues": [
+                        "CZ072"
+                    ],
+                    "id": "CZ072",
+                    "title": "Zlínský kraj",
+                    "workspace": {
+                        "id": "covid.cz_cz072",
+                        "type": "workspace"
+                    }
+                },
+                {
+                    "filterValues": [
+                        "CZ080"
+                    ],
+                    "id": "CZ080",
+                    "title": "Moravskoslezský kraj",
+                    "workspace": {
+                        "id": "covid.cz_cz080",
+                        "type": "workspace"
+                    }
+                }
+            ]
+        }
+    ],
+    "workspaces": [
+        {
+            "id": "covid.cz",
+            "model": {
+                "analytics": {
+                    "analyticalDashboards": [
+                        {
+                            "content": {
+                                "filterContextRef": {
+                                    "identifier": {
+                                        "id": "75e4d6fc-1894-4ccc-b519-86c34898d338",
+                                        "type": "filterContext"
+                                    }
+                                },
+                                "layout": {
+                                    "type": "IDashboardLayout",
+                                    "sections": [
+                                        {
+                                            "type": "IDashboardLayoutSection",
+                                            "items": [
+                                                {
+                                                    "type": "IDashboardLayoutItem",
+                                                    "size": {
+                                                        "xl": {
+                                                            "gridWidth": 6
+                                                        }
+                                                    },
+                                                    "widget": {
+                                                        "type": "insight",
+                                                        "title": "KPI Infections",
+                                                        "description": "",
+                                                        "ignoreDashboardFilters": [],
+                                                        "dateDataSet": {
+                                                            "identifier": {
+                                                                "id": "date",
+                                                                "type": "dataset"
+                                                            }
+                                                        },
+                                                        "insight": {
+                                                            "identifier": {
+                                                                "id": "41da25cd-c7dd-49ea-82bf-01f94211cc9d",
+                                                                "type": "visualizationObject"
+                                                            }
+                                                        },
+                                                        "drills": [],
+                                                        "properties": {}
+                                                    }
+                                                },
+                                                {
+                                                    "type": "IDashboardLayoutItem",
+                                                    "size": {
+                                                        "xl": {
+                                                            "gridWidth": 6
+                                                        }
+                                                    },
+                                                    "widget": {
+                                                        "type": "insight",
+                                                        "title": "KPI Deaths",
+                                                        "description": "",
+                                                        "ignoreDashboardFilters": [],
+                                                        "dateDataSet": {
+                                                            "identifier": {
+                                                                "id": "date",
+                                                                "type": "dataset"
+                                                            }
+                                                        },
+                                                        "insight": {
+                                                            "identifier": {
+                                                                "id": "385125ee-0e35-483f-9dc9-be4fdf54fdd3",
+                                                                "type": "visualizationObject"
+                                                            }
+                                                        },
+                                                        "drills": [],
+                                                        "properties": {}
+                                                    }
+                                                }
+                                            ]
+                                        },
+                                        {
+                                            "type": "IDashboardLayoutSection",
+                                            "items": [
+                                                {
+                                                    "type": "IDashboardLayoutItem",
+                                                    "size": {
+                                                        "xl": {
+                                                            "gridWidth": 12
+                                                        }
+                                                    },
+                                                    "widget": {
+                                                        "type": "insight",
+                                                        "title": "Trends",
+                                                        "description": "",
+                                                        "ignoreDashboardFilters": [],
+                                                        "dateDataSet": {
+                                                            "identifier": {
+                                                                "id": "date",
+                                                                "type": "dataset"
+                                                            }
+                                                        },
+                                                        "insight": {
+                                                            "identifier": {
+                                                                "id": "46bddcda-1b2a-4c21-ac2d-931d32a8e267",
+                                                                "type": "visualizationObject"
+                                                            }
+                                                        },
+                                                        "drills": [],
+                                                        "properties": {}
+                                                    }
+                                                }
+                                            ]
+                                        },
+                                        {
+                                            "type": "IDashboardLayoutSection",
+                                            "items": [
+                                                {
+                                                    "type": "IDashboardLayoutItem",
+                                                    "size": {
+                                                        "xl": {
+                                                            "gridWidth": 12,
+                                                            "gridHeight": 40
+                                                        }
+                                                    },
+                                                    "widget": {
+                                                        "type": "insight",
+                                                        "title": "Infections and Deaths by District",
+                                                        "description": "",
+                                                        "ignoreDashboardFilters": [],
+                                                        "dateDataSet": {
+                                                            "identifier": {
+                                                                "id": "date",
+                                                                "type": "dataset"
+                                                            }
+                                                        },
+                                                        "insight": {
+                                                            "identifier": {
+                                                                "id": "b741860b-61e6-416c-a77b-3a8cd0e5c89a",
+                                                                "type": "visualizationObject"
+                                                            }
+                                                        },
+                                                        "drills": [],
+                                                        "properties": {}
+                                                    }
+                                                },
+                                                {
+                                                    "type": "IDashboardLayoutItem",
+                                                    "size": {
+                                                        "xl": {
+                                                            "gridWidth": 12,
+                                                            "gridHeight": 40
+                                                        }
+                                                    },
+                                                    "widget": {
+                                                        "type": "insight",
+                                                        "title": "Deaths per capita",
+                                                        "description": "",
+                                                        "ignoreDashboardFilters": [],
+                                                        "dateDataSet": {
+                                                            "identifier": {
+                                                                "id": "date",
+                                                                "type": "dataset"
+                                                            }
+                                                        },
+                                                        "insight": {
+                                                            "identifier": {
+                                                                "id": "5ffa5395-fe21-465a-8bda-fa990e52cd23",
+                                                                "type": "visualizationObject"
+                                                            }
+                                                        },
+                                                        "drills": [],
+                                                        "properties": {}
+                                                    }
+                                                }
+                                            ]
+                                        }
+                                    ]
+                                },
+                                "version": "2"
+                            },
+                            "description": "",
+                            "id": "d372f61e-7a73-4047-8d77-7578763ee3e1",
+                            "title": "Overview"
+                        }
+                    ],
+                    "dashboardPlugins": [],
+                    "filterContexts": [
+                        {
+                            "content": {
+                                "filters": [
+                                    {
+                                        "dateFilter": {
+                                            "from": "-12",
+                                            "to": "-1",
+                                            "granularity": "GDC.time.month",
+                                            "type": "relative"
+                                        }
+                                    },
+                                    {
+                                        "attributeFilter": {
+                                            "displayForm": {
+                                                "identifier": {
+                                                    "id": "county_name",
+                                                    "type": "label"
+                                                }
+                                            },
+                                            "negativeSelection": true,
+                                            "attributeElements": {
+                                                "uris": []
+                                            },
+                                            "localIdentifier": "3e1adb6eca22408f9a1161636a98b088",
+                                            "filterElementsBy": []
+                                        }
+                                    }
+                                ],
+                                "version": "2"
+                            },
+                            "description": "",
+                            "id": "75e4d6fc-1894-4ccc-b519-86c34898d338",
+                            "title": "filterContext"
+                        }
+                    ],
+                    "metrics": [
+                        {
+                            "content": {
+                                "format": "[>=1000000000000]#,,,,.0 T;\n[>=1000000000]#,,,.0 B;\n[>=1000000]#,,.0 M;\n[>=1000]#,.0 K;\n[>=0]#,##0;\n[<=-1000000000000]-#,,,,.0 T;\n[<=-1000000000]-#,,,.0 B;\n[<=-1000000]-#,,.0 M;\n[<=-1000]-#,.0 K;\n[<0]-#,##0",
+                                "maql": "SELECT SUM({fact/covid_event_cnt})\n    WHERE {label/covid_event_type} = \"D\""
+                            },
+                            "description": "",
+                            "id": "deaths",
+                            "title": "Deaths"
+                        },
+                        {
+                            "content": {
+                                "format": "#,##0.00%",
+                                "maql": "SELECT {metric/deaths} / {metric/population} \nBY {label/district_id}, ALL OTHER "
+                            },
+                            "description": "",
+                            "id": "deaths_per_capita",
+                            "title": "Deaths per capita (%)"
+                        },
+                        {
+                            "content": {
+                                "format": "[>=1000000000000]#,,,,.0 T;\n[>=1000000000]#,,,.0 B;\n[>=1000000]#,,.0 M;\n[>=1000]#,.0 K;\n[>=0]#,##0;\n[<=-1000000000000]-#,,,,.0 T;\n[<=-1000000000]-#,,,.0 B;\n[<=-1000000]-#,,.0 M;\n[<=-1000]-#,.0 K;\n[<0]-#,##0",
+                                "maql": "SELECT SUM({fact/covid_event_cnt})\n    WHERE {label/covid_event_type} = \"I\""
+                            },
+                            "description": "",
+                            "id": "infections",
+                            "title": "Infections"
+                        },
+                        {
+                            "content": {
+                                "format": "[>=1000000000000][green]#,,,,.0 T;\n[>=1000000000][green]#,,,.0 B;\n[>=1000000][green]#,,.0 M;\n[>=1000][black]#,.0 K;\n[>=0][black]#,##0;\n[<=-1000000000000][red]-#,,,,.0 T;\n[<=-1000000000][red]-#,,,.0 B;\n[<=-1000000][red]-#,,.0 M;\n[<=-1000][red]-#,.0 K;\n[<0][black]-#,##0",
+                                "maql": "SELECT SUM({fact/city_population})"
+                            },
+                            "description": "",
+                            "id": "population",
+                            "title": "Population"
+                        }
+                    ],
+                    "visualizationObjects": [
+                        {
+                            "content": {
+                                "buckets": [
+                                    {
+                                        "items": [
+                                            {
+                                                "measure": {
+                                                    "localIdentifier": "01fae5e4dd95434baa40cf1a857bd84c",
+                                                    "definition": {
+                                                        "measureDefinition": {
+                                                            "item": {
+                                                                "identifier": {
+                                                                    "id": "deaths",
+                                                                    "type": "metric"
+                                                                }
+                                                            },
+                                                            "filters": []
+                                                        }
+                                                    },
+                                                    "title": "Deaths"
+                                                }
+                                            }
+                                        ],
+                                        "localIdentifier": "measures"
+                                    }
+                                ],
+                                "filters": [],
+                                "sorts": [],
+                                "properties": {},
+                                "visualizationUrl": "local:headline",
+                                "version": "2"
+                            },
+                            "description": "KPI Deaths",
+                            "id": "385125ee-0e35-483f-9dc9-be4fdf54fdd3",
+                            "title": "KPI Deaths"
+                        },
+                        {
+                            "content": {
+                                "buckets": [
+                                    {
+                                        "items": [
+                                            {
+                                                "measure": {
+                                                    "localIdentifier": "5f9f7f590dab41dd9dd61dc51d1c777b",
+                                                    "definition": {
+                                                        "measureDefinition": {
+                                                            "item": {
+                                                                "identifier": {
+                                                                    "id": "infections",
+                                                                    "type": "metric"
+                                                                }
+                                                            },
+                                                            "filters": []
+                                                        }
+                                                    },
+                                                    "title": "Infections"
+                                                }
+                                            }
+                                        ],
+                                        "localIdentifier": "measures"
+                                    }
+                                ],
+                                "filters": [],
+                                "sorts": [],
+                                "properties": {},
+                                "visualizationUrl": "local:headline",
+                                "version": "2"
+                            },
+                            "description": "KPI Infections",
+                            "id": "41da25cd-c7dd-49ea-82bf-01f94211cc9d",
+                            "title": "KPI Infections"
+                        },
+                        {
+                            "content": {
+                                "buckets": [
+                                    {
+                                        "items": [
+                                            {
+                                                "measure": {
+                                                    "localIdentifier": "f78453068ecc484cad26e53796dd06e2",
+                                                    "definition": {
+                                                        "measureDefinition": {
+                                                            "item": {
+                                                                "identifier": {
+                                                                    "id": "deaths",
+                                                                    "type": "metric"
+                                                                }
+                                                            },
+                                                            "filters": []
+                                                        }
+                                                    },
+                                                    "title": "Deaths"
+                                                }
+                                            }
+                                        ],
+                                        "localIdentifier": "measures"
+                                    },
+                                    {
+                                        "items": [
+                                            {
+                                                "measure": {
+                                                    "localIdentifier": "6b8629046a7044bdab88873462002e47",
+                                                    "definition": {
+                                                        "measureDefinition": {
+                                                            "item": {
+                                                                "identifier": {
+                                                                    "id": "infections",
+                                                                    "type": "metric"
+                                                                }
+                                                            },
+                                                            "filters": []
+                                                        }
+                                                    },
+                                                    "title": "Infections"
+                                                }
+                                            }
+                                        ],
+                                        "localIdentifier": "secondary_measures"
+                                    },
+                                    {
+                                        "items": [
+                                            {
+                                                "attribute": {
+                                                    "localIdentifier": "91753ad244ef425da90448d59e64c6ba",
+                                                    "displayForm": {
+                                                        "identifier": {
+                                                            "id": "date.month",
+                                                            "type": "label"
+                                                        }
+                                                    }
+                                                }
+                                            }
+                                        ],
+                                        "localIdentifier": "view"
+                                    }
+                                ],
+                                "filters": [],
+                                "sorts": [],
+                                "properties": {
+                                    "controls": {
+                                        "dualAxis": true,
+                                        "primaryChartType": "column",
+                                        "secondaryChartType": "line",
+                                        "secondary_yaxis": {
+                                            "measures": [
+                                                "6b8629046a7044bdab88873462002e47"
+                                            ]
+                                        }
+                                    }
+                                },
+                                "visualizationUrl": "local:combo2",
+                                "version": "2"
+                            },
+                            "description": "Trends",
+                            "id": "46bddcda-1b2a-4c21-ac2d-931d32a8e267",
+                            "title": "Trends"
+                        },
+                        {
+                            "content": {
+                                "buckets": [
+                                    {
+                                        "items": [
+                                            {
+                                                "measure": {
+                                                    "localIdentifier": "5256d16d610342b09dd927e81b878045",
+                                                    "definition": {
+                                                        "measureDefinition": {
+                                                            "item": {
+                                                                "identifier": {
+                                                                    "id": "deaths_per_capita",
+                                                                    "type": "metric"
+                                                                }
+                                                            },
+                                                            "computeRatio": false,
+                                                            "filters": []
+                                                        }
+                                                    },
+                                                    "title": "Deaths per capita (%)"
+                                                }
+                                            }
+                                        ],
+                                        "localIdentifier": "measures"
+                                    },
+                                    {
+                                        "items": [
+                                            {
+                                                "attribute": {
+                                                    "localIdentifier": "a82b6e38728c448789b293b6e37d94c8",
+                                                    "displayForm": {
+                                                        "identifier": {
+                                                            "id": "district_name",
+                                                            "type": "label"
+                                                        }
+                                                    }
+                                                }
+                                            }
+                                        ],
+                                        "localIdentifier": "view"
+                                    }
+                                ],
+                                "filters": [],
+                                "sorts": [],
+                                "properties": {},
+                                "visualizationUrl": "local:bar",
+                                "version": "2"
+                            },
+                            "description": "Deaths per capita",
+                            "id": "5ffa5395-fe21-465a-8bda-fa990e52cd23",
+                            "title": "Deaths per capita"
+                        },
+                        {
+                            "content": {
+                                "buckets": [
+                                    {
+                                        "items": [
+                                            {
+                                                "measure": {
+                                                    "localIdentifier": "bcb39dc50a7c4a7e8439e64cbebafe6f",
+                                                    "definition": {
+                                                        "measureDefinition": {
+                                                            "item": {
+                                                                "identifier": {
+                                                                    "id": "deaths",
+                                                                    "type": "metric"
+                                                                }
+                                                            },
+                                                            "filters": []
+                                                        }
+                                                    },
+                                                    "title": "Deaths"
+                                                }
+                                            }
+                                        ],
+                                        "localIdentifier": "measures"
+                                    },
+                                    {
+                                        "items": [
+                                            {
+                                                "measure": {
+                                                    "localIdentifier": "d4bb6a4532f44648ac07391a1f79e03d",
+                                                    "definition": {
+                                                        "measureDefinition": {
+                                                            "item": {
+                                                                "identifier": {
+                                                                    "id": "infections",
+                                                                    "type": "metric"
+                                                                }
+                                                            },
+                                                            "filters": []
+                                                        }
+                                                    },
+                                                    "title": "Infections"
+                                                }
+                                            }
+                                        ],
+                                        "localIdentifier": "secondary_measures"
+                                    },
+                                    {
+                                        "items": [
+                                            {
+                                                "attribute": {
+                                                    "localIdentifier": "464d6629cb584e7b8534beca9a393c0c",
+                                                    "displayForm": {
+                                                        "identifier": {
+                                                            "id": "district_name",
+                                                            "type": "label"
+                                                        }
+                                                    }
+                                                }
+                                            }
+                                        ],
+                                        "localIdentifier": "view"
+                                    }
+                                ],
+                                "filters": [],
+                                "sorts": [],
+                                "properties": {
+                                    "controls": {
+                                        "dualAxis": true,
+                                        "primaryChartType": "column",
+                                        "secondaryChartType": "line",
+                                        "secondary_yaxis": {
+                                            "measures": [
+                                                "d4bb6a4532f44648ac07391a1f79e03d"
+                                            ]
+                                        }
+                                    }
+                                },
+                                "visualizationUrl": "local:combo2",
+                                "version": "2"
+                            },
+                            "description": "Infections and Deaths by District",
+                            "id": "b741860b-61e6-416c-a77b-3a8cd0e5c89a",
+                            "title": "Infections and Deaths by District"
+                        }
+                    ]
+                },
+                "ldm": {
+                    "datasets": [
+                        {
+                            "attributes": [
+                                {
+                                    "description": "City id",
+                                    "id": "city_id",
+                                    "labels": [
+                                        {
+                                            "description": "City id",
+                                            "id": "city_id",
+                                            "primary": true,
+                                            "sourceColumn": "city_id",
+                                            "tags": [
+                                                "City"
+                                            ],
+                                            "title": "City id"
+                                        }
+                                    ],
+                                    "tags": [
+                                        "City"
+                                    ],
+                                    "title": "City id"
+                                },
+                                {
+                                    "description": "City latitude",
+                                    "id": "city_latitude",
+                                    "labels": [
+                                        {
+                                            "description": "City latitude",
+                                            "id": "city_latitude",
+                                            "primary": true,
+                                            "sourceColumn": "city_latitude",
+                                            "tags": [
+                                                "City"
+                                            ],
+                                            "title": "City latitude"
+                                        }
+                                    ],
+                                    "tags": [
+                                        "City"
+                                    ],
+                                    "title": "City latitude"
+                                },
+                                {
+                                    "description": "City longitude",
+                                    "id": "city_longitude",
+                                    "labels": [
+                                        {
+                                            "description": "City longitude",
+                                            "id": "city_longitude",
+                                            "primary": true,
+                                            "sourceColumn": "city_longitude",
+                                            "tags": [
+                                                "City"
+                                            ],
+                                            "title": "City longitude"
+                                        }
+                                    ],
+                                    "tags": [
+                                        "City"
+                                    ],
+                                    "title": "City longitude"
+                                },
+                                {
+                                    "description": "City name",
+                                    "id": "city_name",
+                                    "labels": [
+                                        {
+                                            "description": "City name",
+                                            "id": "city_name",
+                                            "primary": true,
+                                            "sourceColumn": "city_name",
+                                            "tags": [
+                                                "City"
+                                            ],
+                                            "title": "City name"
+                                        }
+                                    ],
+                                    "tags": [
+                                        "City"
+                                    ],
+                                    "title": "City name"
+                                }
+                            ],
+                            "dataSourceTableId": {
+                                "dataSourceId": "covid.cz",
+                                "id": "city",
+                                "type": "dataSource"
+                            },
+                            "description": "",
+                            "facts": [],
+                            "grain": [
+                                {
+                                    "id": "city_id",
+                                    "type": "attribute"
+                                }
+                            ],
+                            "id": "city",
+                            "references": [
+                                {
+                                    "identifier": {
+                                        "id": "district",
+                                        "type": "dataset"
+                                    },
+                                    "multivalue": false,
+                                    "sourceColumns": [
+                                        "district_id"
+                                    ]
+                                }
+                            ],
+                            "tags": [
+                                "City"
+                            ],
+                            "title": "City"
+                        },
+                        {
+                            "attributes": [
+                                {
+                                    "description": "Country id",
+                                    "id": "country_id",
+                                    "labels": [
+                                        {
+                                            "description": "Country id",
+                                            "id": "country_id",
+                                            "primary": true,
+                                            "sourceColumn": "country_id",
+                                            "tags": [
+                                                "Country"
+                                            ],
+                                            "title": "Country id"
+                                        }
+                                    ],
+                                    "tags": [
+                                        "Country"
+                                    ],
+                                    "title": "Country id"
+                                },
+                                {
+                                    "description": "Country name",
+                                    "id": "country_name",
+                                    "labels": [
+                                        {
+                                            "description": "Country name",
+                                            "id": "country_name",
+                                            "primary": true,
+                                            "sourceColumn": "country_name",
+                                            "tags": [
+                                                "Country"
+                                            ],
+                                            "title": "Country name"
+                                        }
+                                    ],
+                                    "tags": [
+                                        "Country"
+                                    ],
+                                    "title": "Country name"
+                                }
+                            ],
+                            "dataSourceTableId": {
+                                "dataSourceId": "covid.cz",
+                                "id": "country",
+                                "type": "dataSource"
+                            },
+                            "description": "",
+                            "facts": [],
+                            "grain": [
+                                {
+                                    "id": "country_id",
+                                    "type": "attribute"
+                                }
+                            ],
+                            "id": "country",
+                            "references": [],
+                            "tags": [
+                                "Country"
+                            ],
+                            "title": "Country"
+                        },
+                        {
+                            "attributes": [
+                                {
+                                    "description": "County id",
+                                    "id": "county_id",
+                                    "labels": [
+                                        {
+                                            "description": "County id",
+                                            "id": "county_id",
+                                            "primary": true,
+                                            "sourceColumn": "county_id",
+                                            "tags": [
+                                                "County"
+                                            ],
+                                            "title": "County id"
+                                        }
+                                    ],
+                                    "tags": [
+                                        "County"
+                                    ],
+                                    "title": "County id"
+                                },
+                                {
+                                    "description": "County name",
+                                    "id": "county_name",
+                                    "labels": [
+                                        {
+                                            "description": "County name",
+                                            "id": "county_name",
+                                            "primary": true,
+                                            "sourceColumn": "county_name",
+                                            "tags": [
+                                                "County"
+                                            ],
+                                            "title": "County name"
+                                        }
+                                    ],
+                                    "tags": [
+                                        "County"
+                                    ],
+                                    "title": "County name"
+                                }
+                            ],
+                            "dataSourceTableId": {
+                                "dataSourceId": "covid.cz",
+                                "id": "county",
+                                "type": "dataSource"
+                            },
+                            "description": "",
+                            "facts": [],
+                            "grain": [
+                                {
+                                    "id": "county_id",
+                                    "type": "attribute"
+                                }
+                            ],
+                            "id": "county",
+                            "references": [
+                                {
+                                    "identifier": {
+                                        "id": "country",
+                                        "type": "dataset"
+                                    },
+                                    "multivalue": false,
+                                    "sourceColumns": [
+                                        "country_id"
+                                    ]
+                                }
+                            ],
+                            "tags": [
+                                "County"
+                            ],
+                            "title": "County"
+                        },
+                        {
+                            "attributes": [
+                                {
+                                    "description": "Covid event id",
+                                    "id": "covid_event_id",
+                                    "labels": [
+                                        {
+                                            "description": "Covid event id",
+                                            "id": "covid_event_id",
+                                            "primary": true,
+                                            "sourceColumn": "covid_event_id",
+                                            "tags": [
+                                                "Covid event"
+                                            ],
+                                            "title": "Covid event id"
+                                        }
+                                    ],
+                                    "tags": [
+                                        "Covid event"
+                                    ],
+                                    "title": "Covid event id"
+                                },
+                                {
+                                    "description": "Covid event person age",
+                                    "id": "covid_event_person_age",
+                                    "labels": [
+                                        {
+                                            "description": "Covid event person age",
+                                            "id": "covid_event_person_age",
+                                            "primary": true,
+                                            "sourceColumn": "covid_event_person_age",
+                                            "tags": [
+                                                "Covid event"
+                                            ],
+                                            "title": "Covid event person age"
+                                        }
+                                    ],
+                                    "tags": [
+                                        "Covid event"
+                                    ],
+                                    "title": "Covid event person age"
+                                },
+                                {
+                                    "description": "Covid event person gender",
+                                    "id": "covid_event_person_gender",
+                                    "labels": [
+                                        {
+                                            "description": "Covid event person gender",
+                                            "id": "covid_event_person_gender",
+                                            "primary": true,
+                                            "sourceColumn": "covid_event_person_gender",
+                                            "tags": [
+                                                "Covid event"
+                                            ],
+                                            "title": "Covid event person gender"
+                                        }
+                                    ],
+                                    "tags": [
+                                        "Covid event"
+                                    ],
+                                    "title": "Covid event person gender"
+                                },
+                                {
+                                    "description": "Covid event type",
+                                    "id": "covid_event_type",
+                                    "labels": [
+                                        {
+                                            "description": "Covid event type",
+                                            "id": "covid_event_type",
+                                            "primary": true,
+                                            "sourceColumn": "covid_event_type",
+                                            "tags": [
+                                                "Covid event"
+                                            ],
+                                            "title": "Covid event type"
+                                        }
+                                    ],
+                                    "tags": [
+                                        "Covid event"
+                                    ],
+                                    "title": "Covid event type"
+                                }
+                            ],
+                            "dataSourceTableId": {
+                                "dataSourceId": "covid.cz",
+                                "id": "covid_event",
+                                "type": "dataSource"
+                            },
+                            "description": "",
+                            "facts": [
+                                {
+                                    "description": "Covid event cnt",
+                                    "id": "covid_event_cnt",
+                                    "sourceColumn": "covid_event_cnt",
+                                    "tags": [
+                                        "Covid event"
+                                    ],
+                                    "title": "Covid event cnt"
+                                },
+                                {
+                                    "description": "Covid event person age num",
+                                    "id": "covid_event_person_age_num",
+                                    "sourceColumn": "covid_event_person_age_num",
+                                    "tags": [
+                                        "Covid event"
+                                    ],
+                                    "title": "Covid event person age num"
+                                }
+                            ],
+                            "grain": [
+                                {
+                                    "id": "covid_event_id",
+                                    "type": "attribute"
+                                }
+                            ],
+                            "id": "covid_event",
+                            "references": [
+                                {
+                                    "identifier": {
+                                        "id": "date",
+                                        "type": "dataset"
+                                    },
+                                    "multivalue": false,
+                                    "sourceColumns": [
+                                        "covid_event_date"
+                                    ]
+                                },
+                                {
+                                    "identifier": {
+                                        "id": "district",
+                                        "type": "dataset"
+                                    },
+                                    "multivalue": false,
+                                    "sourceColumns": [
+                                        "district_id"
+                                    ]
+                                }
+                            ],
+                            "tags": [
+                                "Covid event"
+                            ],
+                            "title": "Covid event"
+                        },
+                        {
+                            "attributes": [
+                                {
+                                    "description": "Covid hospitalisation id",
+                                    "id": "covid_hospitalisation_id",
+                                    "labels": [
+                                        {
+                                            "description": "Covid hospitalisation id",
+                                            "id": "covid_hospitalisation_id",
+                                            "primary": true,
+                                            "sourceColumn": "covid_hospitalisation_id",
+                                            "tags": [
+                                                "Covid hospitalisation"
+                                            ],
+                                            "title": "Covid hospitalisation id"
+                                        }
+                                    ],
+                                    "tags": [
+                                        "Covid hospitalisation"
+                                    ],
+                                    "title": "Covid hospitalisation id"
+                                }
+                            ],
+                            "dataSourceTableId": {
+                                "dataSourceId": "covid.cz",
+                                "id": "covid_hospitalisation",
+                                "type": "dataSource"
+                            },
+                            "description": "",
+                            "facts": [
+                                {
+                                    "description": "Covid hospitalisation admissions",
+                                    "id": "covid_hospitalisation_admissions",
+                                    "sourceColumn": "covid_hospitalisation_admissions",
+                                    "tags": [
+                                        "Covid hospitalisation"
+                                    ],
+                                    "title": "Covid hospitalisation admissions"
+                                },
+                                {
+                                    "description": "Covid hospitalisation current",
+                                    "id": "covid_hospitalisation_current",
+                                    "sourceColumn": "covid_hospitalisation_current",
+                                    "tags": [
+                                        "Covid hospitalisation"
+                                    ],
+                                    "title": "Covid hospitalisation current"
+                                },
+                                {
+                                    "description": "Covid hospitalisation deaths",
+                                    "id": "covid_hospitalisation_deaths",
+                                    "sourceColumn": "covid_hospitalisation_deaths",
+                                    "tags": [
+                                        "Covid hospitalisation"
+                                    ],
+                                    "title": "Covid hospitalisation deaths"
+                                },
+                                {
+                                    "description": "Covid hospitalisation ecmo",
+                                    "id": "covid_hospitalisation_ecmo",
+                                    "sourceColumn": "covid_hospitalisation_ecmo",
+                                    "tags": [
+                                        "Covid hospitalisation"
+                                    ],
+                                    "title": "Covid hospitalisation ecmo"
+                                },
+                                {
+                                    "description": "Covid hospitalisation ecmo ventilation",
+                                    "id": "covid_hospitalisation_ecmo_ventilation",
+                                    "sourceColumn": "covid_hospitalisation_ecmo_ventilation",
+                                    "tags": [
+                                        "Covid hospitalisation"
+                                    ],
+                                    "title": "Covid hospitalisation ecmo ventilation"
+                                },
+                                {
+                                    "description": "Covid hospitalisation hfno",
+                                    "id": "covid_hospitalisation_hfno",
+                                    "sourceColumn": "covid_hospitalisation_hfno",
+                                    "tags": [
+                                        "Covid hospitalisation"
+                                    ],
+                                    "title": "Covid hospitalisation hfno"
+                                },
+                                {
+                                    "description": "Covid hospitalisation intensive care",
+                                    "id": "covid_hospitalisation_intensive_care",
+                                    "sourceColumn": "covid_hospitalisation_intensive_care",
+                                    "tags": [
+                                        "Covid hospitalisation"
+                                    ],
+                                    "title": "Covid hospitalisation intensive care"
+                                },
+                                {
+                                    "description": "Covid hospitalisation light symptoms",
+                                    "id": "covid_hospitalisation_light_symptoms",
+                                    "sourceColumn": "covid_hospitalisation_light_symptoms",
+                                    "tags": [
+                                        "Covid hospitalisation"
+                                    ],
+                                    "title": "Covid hospitalisation light symptoms"
+                                },
+                                {
+                                    "description": "Covid hospitalisation medium symptoms",
+                                    "id": "covid_hospitalisation_medium_symptoms",
+                                    "sourceColumn": "covid_hospitalisation_medium_symptoms",
+                                    "tags": [
+                                        "Covid hospitalisation"
+                                    ],
+                                    "title": "Covid hospitalisation medium symptoms"
+                                },
+                                {
+                                    "description": "Covid hospitalisation no symptoms",
+                                    "id": "covid_hospitalisation_no_symptoms",
+                                    "sourceColumn": "covid_hospitalisation_no_symptoms",
+                                    "tags": [
+                                        "Covid hospitalisation"
+                                    ],
+                                    "title": "Covid hospitalisation no symptoms"
+                                },
+                                {
+                                    "description": "Covid hospitalisation oxygen",
+                                    "id": "covid_hospitalisation_oxygen",
+                                    "sourceColumn": "covid_hospitalisation_oxygen",
+                                    "tags": [
+                                        "Covid hospitalisation"
+                                    ],
+                                    "title": "Covid hospitalisation oxygen"
+                                },
+                                {
+                                    "description": "Covid hospitalisation severe symptoms",
+                                    "id": "covid_hospitalisation_severe_symptoms",
+                                    "sourceColumn": "covid_hospitalisation_severe_symptoms",
+                                    "tags": [
+                                        "Covid hospitalisation"
+                                    ],
+                                    "title": "Covid hospitalisation severe symptoms"
+                                },
+                                {
+                                    "description": "Covid hospitalisation ventilation",
+                                    "id": "covid_hospitalisation_ventilation",
+                                    "sourceColumn": "covid_hospitalisation_ventilation",
+                                    "tags": [
+                                        "Covid hospitalisation"
+                                    ],
+                                    "title": "Covid hospitalisation ventilation"
+                                }
+                            ],
+                            "grain": [
+                                {
+                                    "id": "covid_hospitalisation_id",
+                                    "type": "attribute"
+                                }
+                            ],
+                            "id": "covid_hospitalisation",
+                            "references": [
+                                {
+                                    "identifier": {
+                                        "id": "country",
+                                        "type": "dataset"
+                                    },
+                                    "multivalue": false,
+                                    "sourceColumns": [
+                                        "country_id"
+                                    ]
+                                },
+                                {
+                                    "identifier": {
+                                        "id": "date",
+                                        "type": "dataset"
+                                    },
+                                    "multivalue": false,
+                                    "sourceColumns": [
+                                        "covid_hospitalisation_date"
+                                    ]
+                                }
+                            ],
+                            "tags": [
+                                "Covid hospitalisation"
+                            ],
+                            "title": "Covid hospitalisation"
+                        },
+                        {
+                            "attributes": [
+                                {
+                                    "description": "Covid testing id",
+                                    "id": "covid_testing_id",
+                                    "labels": [
+                                        {
+                                            "description": "Covid testing id",
+                                            "id": "covid_testing_id",
+                                            "primary": true,
+                                            "sourceColumn": "covid_testing_id",
+                                            "tags": [
+                                                "Covid testing"
+                                            ],
+                                            "title": "Covid testing id"
+                                        }
+                                    ],
+                                    "tags": [
+                                        "Covid testing"
+                                    ],
+                                    "title": "Covid testing id"
+                                }
+                            ],
+                            "dataSourceTableId": {
+                                "dataSourceId": "covid.cz",
+                                "id": "covid_testing",
+                                "type": "dataSource"
+                            },
+                            "description": "",
+                            "facts": [
+                                {
+                                    "description": "Covid testing type ag",
+                                    "id": "covid_testing_type_ag",
+                                    "sourceColumn": "covid_testing_type_ag",
+                                    "tags": [
+                                        "Covid testing"
+                                    ],
+                                    "title": "Covid testing type ag"
+                                },
+                                {
+                                    "description": "Covid testing type pcr",
+                                    "id": "covid_testing_type_pcr",
+                                    "sourceColumn": "covid_testing_type_pcr",
+                                    "tags": [
+                                        "Covid testing"
+                                    ],
+                                    "title": "Covid testing type pcr"
+                                }
+                            ],
+                            "grain": [
+                                {
+                                    "id": "covid_testing_id",
+                                    "type": "attribute"
+                                }
+                            ],
+                            "id": "covid_testing",
+                            "references": [
+                                {
+                                    "identifier": {
+                                        "id": "country",
+                                        "type": "dataset"
+                                    },
+                                    "multivalue": false,
+                                    "sourceColumns": [
+                                        "country_id"
+                                    ]
+                                },
+                                {
+                                    "identifier": {
+                                        "id": "date",
+                                        "type": "dataset"
+                                    },
+                                    "multivalue": false,
+                                    "sourceColumns": [
+                                        "covid_testing_date"
+                                    ]
+                                }
+                            ],
+                            "tags": [
+                                "Covid testing"
+                            ],
+                            "title": "Covid testing"
+                        },
+                        {
+                            "attributes": [
+                                {
+                                    "description": "Demography id",
+                                    "id": "demography_id",
+                                    "labels": [
+                                        {
+                                            "description": "Demography id",
+                                            "id": "demography_id",
+                                            "primary": true,
+                                            "sourceColumn": "demography_id",
+                                            "tags": [
+                                                "Demography"
+                                            ],
+                                            "title": "Demography id"
+                                        }
+                                    ],
+                                    "tags": [
+                                        "Demography"
+                                    ],
+                                    "title": "Demography id"
+                                }
+                            ],
+                            "dataSourceTableId": {
+                                "dataSourceId": "covid.cz",
+                                "id": "demography",
+                                "type": "dataSource"
+                            },
+                            "description": "",
+                            "facts": [
+                                {
+                                    "description": "City average age",
+                                    "id": "city_average_age",
+                                    "sourceColumn": "city_average_age",
+                                    "tags": [
+                                        "Demography"
+                                    ],
+                                    "title": "City average age"
+                                },
+                                {
+                                    "description": "City average age female",
+                                    "id": "city_average_age_female",
+                                    "sourceColumn": "city_average_age_female",
+                                    "tags": [
+                                        "Demography"
+                                    ],
+                                    "title": "City average age female"
+                                },
+                                {
+                                    "description": "City average age male",
+                                    "id": "city_average_age_male",
+                                    "sourceColumn": "city_average_age_male",
+                                    "tags": [
+                                        "Demography"
+                                    ],
+                                    "title": "City average age male"
+                                },
+                                {
+                                    "description": "City population",
+                                    "id": "city_population",
+                                    "sourceColumn": "city_population",
+                                    "tags": [
+                                        "Demography"
+                                    ],
+                                    "title": "City population"
+                                },
+                                {
+                                    "description": "City population female",
+                                    "id": "city_population_female",
+                                    "sourceColumn": "city_population_female",
+                                    "tags": [
+                                        "Demography"
+                                    ],
+                                    "title": "City population female"
+                                },
+                                {
+                                    "description": "City population male",
+                                    "id": "city_population_male",
+                                    "sourceColumn": "city_population_male",
+                                    "tags": [
+                                        "Demography"
+                                    ],
+                                    "title": "City population male"
+                                }
+                            ],
+                            "grain": [
+                                {
+                                    "id": "demography_id",
+                                    "type": "attribute"
+                                }
+                            ],
+                            "id": "demography",
+                            "references": [
+                                {
+                                    "identifier": {
+                                        "id": "city",
+                                        "type": "dataset"
+                                    },
+                                    "multivalue": false,
+                                    "sourceColumns": [
+                                        "city_id"
+                                    ]
+                                }
+                            ],
+                            "tags": [
+                                "Demography"
+                            ],
+                            "title": "Demography"
+                        },
+                        {
+                            "attributes": [
+                                {
+                                    "description": "District id",
+                                    "id": "district_id",
+                                    "labels": [
+                                        {
+                                            "description": "District id",
+                                            "id": "district_id",
+                                            "primary": true,
+                                            "sourceColumn": "district_id",
+                                            "tags": [
+                                                "District"
+                                            ],
+                                            "title": "District id"
+                                        }
+                                    ],
+                                    "tags": [
+                                        "District"
+                                    ],
+                                    "title": "District id"
+                                },
+                                {
+                                    "description": "District name",
+                                    "id": "district_name",
+                                    "labels": [
+                                        {
+                                            "description": "District name",
+                                            "id": "district_name",
+                                            "primary": true,
+                                            "sourceColumn": "district_name",
+                                            "tags": [
+                                                "District"
+                                            ],
+                                            "title": "District name"
+                                        }
+                                    ],
+                                    "tags": [
+                                        "District"
+                                    ],
+                                    "title": "District name"
+                                }
+                            ],
+                            "dataSourceTableId": {
+                                "dataSourceId": "covid.cz",
+                                "id": "district",
+                                "type": "dataSource"
+                            },
+                            "description": "",
+                            "facts": [],
+                            "grain": [
+                                {
+                                    "id": "district_id",
+                                    "type": "attribute"
+                                }
+                            ],
+                            "id": "district",
+                            "references": [
+                                {
+                                    "identifier": {
+                                        "id": "county",
+                                        "type": "dataset"
+                                    },
+                                    "multivalue": false,
+                                    "sourceColumns": [
+                                        "county_id"
+                                    ]
+                                }
+                            ],
+                            "tags": [
+                                "District"
+                            ],
+                            "title": "District"
+                        }
+                    ],
+                    "dateInstances": [
+                        {
+                            "description": "",
+                            "granularities": [
+                                "DAY",
+                                "WEEK",
+                                "MONTH",
+                                "QUARTER",
+                                "YEAR"
+                            ],
+                            "granularitiesFormatting": {
+                                "titleBase": "Date",
+                                "titlePattern": "%titleBase - %granularityTitle"
+                            },
+                            "id": "date",
+                            "tags": [
+                                "Date"
+                            ],
+                            "title": "Date"
+                        }
+                    ]
+                }
+            },
+            "name": "Česká republika (All data)"
+        },
+        {
+            "id": "covid.cz_cz010",
+            "model": {
+                "analytics": {
+                    "analyticalDashboards": [],
+                    "dashboardPlugins": [],
+                    "filterContexts": [],
+                    "metrics": [],
+                    "visualizationObjects": []
+                },
+                "ldm": {
+                    "datasets": [],
+                    "dateInstances": []
+                }
+            },
+            "name": "Praha",
+            "parent": {
+                "id": "covid.cz",
+                "type": "workspace"
+            }
+        },
+        {
+            "id": "covid.cz_cz020",
+            "model": {
+                "analytics": {
+                    "analyticalDashboards": [],
+                    "dashboardPlugins": [],
+                    "filterContexts": [],
+                    "metrics": [],
+                    "visualizationObjects": []
+                },
+                "ldm": {
+                    "datasets": [],
+                    "dateInstances": []
+                }
+            },
+            "name": "Středočeský kraj",
+            "parent": {
+                "id": "covid.cz",
+                "type": "workspace"
+            }
+        },
+        {
+            "id": "covid.cz_cz031",
+            "model": {
+                "analytics": {
+                    "analyticalDashboards": [],
+                    "dashboardPlugins": [],
+                    "filterContexts": [],
+                    "metrics": [],
+                    "visualizationObjects": []
+                },
+                "ldm": {
+                    "datasets": [],
+                    "dateInstances": []
+                }
+            },
+            "name": "Jihočeský kraj",
+            "parent": {
+                "id": "covid.cz",
+                "type": "workspace"
+            }
+        },
+        {
+            "id": "covid.cz_cz032",
+            "model": {
+                "analytics": {
+                    "analyticalDashboards": [],
+                    "dashboardPlugins": [],
+                    "filterContexts": [],
+                    "metrics": [],
+                    "visualizationObjects": []
+                },
+                "ldm": {
+                    "datasets": [],
+                    "dateInstances": []
+                }
+            },
+            "name": "Plzeňský kraj",
+            "parent": {
+                "id": "covid.cz",
+                "type": "workspace"
+            }
+        },
+        {
+            "id": "covid.cz_cz041",
+            "model": {
+                "analytics": {
+                    "analyticalDashboards": [],
+                    "dashboardPlugins": [],
+                    "filterContexts": [],
+                    "metrics": [],
+                    "visualizationObjects": []
+                },
+                "ldm": {
+                    "datasets": [],
+                    "dateInstances": []
+                }
+            },
+            "name": "Karlovarský kraj",
+            "parent": {
+                "id": "covid.cz",
+                "type": "workspace"
+            }
+        },
+        {
+            "id": "covid.cz_cz042",
+            "model": {
+                "analytics": {
+                    "analyticalDashboards": [],
+                    "dashboardPlugins": [],
+                    "filterContexts": [],
+                    "metrics": [],
+                    "visualizationObjects": []
+                },
+                "ldm": {
+                    "datasets": [],
+                    "dateInstances": []
+                }
+            },
+            "name": "Ústecký kraj",
+            "parent": {
+                "id": "covid.cz",
+                "type": "workspace"
+            }
+        },
+        {
+            "id": "covid.cz_cz051",
+            "model": {
+                "analytics": {
+                    "analyticalDashboards": [],
+                    "dashboardPlugins": [],
+                    "filterContexts": [],
+                    "metrics": [],
+                    "visualizationObjects": []
+                },
+                "ldm": {
+                    "datasets": [],
+                    "dateInstances": []
+                }
+            },
+            "name": "Liberecký kraj",
+            "parent": {
+                "id": "covid.cz",
+                "type": "workspace"
+            }
+        },
+        {
+            "id": "covid.cz_cz052",
+            "model": {
+                "analytics": {
+                    "analyticalDashboards": [],
+                    "dashboardPlugins": [],
+                    "filterContexts": [],
+                    "metrics": [],
+                    "visualizationObjects": []
+                },
+                "ldm": {
+                    "datasets": [],
+                    "dateInstances": []
+                }
+            },
+            "name": "Královéhradecký kraj",
+            "parent": {
+                "id": "covid.cz",
+                "type": "workspace"
+            }
+        },
+        {
+            "id": "covid.cz_cz053",
+            "model": {
+                "analytics": {
+                    "analyticalDashboards": [],
+                    "dashboardPlugins": [],
+                    "filterContexts": [],
+                    "metrics": [],
+                    "visualizationObjects": []
+                },
+                "ldm": {
+                    "datasets": [],
+                    "dateInstances": []
+                }
+            },
+            "name": "Pardubický kraj",
+            "parent": {
+                "id": "covid.cz",
+                "type": "workspace"
+            }
+        },
+        {
+            "id": "covid.cz_cz063",
+            "model": {
+                "analytics": {
+                    "analyticalDashboards": [],
+                    "dashboardPlugins": [],
+                    "filterContexts": [],
+                    "metrics": [],
+                    "visualizationObjects": []
+                },
+                "ldm": {
+                    "datasets": [],
+                    "dateInstances": []
+                }
+            },
+            "name": "Kraj Vysočina",
+            "parent": {
+                "id": "covid.cz",
+                "type": "workspace"
+            }
+        },
+        {
+            "id": "covid.cz_cz064",
+            "model": {
+                "analytics": {
+                    "analyticalDashboards": [],
+                    "dashboardPlugins": [],
+                    "filterContexts": [],
+                    "metrics": [],
+                    "visualizationObjects": []
+                },
+                "ldm": {
+                    "datasets": [],
+                    "dateInstances": []
+                }
+            },
+            "name": "Jihomoravský kraj",
+            "parent": {
+                "id": "covid.cz",
+                "type": "workspace"
+            }
+        },
+        {
+            "id": "covid.cz_cz071",
+            "model": {
+                "analytics": {
+                    "analyticalDashboards": [],
+                    "dashboardPlugins": [],
+                    "filterContexts": [],
+                    "metrics": [],
+                    "visualizationObjects": []
+                },
+                "ldm": {
+                    "datasets": [],
+                    "dateInstances": []
+                }
+            },
+            "name": "Olomoucký kraj",
+            "parent": {
+                "id": "covid.cz",
+                "type": "workspace"
+            }
+        },
+        {
+            "id": "covid.cz_cz072",
+            "model": {
+                "analytics": {
+                    "analyticalDashboards": [],
+                    "dashboardPlugins": [],
+                    "filterContexts": [],
+                    "metrics": [],
+                    "visualizationObjects": []
+                },
+                "ldm": {
+                    "datasets": [],
+                    "dateInstances": []
+                }
+            },
+            "name": "Zlínský kraj",
+            "parent": {
+                "id": "covid.cz",
+                "type": "workspace"
+            }
+        },
+        {
+            "id": "covid.cz_cz080",
+            "model": {
+                "analytics": {
+                    "analyticalDashboards": [],
+                    "dashboardPlugins": [],
+                    "filterContexts": [],
+                    "metrics": [],
+                    "visualizationObjects": []
+                },
+                "ldm": {
+                    "datasets": [],
+                    "dateInstances": []
+                }
+            },
+            "name": "Moravskoslezský kraj",
+            "parent": {
+                "id": "covid.cz",
+                "type": "workspace"
+            }
+        }
+    ]
+}

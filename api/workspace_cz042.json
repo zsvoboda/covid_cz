@@ -1,0 +1,18 @@
+{
+  "data": {
+      "id": "covid.cz_cz042",
+      "type": "workspace",
+      "attributes": {
+          "name": "Ústecký kraj"
+      },
+      "relationships": {
+          "parent": {
+            "data": {
+              "id": "covid.cz",
+              "type": "workspace"
+            }
+          }
+        }
+
+  }
+}

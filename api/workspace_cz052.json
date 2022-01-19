@@ -1,0 +1,18 @@
+{
+  "data": {
+      "id": "covid.cz_cz052",
+      "type": "workspace",
+      "attributes": {
+          "name": "Královéhradecký kraj"
+      },
+      "relationships": {
+          "parent": {
+            "data": {
+              "id": "covid.cz",
+              "type": "workspace"
+            }
+          }
+        }
+
+  }
+}

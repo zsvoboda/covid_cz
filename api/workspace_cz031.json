@@ -1,0 +1,18 @@
+{
+    "data": {
+        "id": "covid.cz_cz031",
+        "type": "workspace",
+        "attributes": {
+            "name": "Jihočeský kraj"
+        },
+        "relationships": {
+            "parent": {
+              "data": {
+                "id": "covid.cz",
+                "type": "workspace"
+              }
+            }
+          }
+
+    }
+}

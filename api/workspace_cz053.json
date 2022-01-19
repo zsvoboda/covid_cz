@@ -1,0 +1,18 @@
+{
+  "data": {
+      "id": "covid.cz_cz053",
+      "type": "workspace",
+      "attributes": {
+          "name": "Pardubický kraj"
+      },
+      "relationships": {
+          "parent": {
+            "data": {
+              "id": "covid.cz",
+              "type": "workspace"
+            }
+          }
+        }
+
+  }
+}
