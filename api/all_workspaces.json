@@ -190,7 +190,7 @@
                                                     "type": "IDashboardLayoutItem",
                                                     "size": {
                                                         "xl": {
-                                                            "gridWidth": 6
+                                                            "gridWidth": 4
                                                         }
                                                     },
                                                     "widget": {
@@ -218,7 +218,7 @@
                                                     "type": "IDashboardLayoutItem",
                                                     "size": {
                                                         "xl": {
-                                                            "gridWidth": 6
+                                                            "gridWidth": 4
                                                         }
                                                     },
                                                     "widget": {
@@ -235,6 +235,34 @@
                                                         "insight": {
                                                             "identifier": {
                                                                 "id": "385125ee-0e35-483f-9dc9-be4fdf54fdd3",
+                                                                "type": "visualizationObject"
+                                                            }
+                                                        },
+                                                        "drills": [],
+                                                        "properties": {}
+                                                    }
+                                                },
+                                                {
+                                                    "type": "IDashboardLayoutItem",
+                                                    "size": {
+                                                        "xl": {
+                                                            "gridWidth": 4
+                                                        }
+                                                    },
+                                                    "widget": {
+                                                        "type": "insight",
+                                                        "title": "KPI Death per capita",
+                                                        "description": "",
+                                                        "ignoreDashboardFilters": [],
+                                                        "dateDataSet": {
+                                                            "identifier": {
+                                                                "id": "date",
+                                                                "type": "dataset"
+                                                            }
+                                                        },
+                                                        "insight": {
+                                                            "identifier": {
+                                                                "id": "7d881e86-16d7-417c-8d54-acc9e5645b07",
                                                                 "type": "visualizationObject"
                                                             }
                                                         },
@@ -285,12 +313,12 @@
                                                     "size": {
                                                         "xl": {
                                                             "gridWidth": 12,
-                                                            "gridHeight": 40
+                                                            "gridHeight": 26
                                                         }
                                                     },
                                                     "widget": {
                                                         "type": "insight",
-                                                        "title": "Infections and Deaths by District",
+                                                        "title": "Death per capita weekly trend",
                                                         "description": "",
                                                         "ignoreDashboardFilters": [],
                                                         "dateDataSet": {
@@ -301,11 +329,28 @@
                                                         },
                                                         "insight": {
                                                             "identifier": {
-                                                                "id": "b741860b-61e6-416c-a77b-3a8cd0e5c89a",
+                                                                "id": "549ef5b8-ba74-4d41-9750-a34c93b6f0cb",
                                                                 "type": "visualizationObject"
                                                             }
                                                         },
-                                                        "drills": [],
+                                                        "drills": [
+                                                            {
+                                                                "type": "drillToInsight",
+                                                                "origin": {
+                                                                    "type": "drillFromMeasure",
+                                                                    "measure": {
+                                                                        "localIdentifier": "2bbc19fc07a64269a7884b448293d234"
+                                                                    }
+                                                                },
+                                                                "transition": "pop-up",
+                                                                "target": {
+                                                                    "identifier": {
+                                                                        "id": "7611fd6c-9b87-4120-9245-de418c6c1dfe",
+                                                                        "type": "visualizationObject"
+                                                                    }
+                                                                }
+                                                            }
+                                                        ],
                                                         "properties": {}
                                                     }
                                                 },
@@ -319,7 +364,7 @@
                                                     },
                                                     "widget": {
                                                         "type": "insight",
-                                                        "title": "Deaths per capita",
+                                                        "title": "Deaths per capita in cities",
                                                         "description": "",
                                                         "ignoreDashboardFilters": [],
                                                         "dateDataSet": {
@@ -335,6 +380,57 @@
                                                             }
                                                         },
                                                         "drills": [],
+                                                        "properties": {}
+                                                    }
+                                                }
+                                            ]
+                                        },
+                                        {
+                                            "type": "IDashboardLayoutSection",
+                                            "items": [
+                                                {
+                                                    "type": "IDashboardLayoutItem",
+                                                    "size": {
+                                                        "xl": {
+                                                            "gridWidth": 12,
+                                                            "gridHeight": 28
+                                                        }
+                                                    },
+                                                    "widget": {
+                                                        "type": "insight",
+                                                        "title": "Death per capita by district",
+                                                        "description": "",
+                                                        "ignoreDashboardFilters": [],
+                                                        "dateDataSet": {
+                                                            "identifier": {
+                                                                "id": "date",
+                                                                "type": "dataset"
+                                                            }
+                                                        },
+                                                        "insight": {
+                                                            "identifier": {
+                                                                "id": "7611fd6c-9b87-4120-9245-de418c6c1dfe",
+                                                                "type": "visualizationObject"
+                                                            }
+                                                        },
+                                                        "drills": [
+                                                            {
+                                                                "type": "drillToInsight",
+                                                                "origin": {
+                                                                    "type": "drillFromMeasure",
+                                                                    "measure": {
+                                                                        "localIdentifier": "4c583b6c8cc445f4832bfc4816dd41f9"
+                                                                    }
+                                                                },
+                                                                "transition": "pop-up",
+                                                                "target": {
+                                                                    "identifier": {
+                                                                        "id": "549ef5b8-ba74-4d41-9750-a34c93b6f0cb",
+                                                                        "type": "visualizationObject"
+                                                                    }
+                                                                }
+                                                            }
+                                                        ],
                                                         "properties": {}
                                                     }
                                                 }
@@ -399,7 +495,7 @@
                         {
                             "content": {
                                 "format": "#,##0.00%",
-                                "maql": "SELECT {metric/deaths} / {metric/population} \nBY {label/district_id}, ALL OTHER "
+                                "maql": "SELECT {metric/deaths} / (SELECT SUM({metric/population} ) BY {label/district_id} ALL OTHER )\nBY {label/district_id}, {label/date.day}, ALL OTHER "
                             },
                             "description": "",
                             "id": "deaths_per_capita",
@@ -425,6 +521,59 @@
                         }
                     ],
                     "visualizationObjects": [
+                        {
+                            "content": {
+                                "buckets": [
+                                    {
+                                        "items": [
+                                            {
+                                                "measure": {
+                                                    "localIdentifier": "4c583b6c8cc445f4832bfc4816dd41f9",
+                                                    "definition": {
+                                                        "measureDefinition": {
+                                                            "item": {
+                                                                "identifier": {
+                                                                    "id": "deaths_per_capita",
+                                                                    "type": "metric"
+                                                                }
+                                                            },
+                                                            "computeRatio": false,
+                                                            "filters": []
+                                                        }
+                                                    },
+                                                    "title": "Deaths per capita (%)"
+                                                }
+                                            }
+                                        ],
+                                        "localIdentifier": "measures"
+                                    },
+                                    {
+                                        "items": [
+                                            {
+                                                "attribute": {
+                                                    "localIdentifier": "5d7fd9c5fe764cc294c75c9b3484ab6c",
+                                                    "displayForm": {
+                                                        "identifier": {
+                                                            "id": "district_name",
+                                                            "type": "label"
+                                                        }
+                                                    }
+                                                }
+                                            }
+                                        ],
+                                        "localIdentifier": "view"
+                                    }
+                                ],
+                                "filters": [],
+                                "sorts": [],
+                                "properties": {},
+                                "visualizationUrl": "local:treemap",
+                                "version": "2"
+                            },
+                            "description": "Death per capita by district",
+                            "id": "33201746-9e96-4fe1-8392-dabcc82b3178",
+                            "title": "Death per capita by district"
+                        },
                         {
                             "content": {
                                 "buckets": [
@@ -589,6 +738,58 @@
                                         "items": [
                                             {
                                                 "measure": {
+                                                    "localIdentifier": "2bbc19fc07a64269a7884b448293d234",
+                                                    "definition": {
+                                                        "measureDefinition": {
+                                                            "item": {
+                                                                "identifier": {
+                                                                    "id": "deaths_per_capita",
+                                                                    "type": "metric"
+                                                                }
+                                                            },
+                                                            "filters": []
+                                                        }
+                                                    },
+                                                    "title": "Deaths per capita (%)"
+                                                }
+                                            }
+                                        ],
+                                        "localIdentifier": "measures"
+                                    },
+                                    {
+                                        "items": [
+                                            {
+                                                "attribute": {
+                                                    "localIdentifier": "4491755c783049bb8a3a1a49fe9b097d",
+                                                    "displayForm": {
+                                                        "identifier": {
+                                                            "id": "date.week",
+                                                            "type": "label"
+                                                        }
+                                                    }
+                                                }
+                                            }
+                                        ],
+                                        "localIdentifier": "trend"
+                                    }
+                                ],
+                                "filters": [],
+                                "sorts": [],
+                                "properties": {},
+                                "visualizationUrl": "local:line",
+                                "version": "2"
+                            },
+                            "description": "Death per capita trend",
+                            "id": "549ef5b8-ba74-4d41-9750-a34c93b6f0cb",
+                            "title": "Death per capita trend"
+                        },
+                        {
+                            "content": {
+                                "buckets": [
+                                    {
+                                        "items": [
+                                            {
+                                                "measure": {
                                                     "localIdentifier": "5256d16d610342b09dd927e81b878045",
                                                     "definition": {
                                                         "measureDefinition": {
@@ -634,6 +835,95 @@
                             "description": "Deaths per capita",
                             "id": "5ffa5395-fe21-465a-8bda-fa990e52cd23",
                             "title": "Deaths per capita"
+                        },
+                        {
+                            "content": {
+                                "buckets": [
+                                    {
+                                        "items": [
+                                            {
+                                                "measure": {
+                                                    "localIdentifier": "4c583b6c8cc445f4832bfc4816dd41f9",
+                                                    "definition": {
+                                                        "measureDefinition": {
+                                                            "item": {
+                                                                "identifier": {
+                                                                    "id": "deaths_per_capita",
+                                                                    "type": "metric"
+                                                                }
+                                                            },
+                                                            "computeRatio": false,
+                                                            "filters": []
+                                                        }
+                                                    },
+                                                    "title": "Deaths per capita (%)"
+                                                }
+                                            }
+                                        ],
+                                        "localIdentifier": "measures"
+                                    },
+                                    {
+                                        "items": [
+                                            {
+                                                "attribute": {
+                                                    "localIdentifier": "3579839b58ae409282b20974996b56f6",
+                                                    "displayForm": {
+                                                        "identifier": {
+                                                            "id": "county_name",
+                                                            "type": "label"
+                                                        }
+                                                    }
+                                                }
+                                            }
+                                        ],
+                                        "localIdentifier": "view"
+                                    }
+                                ],
+                                "filters": [],
+                                "sorts": [],
+                                "properties": {},
+                                "visualizationUrl": "local:treemap",
+                                "version": "2"
+                            },
+                            "description": "Death per capita by county",
+                            "id": "7611fd6c-9b87-4120-9245-de418c6c1dfe",
+                            "title": "Death per capita by county"
+                        },
+                        {
+                            "content": {
+                                "buckets": [
+                                    {
+                                        "items": [
+                                            {
+                                                "measure": {
+                                                    "localIdentifier": "550a7115274346c98978b1954d0e9e43",
+                                                    "definition": {
+                                                        "measureDefinition": {
+                                                            "item": {
+                                                                "identifier": {
+                                                                    "id": "deaths_per_capita",
+                                                                    "type": "metric"
+                                                                }
+                                                            },
+                                                            "filters": []
+                                                        }
+                                                    },
+                                                    "title": "Deaths per capita (%)"
+                                                }
+                                            }
+                                        ],
+                                        "localIdentifier": "measures"
+                                    }
+                                ],
+                                "filters": [],
+                                "sorts": [],
+                                "properties": {},
+                                "visualizationUrl": "local:headline",
+                                "version": "2"
+                            },
+                            "description": "KPI Death per capita",
+                            "id": "7d881e86-16d7-417c-8d54-acc9e5645b07",
+                            "title": "KPI Death per capita"
                         },
                         {
                             "content": {
@@ -719,6 +1009,78 @@
                             "description": "Infections and Deaths by District",
                             "id": "b741860b-61e6-416c-a77b-3a8cd0e5c89a",
                             "title": "Infections and Deaths by District"
+                        },
+                        {
+                            "content": {
+                                "buckets": [
+                                    {
+                                        "items": [
+                                            {
+                                                "measure": {
+                                                    "localIdentifier": "7a2dea2b9b464653888e76b0e71aab56",
+                                                    "definition": {
+                                                        "measureDefinition": {
+                                                            "item": {
+                                                                "identifier": {
+                                                                    "id": "infections",
+                                                                    "type": "metric"
+                                                                }
+                                                            },
+                                                            "filters": []
+                                                        }
+                                                    },
+                                                    "title": "Infections"
+                                                }
+                                            }
+                                        ],
+                                        "localIdentifier": "measures"
+                                    },
+                                    {
+                                        "items": [
+                                            {
+                                                "attribute": {
+                                                    "localIdentifier": "4d44ff6a1e3347848c258abe659dcacc",
+                                                    "displayForm": {
+                                                        "identifier": {
+                                                            "id": "date.day",
+                                                            "type": "label"
+                                                        }
+                                                    }
+                                                }
+                                            }
+                                        ],
+                                        "localIdentifier": "view"
+                                    }
+                                ],
+                                "filters": [
+                                    {
+                                        "relativeDateFilter": {
+                                            "dataSet": {
+                                                "identifier": {
+                                                    "id": "date",
+                                                    "type": "dataset"
+                                                }
+                                            },
+                                            "granularity": "GDC.time.date",
+                                            "from": -89,
+                                            "to": 0
+                                        }
+                                    }
+                                ],
+                                "sorts": [],
+                                "properties": {
+                                    "controls": {
+                                        "dualAxis": true,
+                                        "primaryChartType": "column",
+                                        "secondaryChartType": "line"
+                                    }
+                                },
+                                "visualizationUrl": "local:combo2",
+                                "version": "2"
+                            },
+                            "description": "Omikron",
+                            "id": "ee26ec2c-8bfa-4f41-9c08-fa960915f718",
+                            "title": "Omikron"
                         }
                     ]
                 },
