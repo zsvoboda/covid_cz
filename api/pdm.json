@@ -29,6 +29,11 @@
                         "name": "district_id",
                         "referencedTableColumn": "district_id",
                         "referencedTableId": "district"
+                    },
+                    {
+                        "dataType": "STRING",
+                        "isPrimaryKey": false,
+                        "name": "wdf__county_id"
                     }
                 ],
                 "id": "city",
@@ -76,6 +81,11 @@
                         "dataType": "STRING",
                         "isPrimaryKey": false,
                         "name": "county_name"
+                    },
+                    {
+                        "dataType": "STRING",
+                        "isPrimaryKey": false,
+                        "name": "wdf__county_id"
                     }
                 ],
                 "id": "county",
@@ -88,7 +98,7 @@
             {
                 "columns": [
                     {
-                        "dataType": "INT",
+                        "dataType": "NUMERIC",
                         "isPrimaryKey": false,
                         "name": "covid_event_cnt"
                     },
@@ -108,7 +118,7 @@
                         "name": "covid_event_person_age"
                     },
                     {
-                        "dataType": "INT",
+                        "dataType": "NUMERIC",
                         "isPrimaryKey": false,
                         "name": "covid_event_person_age_num"
                     },
@@ -128,6 +138,11 @@
                         "name": "district_id",
                         "referencedTableColumn": "district_id",
                         "referencedTableId": "district"
+                    },
+                    {
+                        "dataType": "STRING",
+                        "isPrimaryKey": false,
+                        "name": "wdf__county_id"
                     }
                 ],
                 "id": "covid_event",
@@ -147,12 +162,12 @@
                         "referencedTableId": "country"
                     },
                     {
-                        "dataType": "INT",
+                        "dataType": "NUMERIC",
                         "isPrimaryKey": false,
                         "name": "covid_hospitalisation_admissions"
                     },
                     {
-                        "dataType": "INT",
+                        "dataType": "NUMERIC",
                         "isPrimaryKey": false,
                         "name": "covid_hospitalisation_current"
                     },
@@ -162,22 +177,22 @@
                         "name": "covid_hospitalisation_date"
                     },
                     {
-                        "dataType": "INT",
+                        "dataType": "NUMERIC",
                         "isPrimaryKey": false,
                         "name": "covid_hospitalisation_deaths"
                     },
                     {
-                        "dataType": "INT",
+                        "dataType": "NUMERIC",
                         "isPrimaryKey": false,
                         "name": "covid_hospitalisation_ecmo"
                     },
                     {
-                        "dataType": "INT",
+                        "dataType": "NUMERIC",
                         "isPrimaryKey": false,
                         "name": "covid_hospitalisation_ecmo_ventilation"
                     },
                     {
-                        "dataType": "INT",
+                        "dataType": "NUMERIC",
                         "isPrimaryKey": false,
                         "name": "covid_hospitalisation_hfno"
                     },
@@ -187,37 +202,37 @@
                         "name": "covid_hospitalisation_id"
                     },
                     {
-                        "dataType": "INT",
+                        "dataType": "NUMERIC",
                         "isPrimaryKey": false,
                         "name": "covid_hospitalisation_intensive_care"
                     },
                     {
-                        "dataType": "INT",
+                        "dataType": "NUMERIC",
                         "isPrimaryKey": false,
                         "name": "covid_hospitalisation_light_symptoms"
                     },
                     {
-                        "dataType": "INT",
+                        "dataType": "NUMERIC",
                         "isPrimaryKey": false,
                         "name": "covid_hospitalisation_medium_symptoms"
                     },
                     {
-                        "dataType": "INT",
+                        "dataType": "NUMERIC",
                         "isPrimaryKey": false,
                         "name": "covid_hospitalisation_no_symptoms"
                     },
                     {
-                        "dataType": "INT",
+                        "dataType": "NUMERIC",
                         "isPrimaryKey": false,
                         "name": "covid_hospitalisation_oxygen"
                     },
                     {
-                        "dataType": "INT",
+                        "dataType": "NUMERIC",
                         "isPrimaryKey": false,
                         "name": "covid_hospitalisation_severe_symptoms"
                     },
                     {
-                        "dataType": "INT",
+                        "dataType": "NUMERIC",
                         "isPrimaryKey": false,
                         "name": "covid_hospitalisation_ventilation"
                     }
@@ -249,12 +264,12 @@
                         "name": "covid_testing_id"
                     },
                     {
-                        "dataType": "INT",
+                        "dataType": "NUMERIC",
                         "isPrimaryKey": false,
                         "name": "covid_testing_type_ag"
                     },
                     {
-                        "dataType": "INT",
+                        "dataType": "NUMERIC",
                         "isPrimaryKey": false,
                         "name": "covid_testing_type_pcr"
                     }
@@ -291,17 +306,17 @@
                         "referencedTableId": "city"
                     },
                     {
-                        "dataType": "INT",
+                        "dataType": "NUMERIC",
                         "isPrimaryKey": false,
                         "name": "city_population"
                     },
                     {
-                        "dataType": "INT",
+                        "dataType": "NUMERIC",
                         "isPrimaryKey": false,
                         "name": "city_population_female"
                     },
                     {
-                        "dataType": "INT",
+                        "dataType": "NUMERIC",
                         "isPrimaryKey": false,
                         "name": "city_population_male"
                     },
@@ -309,6 +324,11 @@
                         "dataType": "STRING",
                         "isPrimaryKey": true,
                         "name": "demography_id"
+                    },
+                    {
+                        "dataType": "STRING",
+                        "isPrimaryKey": false,
+                        "name": "wdf__county_id"
                     }
                 ],
                 "id": "demography",
@@ -336,6 +356,11 @@
                         "dataType": "STRING",
                         "isPrimaryKey": false,
                         "name": "district_name"
+                    },
+                    {
+                        "dataType": "STRING",
+                        "isPrimaryKey": false,
+                        "name": "wdf__county_id"
                     }
                 ],
                 "id": "district",

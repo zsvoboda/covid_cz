@@ -58,22 +58,16 @@ Sometimes I must click the `Send Request` link twice. Not sure why. I hope that 
 
 10. Create physical data model
 
-Find the `# @name storePhysicalModel` on line 45 and click on the small link `Send Request` between line 45 and 46
+Find the `# @name storePhysicalModel` on line 31 and click on the small link `Send Request` between line 31 and 32
 
 Again, you may need to `Send Request` link twice.
 
-11. Create workspace
+11. Create workspaces
 
-Find the `# @name createWorkspace` on line 25 and click on the small link `Send Request` between line 25 and 26
+Find the `# @name storeAllWorkspaces` on line 45 and click on the small link `Send Request` between line 45 and 46
 
-12. Publish semantic (logical) model 
-
-Find the `@name publishSemanticModel` on line 59 and click on the small link `Send Request` between line 59 and 60
-
-13. Create analytics model (metrics, insights, dashboards) 
-
-Find the `# @name createAnalyticsModelObjects` on line 73 and click on the small link `Send Request` between line 73 and 74
-
-14. ENJOY it at [localhost:3000](http://localhost:3000/)
+12. ENJOY the COVID analytics at [localhost:3000](http://localhost:3000/)
 
 Username is `demo@example.com`, password `demo123`.
+
+There are quite a few courses on GoodData University. You can talk to us on our Slack community if you have a question or run into issues. Visit University and community on [GoodData website](https://www.gooddata.com/learn/) if you need a jumpstart. 

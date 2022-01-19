@@ -21,20 +21,6 @@ GET {{endpoint}}/api/entities/dataSources/covid.cz
 Content-Type: application/vnd.gooddata.api+json
 Authorization: Bearer {{token}}
 
-### Create workspace
-# @name createWorkspace
-POST {{endpoint}}/api/entities/workspaces/
-Content-Type: application/vnd.gooddata.api+json
-Authorization: Bearer {{token}}
-
-< ./workspace.json
-
-### GET workspace
-# @name getWorkspace
-GET {{endpoint}}/api/entities/workspaces/covid.cz
-Content-Type: application/vnd.gooddata.api+json
-Authorization: Bearer {{token}}
-
 ### Get Physical Model
 # @name getPhysicalModel
 GET {{endpoint}}/api/layout/dataSources/covid.cz/physicalModel
@@ -48,6 +34,162 @@ Content-Type: application/json
 Authorization: Bearer {{token}}
 
 < ./pdm.json
+
+### Get all workspaces
+# @name getAllWorkspaces
+GET {{endpoint}}/api/layout/workspaces
+Content-Type: application/json
+Authorization: Bearer {{token}}
+
+### Store all workspaces
+# @name storeAllWorkspaces
+PUT {{endpoint}}/api/layout/workspaces
+Content-Type: application/json
+Authorization: Bearer {{token}}
+
+< ./all_workspaces.json
+
+### Create workspace
+# @name createWorkspace
+POST {{endpoint}}/api/entities/workspaces/
+Content-Type: application/vnd.gooddata.api+json
+Authorization: Bearer {{token}}
+
+< ./workspace.json
+
+### Create workspace CZ010
+# @name createWorkspace CZ010
+POST {{endpoint}}/api/entities/workspaces/
+Content-Type: application/vnd.gooddata.api+json
+Authorization: Bearer {{token}}
+
+< ./workspace_cz010.json
+
+### Create workspace CZ020
+# @name createWorkspace CZ020
+POST {{endpoint}}/api/entities/workspaces/
+Content-Type: application/vnd.gooddata.api+json
+Authorization: Bearer {{token}}
+
+< ./workspace_cz020.json
+
+### Create workspace CZ031
+# @name createWorkspace CZ031
+POST {{endpoint}}/api/entities/workspaces/
+Content-Type: application/vnd.gooddata.api+json
+Authorization: Bearer {{token}}
+
+< ./workspace_cz031.json
+
+### Create workspace CZ032
+# @name createWorkspace CZ032
+POST {{endpoint}}/api/entities/workspaces/
+Content-Type: application/vnd.gooddata.api+json
+Authorization: Bearer {{token}}
+
+< ./workspace_cz032.json
+
+### Create workspace CZ041
+# @name createWorkspace CZ041
+POST {{endpoint}}/api/entities/workspaces/
+Content-Type: application/vnd.gooddata.api+json
+Authorization: Bearer {{token}}
+
+< ./workspace_cz041.json
+
+### Create workspace CZ042
+# @name createWorkspace CZ042
+POST {{endpoint}}/api/entities/workspaces/
+Content-Type: application/vnd.gooddata.api+json
+Authorization: Bearer {{token}}
+
+< ./workspace_cz042.json
+
+### Create workspace CZ051
+# @name createWorkspace CZ051
+POST {{endpoint}}/api/entities/workspaces/
+Content-Type: application/vnd.gooddata.api+json
+Authorization: Bearer {{token}}
+
+< ./workspace_cz051.json
+
+### Create workspace CZ052
+# @name createWorkspace CZ052
+POST {{endpoint}}/api/entities/workspaces/
+Content-Type: application/vnd.gooddata.api+json
+Authorization: Bearer {{token}}
+
+< ./workspace_cz052.json
+
+### Create workspace CZ053
+# @name createWorkspace CZ053
+POST {{endpoint}}/api/entities/workspaces/
+Content-Type: application/vnd.gooddata.api+json
+Authorization: Bearer {{token}}
+
+< ./workspace_cz053.json
+
+### Create workspace CZ063
+# @name createWorkspace CZ063
+POST {{endpoint}}/api/entities/workspaces/
+Content-Type: application/vnd.gooddata.api+json
+Authorization: Bearer {{token}}
+
+< ./workspace_cz063.json
+
+### Create workspace CZ064
+# @name createWorkspace CZ064
+POST {{endpoint}}/api/entities/workspaces/
+Content-Type: application/vnd.gooddata.api+json
+Authorization: Bearer {{token}}
+
+< ./workspace_cz064.json
+
+
+### Create workspace CZ071
+# @name createWorkspace CZ071
+POST {{endpoint}}/api/entities/workspaces/
+Content-Type: application/vnd.gooddata.api+json
+Authorization: Bearer {{token}}
+
+< ./workspace_cz071.json
+
+### Create workspace CZ072
+# @name createWorkspace CZ072
+POST {{endpoint}}/api/entities/workspaces/
+Content-Type: application/vnd.gooddata.api+json
+Authorization: Bearer {{token}}
+
+< ./workspace_cz072.json
+
+### Create workspace CZ080
+# @name createWorkspace CZ080
+POST {{endpoint}}/api/entities/workspaces/
+Content-Type: application/vnd.gooddata.api+json
+Authorization: Bearer {{token}}
+
+< ./workspace_cz080.json
+
+### Store Workspace Data Filters
+# @name storeWorkspaceDataFilters
+PUT {{endpoint}}/api/layout/workspaceDataFilters
+Content-Type: application/json
+Authorization: Bearer {{token}}
+
+< ./workspace_filters.json
+
+
+### GET workspace
+# @name getWorkspace
+GET {{endpoint}}/api/entities/workspaces/covid.cz
+Content-Type: application/vnd.gooddata.api+json
+Authorization: Bearer {{token}}
+
+### DELETE workspace
+# @name deleteWorkspace
+DELETE {{endpoint}}/api/entities/workspaces/84cc34d7091843ceab611823394ac9a3
+Content-Type: application/vnd.gooddata.api+json
+Authorization: Bearer {{token}}
 
 ### Get semantic model
 # @name getSemanticModel
