@@ -217,7 +217,7 @@
                                         "size": {
                                             "xl": {
                                                 "gridWidth": 12,
-                                                "gridHeight": 28
+                                                "gridHeight": 36
                                             }
                                         },
                                         "widget": {
@@ -288,6 +288,35 @@
                                             "insight": {
                                                 "identifier": {
                                                     "id": "f7f64430-6c7c-4717-ad20-1480c7c31b4c",
+                                                    "type": "visualizationObject"
+                                                }
+                                            },
+                                            "drills": [],
+                                            "properties": {}
+                                        }
+                                    },
+                                    {
+                                        "type": "IDashboardLayoutItem",
+                                        "size": {
+                                            "xl": {
+                                                "gridWidth": 12,
+                                                "gridHeight": 33
+                                            }
+                                        },
+                                        "widget": {
+                                            "type": "insight",
+                                            "title": "Vaccinations per capita (%)",
+                                            "description": "",
+                                            "ignoreDashboardFilters": [],
+                                            "dateDataSet": {
+                                                "identifier": {
+                                                    "id": "date",
+                                                    "type": "dataset"
+                                                }
+                                            },
+                                            "insight": {
+                                                "identifier": {
+                                                    "id": "8f5fd8c9-f49e-4fff-803a-928182f93abb",
                                                     "type": "visualizationObject"
                                                 }
                                             },
@@ -412,6 +441,15 @@
             },
             {
                 "content": {
+                    "format": "#,##0.00000%",
+                    "maql": "SELECT {metric/vaccinations_per_day} / (SELECT SUM({metric/population} ) BY {label/county_id} ALL OTHER )\nBY {label/county_id}, {label/date.day}, ALL OTHER "
+                },
+                "description": "",
+                "id": "deaths_per_day_and_capita_2",
+                "title": "Vaccinations per day and capita (%)"
+            },
+            {
+                "content": {
                     "format": "[>=1000000000000]#,,,,.0 T;\n[>=1000000000]#,,,.0 B;\n[>=1000000]#,,.0 M;\n[>=1000]#,.0 K;\n[>=0]#,##0;\n[<=-1000000000000]-#,,,,.0 T;\n[<=-1000000000]-#,,,.0 B;\n[<=-1000000]-#,,.0 M;\n[<=-1000]-#,.0 K;\n[<0]-#,##0",
                     "maql": "SELECT SUM({fact/covid_event_cnt})\n    WHERE {label/covid_event_type} = \"I\""
                 },
@@ -445,6 +483,33 @@
                 "description": "",
                 "id": "population",
                 "title": "Population"
+            },
+            {
+                "content": {
+                    "format": "[>=1000000000000]#,,,,.0 T;\n[>=1000000000]#,,,.0 B;\n[>=1000000]#,,.0 M;\n[>=1000]#,.0 K;\n[>=0]#,##0;\n[<=-1000000000000]-#,,,,.0 T;\n[<=-1000000000]-#,,,.0 B;\n[<=-1000000]-#,,.0 M;\n[<=-1000]-#,.0 K;\n[<0]-#,##0",
+                    "maql": "SELECT SUM({fact/vaccination_total_doses})"
+                },
+                "description": "",
+                "id": "vaccinations",
+                "title": "Vaccinations"
+            },
+            {
+                "content": {
+                    "format": "#,##0.00%",
+                    "maql": "SELECT {metric/vaccinations} / (SELECT SUM({metric/population} ) BY {label/county_id} ALL OTHER )\nBY {label/county_id}, {label/date.day}, ALL OTHER "
+                },
+                "description": "",
+                "id": "vaccinations_per_capita",
+                "title": "Vaccinations per capita (%)"
+            },
+            {
+                "content": {
+                    "format": "#,##0",
+                    "maql": "SELECT AVG(SELECT {metric/vaccinations} BY {label/date.day}, {label/county_id} ALL OTHER )"
+                },
+                "description": "",
+                "id": "vaccinations_per_day",
+                "title": "Vaccinations per day"
             }
         ],
         "visualizationObjects": [
@@ -955,6 +1020,58 @@
                 "description": "KPI Death per capita",
                 "id": "7d881e86-16d7-417c-8d54-acc9e5645b07",
                 "title": "KPI Death per capita"
+            },
+            {
+                "content": {
+                    "buckets": [
+                        {
+                            "items": [
+                                {
+                                    "measure": {
+                                        "localIdentifier": "c61bf0fa99af4a2898f03a11ce1c2282",
+                                        "definition": {
+                                            "measureDefinition": {
+                                                "item": {
+                                                    "identifier": {
+                                                        "id": "vaccinations_per_capita",
+                                                        "type": "metric"
+                                                    }
+                                                },
+                                                "filters": []
+                                            }
+                                        },
+                                        "title": "Vaccinations per capita (%)"
+                                    }
+                                }
+                            ],
+                            "localIdentifier": "measures"
+                        },
+                        {
+                            "items": [
+                                {
+                                    "attribute": {
+                                        "localIdentifier": "1358816d05274bc9906a9d8679ecfa03",
+                                        "displayForm": {
+                                            "identifier": {
+                                                "id": "county_name",
+                                                "type": "label"
+                                            }
+                                        }
+                                    }
+                                }
+                            ],
+                            "localIdentifier": "view"
+                        }
+                    ],
+                    "filters": [],
+                    "sorts": [],
+                    "properties": {},
+                    "visualizationUrl": "local:treemap",
+                    "version": "2"
+                },
+                "description": "Vaccinations per capita (%)",
+                "id": "8f5fd8c9-f49e-4fff-803a-928182f93abb",
+                "title": "Vaccinations per capita (%)"
             },
             {
                 "content": {
