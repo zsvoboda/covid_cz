@@ -19,11 +19,16 @@ Then you can visually create your own data visualizations and interactive dasboa
 
 2. Install [dbd](https://github.com/zsvoboda/dbd) to your computer (make sure that you have Python 3.8+ installed)
 
-`pip3 install dbd`
+```shell
+python3 -m venv dbd-env
+source dbd-env/bin/activate
+pip3 install dbd
+pip3 install dbd
+```
 
 3. Install [Visual Studio Code](https://code.visualstudio.com) on your computer
 
-Install [REsr Client extension](https://marketplace.visualstudio.com/items?itemName=humao.rest-client). You'll use it for convenient GoodData.CM API invocation. 
+Install [REST Client extension](https://marketplace.visualstudio.com/items?itemName=humao.rest-client). You'll use it for convenient GoodData.CM API invocation. 
 
 4. Start GoodData.CN Community Edition
 
