@@ -1,0 +1,13 @@
+---
+table:
+  columns:
+    vaccination_id:
+      nullable: false
+      primary_key: true
+    vaccination_county_id:
+      nullable: false
+      foreign_keys:
+        - county.county_id
+process:
+  materialization: table
+  mode: drop
