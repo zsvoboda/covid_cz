@@ -369,6 +369,63 @@
                     "district"
                 ],
                 "type": "TABLE"
+            },
+            {
+                "columns": [
+                    {
+                        "dataType": "STRING",
+                        "isPrimaryKey": false,
+                        "name": "vaccination_age_group"
+                    },
+                    {
+                        "dataType": "STRING",
+                        "isPrimaryKey": false,
+                        "name": "vaccination_county_id",
+                        "referencedTableColumn": "county_id",
+                        "referencedTableId": "county"
+                    },
+                    {
+                        "dataType": "DATE",
+                        "isPrimaryKey": false,
+                        "name": "vaccination_date"
+                    },
+                    {
+                        "dataType": "NUMERIC",
+                        "isPrimaryKey": false,
+                        "name": "vaccination_first_doses"
+                    },
+                    {
+                        "dataType": "INT",
+                        "isPrimaryKey": true,
+                        "name": "vaccination_id"
+                    },
+                    {
+                        "dataType": "NUMERIC",
+                        "isPrimaryKey": false,
+                        "name": "vaccination_second_doses"
+                    },
+                    {
+                        "dataType": "NUMERIC",
+                        "isPrimaryKey": false,
+                        "name": "vaccination_total_doses"
+                    },
+                    {
+                        "dataType": "STRING",
+                        "isPrimaryKey": false,
+                        "name": "vaccination_vaccine"
+                    },
+                    {
+                        "dataType": "STRING",
+                        "isPrimaryKey": false,
+                        "name": "wdf__county_id"
+                    }
+                ],
+                "id": "vaccination",
+                "path": [
+                    "dwh",
+                    "vaccination"
+                ],
+                "type": "TABLE"
             }
         ]
     }

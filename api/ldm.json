@@ -842,6 +842,158 @@
                     "District"
                 ],
                 "title": "District"
+            },
+            {
+                "attributes": [
+                    {
+                        "description": "County id",
+                        "id": "vaccination.county_id",
+                        "labels": [
+                            {
+                                "description": "County id",
+                                "id": "vaccination.county_id",
+                                "primary": true,
+                                "sourceColumn": "wdf__county_id",
+                                "tags": [
+                                    "Vaccination"
+                                ],
+                                "title": "County id"
+                            }
+                        ],
+                        "tags": [
+                            "Vaccination"
+                        ],
+                        "title": "County id"
+                    },
+                    {
+                        "description": "Vaccination age group",
+                        "id": "vaccination_age_group",
+                        "labels": [
+                            {
+                                "description": "Vaccination age group",
+                                "id": "vaccination_age_group",
+                                "primary": true,
+                                "sourceColumn": "vaccination_age_group",
+                                "tags": [
+                                    "Vaccination"
+                                ],
+                                "title": "Vaccination age group"
+                            }
+                        ],
+                        "tags": [
+                            "Vaccination"
+                        ],
+                        "title": "Vaccination age group"
+                    },
+                    {
+                        "description": "Vaccination id",
+                        "id": "vaccination_id",
+                        "labels": [
+                            {
+                                "description": "Vaccination id",
+                                "id": "vaccination_id",
+                                "primary": true,
+                                "sourceColumn": "vaccination_id",
+                                "tags": [
+                                    "Vaccination"
+                                ],
+                                "title": "Vaccination id"
+                            }
+                        ],
+                        "tags": [
+                            "Vaccination"
+                        ],
+                        "title": "Vaccination id"
+                    },
+                    {
+                        "description": "Vaccination vaccine",
+                        "id": "vaccination_vaccine",
+                        "labels": [
+                            {
+                                "description": "Vaccination vaccine",
+                                "id": "vaccination_vaccine",
+                                "primary": true,
+                                "sourceColumn": "vaccination_vaccine",
+                                "tags": [
+                                    "Vaccination"
+                                ],
+                                "title": "Vaccination vaccine"
+                            }
+                        ],
+                        "tags": [
+                            "Vaccination"
+                        ],
+                        "title": "Vaccination vaccine"
+                    }
+                ],
+                "dataSourceTableId": {
+                    "dataSourceId": "covid.cz",
+                    "id": "vaccination",
+                    "type": "dataSource"
+                },
+                "description": "",
+                "facts": [
+                    {
+                        "description": "Vaccination first doses",
+                        "id": "vaccination_first_doses",
+                        "sourceColumn": "vaccination_first_doses",
+                        "tags": [
+                            "Vaccination"
+                        ],
+                        "title": "Vaccination first doses"
+                    },
+                    {
+                        "description": "Vaccination second doses",
+                        "id": "vaccination_second_doses",
+                        "sourceColumn": "vaccination_second_doses",
+                        "tags": [
+                            "Vaccination"
+                        ],
+                        "title": "Vaccination second doses"
+                    },
+                    {
+                        "description": "Vaccination total doses",
+                        "id": "vaccination_total_doses",
+                        "sourceColumn": "vaccination_total_doses",
+                        "tags": [
+                            "Vaccination"
+                        ],
+                        "title": "Vaccination total doses"
+                    }
+                ],
+                "grain": [
+                    {
+                        "id": "vaccination_id",
+                        "type": "attribute"
+                    }
+                ],
+                "id": "vaccination",
+                "references": [
+                    {
+                        "identifier": {
+                            "id": "county",
+                            "type": "dataset"
+                        },
+                        "multivalue": false,
+                        "sourceColumns": [
+                            "vaccination_county_id"
+                        ]
+                    },
+                    {
+                        "identifier": {
+                            "id": "date",
+                            "type": "dataset"
+                        },
+                        "multivalue": false,
+                        "sourceColumns": [
+                            "vaccination_date"
+                        ]
+                    }
+                ],
+                "tags": [
+                    "Vaccination"
+                ],
+                "title": "Vaccination"
             }
         ],
         "dateInstances": [

@@ -19,7 +19,7 @@
                                         "type": "IDashboardLayoutItem",
                                         "size": {
                                             "xl": {
-                                                "gridWidth": 3
+                                                "gridWidth": 4
                                             }
                                         },
                                         "widget": {
@@ -47,7 +47,7 @@
                                         "type": "IDashboardLayoutItem",
                                         "size": {
                                             "xl": {
-                                                "gridWidth": 3
+                                                "gridWidth": 4
                                             }
                                         },
                                         "widget": {
@@ -75,12 +75,12 @@
                                         "type": "IDashboardLayoutItem",
                                         "size": {
                                             "xl": {
-                                                "gridWidth": 3
+                                                "gridWidth": 4
                                             }
                                         },
                                         "widget": {
                                             "type": "insight",
-                                            "title": "Infections per capita",
+                                            "title": "Vaccination doses",
                                             "description": "",
                                             "ignoreDashboardFilters": [],
                                             "dateDataSet": {
@@ -91,35 +91,7 @@
                                             },
                                             "insight": {
                                                 "identifier": {
-                                                    "id": "b7c11bb1-a982-41e2-b0dc-df678860d3de",
-                                                    "type": "visualizationObject"
-                                                }
-                                            },
-                                            "drills": [],
-                                            "properties": {}
-                                        }
-                                    },
-                                    {
-                                        "type": "IDashboardLayoutItem",
-                                        "size": {
-                                            "xl": {
-                                                "gridWidth": 3
-                                            }
-                                        },
-                                        "widget": {
-                                            "type": "insight",
-                                            "title": "Deaths per capita",
-                                            "description": "",
-                                            "ignoreDashboardFilters": [],
-                                            "dateDataSet": {
-                                                "identifier": {
-                                                    "id": "date",
-                                                    "type": "dataset"
-                                                }
-                                            },
-                                            "insight": {
-                                                "identifier": {
-                                                    "id": "7d881e86-16d7-417c-8d54-acc9e5645b07",
+                                                    "id": "11c7d9ad-27da-4c3a-a8db-e7ed77e65bc6",
                                                     "type": "visualizationObject"
                                                 }
                                             },
@@ -239,12 +211,7 @@
                                             "drills": [],
                                             "properties": {}
                                         }
-                                    }
-                                ]
-                            },
-                            {
-                                "type": "IDashboardLayoutSection",
-                                "items": [
+                                    },
                                     {
                                         "type": "IDashboardLayoutItem",
                                         "size": {
@@ -291,7 +258,47 @@
                                             "properties": {}
                                         }
                                     }
-                                ]
+                                ],
+                                "header": {
+                                    "title": "Deaths per capita"
+                                }
+                            },
+                            {
+                                "type": "IDashboardLayoutSection",
+                                "items": [
+                                    {
+                                        "type": "IDashboardLayoutItem",
+                                        "size": {
+                                            "xl": {
+                                                "gridWidth": 12,
+                                                "gridHeight": 40
+                                            }
+                                        },
+                                        "widget": {
+                                            "type": "insight",
+                                            "title": "Vaccination",
+                                            "description": "",
+                                            "ignoreDashboardFilters": [],
+                                            "dateDataSet": {
+                                                "identifier": {
+                                                    "id": "date",
+                                                    "type": "dataset"
+                                                }
+                                            },
+                                            "insight": {
+                                                "identifier": {
+                                                    "id": "f7f64430-6c7c-4717-ad20-1480c7c31b4c",
+                                                    "type": "visualizationObject"
+                                                }
+                                            },
+                                            "drills": [],
+                                            "properties": {}
+                                        }
+                                    }
+                                ],
+                                "header": {
+                                    "title": "Vaccination"
+                                }
                             }
                         ]
                     },
@@ -441,6 +448,44 @@
             }
         ],
         "visualizationObjects": [
+            {
+                "content": {
+                    "buckets": [
+                        {
+                            "items": [
+                                {
+                                    "measure": {
+                                        "localIdentifier": "0faebb0fd13b4f2f8f552d7b59a1e3e2",
+                                        "definition": {
+                                            "measureDefinition": {
+                                                "item": {
+                                                    "identifier": {
+                                                        "id": "vaccination_total_doses",
+                                                        "type": "fact"
+                                                    }
+                                                },
+                                                "aggregation": "sum",
+                                                "filters": []
+                                            }
+                                        },
+                                        "title": "Sum of Vaccination total doses",
+                                        "format": "[>=1000000000000]#,,,,.0 T;\n[>=1000000000]#,,,.0 B;\n[>=1000000]#,,.0 M;\n[>=1000]#,.0 K;\n[>=0]#,##0;\n[<=-1000000000000]-#,,,,.0 T;\n[<=-1000000000]-#,,,.0 B;\n[<=-1000000]-#,,.0 M;\n[<=-1000]-#,.0 K;\n[<0]-#,##0"
+                                    }
+                                }
+                            ],
+                            "localIdentifier": "measures"
+                        }
+                    ],
+                    "filters": [],
+                    "sorts": [],
+                    "properties": {},
+                    "visualizationUrl": "local:headline",
+                    "version": "2"
+                },
+                "description": "KPI Vaccinations",
+                "id": "11c7d9ad-27da-4c3a-a8db-e7ed77e65bc6",
+                "title": "KPI Vaccinations"
+            },
             {
                 "content": {
                     "buckets": [
@@ -1103,6 +1148,61 @@
                 "description": "Omikron",
                 "id": "ee26ec2c-8bfa-4f41-9c08-fa960915f718",
                 "title": "Omikron"
+            },
+            {
+                "content": {
+                    "buckets": [
+                        {
+                            "items": [
+                                {
+                                    "measure": {
+                                        "localIdentifier": "b88129dcdf4a4b158d00f5091ad95b32",
+                                        "definition": {
+                                            "measureDefinition": {
+                                                "item": {
+                                                    "identifier": {
+                                                        "id": "vaccination_total_doses",
+                                                        "type": "fact"
+                                                    }
+                                                },
+                                                "aggregation": "sum",
+                                                "filters": []
+                                            }
+                                        },
+                                        "title": "Sum of Vaccination total doses",
+                                        "alias": "Vaccination doses",
+                                        "format": "#,##0.00"
+                                    }
+                                }
+                            ],
+                            "localIdentifier": "measures"
+                        },
+                        {
+                            "items": [
+                                {
+                                    "attribute": {
+                                        "localIdentifier": "b01bb32c2a024feb9f9aa6f0210add2d",
+                                        "displayForm": {
+                                            "identifier": {
+                                                "id": "date.week",
+                                                "type": "label"
+                                            }
+                                        }
+                                    }
+                                }
+                            ],
+                            "localIdentifier": "trend"
+                        }
+                    ],
+                    "filters": [],
+                    "sorts": [],
+                    "properties": {},
+                    "visualizationUrl": "local:line",
+                    "version": "2"
+                },
+                "description": "Vaccination",
+                "id": "f7f64430-6c7c-4717-ad20-1480c7c31b4c",
+                "title": "Vaccination"
             }
         ]
     }
