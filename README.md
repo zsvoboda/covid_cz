@@ -23,7 +23,6 @@ Then you can visually create your own data visualizations and interactive dasboa
 python3 -m venv dbd-env
 source dbd-env/bin/activate
 pip3 install dbd
-pip3 install dbd
 ```
 
 3. Install [Visual Studio Code](https://code.visualstudio.com) on your computer
