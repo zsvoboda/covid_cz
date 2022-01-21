@@ -412,7 +412,9 @@
                     {
                         "dataType": "STRING",
                         "isPrimaryKey": false,
-                        "name": "vaccination_vaccine"
+                        "name": "vaccine_id",
+                        "referencedTableColumn": "vaccine_id",
+                        "referencedTableId": "vaccine"
                     },
                     {
                         "dataType": "STRING",
@@ -424,6 +426,134 @@
                 "path": [
                     "dwh",
                     "vaccination"
+                ],
+                "type": "TABLE"
+            },
+            {
+                "columns": [
+                    {
+                        "dataType": "STRING",
+                        "isPrimaryKey": true,
+                        "name": "vaccination_country_id"
+                    },
+                    {
+                        "dataType": "STRING",
+                        "isPrimaryKey": false,
+                        "name": "vaccination_country_name"
+                    }
+                ],
+                "id": "vaccination_country",
+                "path": [
+                    "dwh",
+                    "vaccination_country"
+                ],
+                "type": "TABLE"
+            },
+            {
+                "columns": [
+                    {
+                        "dataType": "STRING",
+                        "isPrimaryKey": false,
+                        "name": "vaccination_country_id",
+                        "referencedTableColumn": "vaccination_country_id",
+                        "referencedTableId": "vaccination_country"
+                    },
+                    {
+                        "dataType": "STRING",
+                        "isPrimaryKey": true,
+                        "name": "vaccination_county_id"
+                    },
+                    {
+                        "dataType": "STRING",
+                        "isPrimaryKey": false,
+                        "name": "vaccination_county_name"
+                    }
+                ],
+                "id": "vaccination_county",
+                "path": [
+                    "dwh",
+                    "vaccination_county"
+                ],
+                "type": "TABLE"
+            },
+            {
+                "columns": [
+                    {
+                        "dataType": "STRING",
+                        "isPrimaryKey": false,
+                        "name": "county_id",
+                        "referencedTableColumn": "county_id",
+                        "referencedTableId": "county"
+                    },
+                    {
+                        "dataType": "STRING",
+                        "isPrimaryKey": false,
+                        "name": "vaccination_county_id",
+                        "referencedTableColumn": "vaccination_county_id",
+                        "referencedTableId": "vaccination_county"
+                    },
+                    {
+                        "dataType": "STRING",
+                        "isPrimaryKey": false,
+                        "name": "vaccination_snapshot_age_group"
+                    },
+                    {
+                        "dataType": "NUMERIC",
+                        "isPrimaryKey": false,
+                        "name": "vaccination_snapshot_count"
+                    },
+                    {
+                        "dataType": "NUMERIC",
+                        "isPrimaryKey": false,
+                        "name": "vaccination_snapshot_dose_order"
+                    },
+                    {
+                        "dataType": "STRING",
+                        "isPrimaryKey": false,
+                        "name": "vaccination_snapshot_gender"
+                    },
+                    {
+                        "dataType": "INT",
+                        "isPrimaryKey": true,
+                        "name": "vaccination_snapshot_id"
+                    },
+                    {
+                        "dataType": "STRING",
+                        "isPrimaryKey": false,
+                        "name": "vaccine_id",
+                        "referencedTableColumn": "vaccine_id",
+                        "referencedTableId": "vaccine"
+                    },
+                    {
+                        "dataType": "STRING",
+                        "isPrimaryKey": false,
+                        "name": "wdf__county_id"
+                    }
+                ],
+                "id": "vaccination_snapshot",
+                "path": [
+                    "dwh",
+                    "vaccination_snapshot"
+                ],
+                "type": "TABLE"
+            },
+            {
+                "columns": [
+                    {
+                        "dataType": "STRING",
+                        "isPrimaryKey": true,
+                        "name": "vaccine_id"
+                    },
+                    {
+                        "dataType": "STRING",
+                        "isPrimaryKey": false,
+                        "name": "vaccine_name"
+                    }
+                ],
+                "id": "vaccine",
+                "path": [
+                    "dwh",
+                    "vaccine"
                 ],
                 "type": "TABLE"
             }

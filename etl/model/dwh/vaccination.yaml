@@ -8,6 +8,10 @@ table:
       nullable: false
       foreign_keys:
         - county.county_id
+    vaccine_id:
+      nullable: false
+      foreign_keys:
+        - vaccine.vaccine_id
 process:
   materialization: table
   mode: drop

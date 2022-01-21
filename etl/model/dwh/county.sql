@@ -4,3 +4,5 @@ select distinct
     kraj as county_name, 
     'CZ' as country_id
 from stage.ext_souradnice
+union 
+select 'CZ000', 'CZ000', 'Neznámý', 'CZ'

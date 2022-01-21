@@ -1201,6 +1201,90 @@
                             "items": [
                                 {
                                     "measure": {
+                                        "localIdentifier": "552ede8dc1934f018d4bcf885bc968fe",
+                                        "definition": {
+                                            "measureDefinition": {
+                                                "item": {
+                                                    "identifier": {
+                                                        "id": "vaccination_total_doses",
+                                                        "type": "fact"
+                                                    }
+                                                },
+                                                "aggregation": "sum",
+                                                "filters": []
+                                            }
+                                        },
+                                        "title": "Sum of Vaccination total doses",
+                                        "format": "#,##0"
+                                    }
+                                }
+                            ],
+                            "localIdentifier": "measures"
+                        },
+                        {
+                            "items": [
+                                {
+                                    "attribute": {
+                                        "localIdentifier": "259e105add07483fbf721cd183e9e1dd",
+                                        "displayForm": {
+                                            "identifier": {
+                                                "id": "vaccination_age_group",
+                                                "type": "label"
+                                            }
+                                        }
+                                    }
+                                }
+                            ],
+                            "localIdentifier": "attribute",
+                            "totals": [
+                                {
+                                    "type": "sum",
+                                    "attributeIdentifier": "259e105add07483fbf721cd183e9e1dd",
+                                    "measureIdentifier": "552ede8dc1934f018d4bcf885bc968fe"
+                                }
+                            ]
+                        },
+                        {
+                            "items": [
+                                {
+                                    "attribute": {
+                                        "localIdentifier": "8a1d0b60618449b1a8689e11024572bc",
+                                        "displayForm": {
+                                            "identifier": {
+                                                "id": "vaccine_name",
+                                                "type": "label"
+                                            }
+                                        }
+                                    }
+                                }
+                            ],
+                            "localIdentifier": "columns"
+                        }
+                    ],
+                    "filters": [],
+                    "sorts": [
+                        {
+                            "attributeSortItem": {
+                                "attributeIdentifier": "259e105add07483fbf721cd183e9e1dd",
+                                "direction": "asc"
+                            }
+                        }
+                    ],
+                    "properties": {},
+                    "visualizationUrl": "local:table",
+                    "version": "2"
+                },
+                "description": "Vacinnes by age group",
+                "id": "d56b4e56-6ed5-4f48-9c82-3b9d06a7f15b",
+                "title": "Vacinnes by age group"
+            },
+            {
+                "content": {
+                    "buckets": [
+                        {
+                            "items": [
+                                {
+                                    "measure": {
                                         "localIdentifier": "7a2dea2b9b464653888e76b0e71aab56",
                                         "definition": {
                                             "measureDefinition": {
@@ -1265,6 +1349,86 @@
                 "description": "Omikron",
                 "id": "ee26ec2c-8bfa-4f41-9c08-fa960915f718",
                 "title": "Omikron"
+            },
+            {
+                "content": {
+                    "buckets": [
+                        {
+                            "items": [
+                                {
+                                    "measure": {
+                                        "localIdentifier": "073c6ef0a33e4ca9b4965a92f7d7f5c9",
+                                        "definition": {
+                                            "measureDefinition": {
+                                                "item": {
+                                                    "identifier": {
+                                                        "id": "vaccination_snapshot_count",
+                                                        "type": "fact"
+                                                    }
+                                                },
+                                                "aggregation": "sum",
+                                                "filters": []
+                                            }
+                                        },
+                                        "title": "Sum of Vaccination snapshot count",
+                                        "alias": "Vaccinations",
+                                        "format": "#,##0"
+                                    }
+                                }
+                            ],
+                            "localIdentifier": "measures"
+                        },
+                        {
+                            "items": [
+                                {
+                                    "attribute": {
+                                        "localIdentifier": "9332ed2db4e44b08b0d595ed0e46e732",
+                                        "displayForm": {
+                                            "identifier": {
+                                                "id": "vaccination_county_name",
+                                                "type": "label"
+                                            }
+                                        },
+                                        "alias": "Vaccination county"
+                                    }
+                                }
+                            ],
+                            "localIdentifier": "attribute"
+                        },
+                        {
+                            "items": [
+                                {
+                                    "attribute": {
+                                        "localIdentifier": "b51be72f91af4e929b03c2de7ffd65cc",
+                                        "displayForm": {
+                                            "identifier": {
+                                                "id": "county_name",
+                                                "type": "label"
+                                            }
+                                        },
+                                        "alias": "Home county"
+                                    }
+                                }
+                            ],
+                            "localIdentifier": "columns"
+                        }
+                    ],
+                    "filters": [],
+                    "sorts": [
+                        {
+                            "attributeSortItem": {
+                                "attributeIdentifier": "9332ed2db4e44b08b0d595ed0e46e732",
+                                "direction": "asc"
+                            }
+                        }
+                    ],
+                    "properties": {},
+                    "visualizationUrl": "local:table",
+                    "version": "2"
+                },
+                "description": "Vaccinations in counties",
+                "id": "ee807c41-9e72-4121-bd39-a2627eac9e38",
+                "title": "Vaccinations in counties"
             },
             {
                 "content": {

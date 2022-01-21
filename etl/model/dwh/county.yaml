@@ -8,11 +8,15 @@ table:
       nullable: false
       type: CHAR(3)
     county_id:
-      nullable: false
+      type: CHAR(5)
       primary_key: true
+    wdf__county_id:
+      nullable: false
+      type: CHAR(5)
     county_name:
       nullable: false
       unique: true
+      type: VARCHAR(50)
 process:
   materialization: table
   mode: drop
