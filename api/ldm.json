@@ -1203,6 +1203,26 @@
                             "Vaccination snapshot"
                         ],
                         "title": "Vaccination snapshot id"
+                    },
+                    {
+                        "description": "",
+                        "id": "vaccinationsnapshotorder",
+                        "labels": [
+                            {
+                                "description": "",
+                                "id": "vaccinationsnapshotorder",
+                                "primary": true,
+                                "sourceColumn": "vaccination_snapshot_dose_order",
+                                "tags": [
+                                    "Vaccination snapshot"
+                                ],
+                                "title": "Vaccination snapshot order"
+                            }
+                        ],
+                        "tags": [
+                            "Vaccination snapshot"
+                        ],
+                        "title": "Vaccination snapshot order"
                     }
                 ],
                 "dataSourceTableId": {
@@ -1220,15 +1240,6 @@
                             "Vaccination snapshot"
                         ],
                         "title": "Vaccination snapshot count"
-                    },
-                    {
-                        "description": "Vaccination snapshot dose order",
-                        "id": "vaccination_snapshot_dose_order",
-                        "sourceColumn": "vaccination_snapshot_dose_order",
-                        "tags": [
-                            "Vaccination snapshot"
-                        ],
-                        "title": "Vaccination snapshot dose order"
                     }
                 ],
                 "grain": [

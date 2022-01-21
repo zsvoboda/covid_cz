@@ -886,6 +886,99 @@
                             "items": [
                                 {
                                     "measure": {
+                                        "localIdentifier": "f76c1cfa5dad486d9ba2f868b013eb32",
+                                        "definition": {
+                                            "measureDefinition": {
+                                                "item": {
+                                                    "identifier": {
+                                                        "id": "vaccination_snapshot_count",
+                                                        "type": "fact"
+                                                    }
+                                                },
+                                                "aggregation": "sum",
+                                                "computeRatio": false,
+                                                "filters": []
+                                            }
+                                        },
+                                        "title": "Sum of Vaccination snapshot count",
+                                        "alias": "Vaccinations",
+                                        "format": "#,##0"
+                                    }
+                                }
+                            ],
+                            "localIdentifier": "measures"
+                        },
+                        {
+                            "items": [
+                                {
+                                    "attribute": {
+                                        "localIdentifier": "f2a702e530964e4fbe3fce52b4862e41",
+                                        "displayForm": {
+                                            "identifier": {
+                                                "id": "vaccination_county_name",
+                                                "type": "label"
+                                            }
+                                        },
+                                        "alias": "Vaccination place"
+                                    }
+                                }
+                            ],
+                            "localIdentifier": "attribute"
+                        },
+                        {
+                            "items": [
+                                {
+                                    "attribute": {
+                                        "localIdentifier": "f6991c42d3e5453587c075a72397c16c",
+                                        "displayForm": {
+                                            "identifier": {
+                                                "id": "county_name",
+                                                "type": "label"
+                                            }
+                                        },
+                                        "alias": "Home place"
+                                    }
+                                },
+                                {
+                                    "attribute": {
+                                        "localIdentifier": "6440b906a4fa4bd9905a350257a2352b",
+                                        "displayForm": {
+                                            "identifier": {
+                                                "id": "vaccinationsnapshotorder",
+                                                "type": "label"
+                                            }
+                                        },
+                                        "alias": "Order"
+                                    }
+                                }
+                            ],
+                            "localIdentifier": "columns"
+                        }
+                    ],
+                    "filters": [],
+                    "sorts": [
+                        {
+                            "attributeSortItem": {
+                                "attributeIdentifier": "f2a702e530964e4fbe3fce52b4862e41",
+                                "direction": "asc"
+                            }
+                        }
+                    ],
+                    "properties": {},
+                    "visualizationUrl": "local:table",
+                    "version": "2"
+                },
+                "description": "Vaccination location vs Home location",
+                "id": "56c8f070-48eb-4418-bd43-3cfc95ed6824",
+                "title": "Vaccination location vs Home location"
+            },
+            {
+                "content": {
+                    "buckets": [
+                        {
+                            "items": [
+                                {
+                                    "measure": {
                                         "localIdentifier": "5256d16d610342b09dd927e81b878045",
                                         "definition": {
                                             "measureDefinition": {

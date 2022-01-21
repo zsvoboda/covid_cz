@@ -503,7 +503,7 @@
                         "name": "vaccination_snapshot_count"
                     },
                     {
-                        "dataType": "NUMERIC",
+                        "dataType": "STRING",
                         "isPrimaryKey": false,
                         "name": "vaccination_snapshot_dose_order"
                     },

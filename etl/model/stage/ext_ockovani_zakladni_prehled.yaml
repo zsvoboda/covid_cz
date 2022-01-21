@@ -20,7 +20,7 @@ table:
     vekova_skupina:
       type: VARCHAR(15)
     poradi_davky:
-      type: DECIMAL(2,0)
+      type: CHAR(2)
     pohlavi:
       type: CHAR(1)
     pocet_davek:
