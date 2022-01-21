@@ -1,0 +1,19 @@
+---
+table:
+  columns:
+    vaccination_country_id:
+      foreign_keys:
+        - vaccination_country.vaccination_country_id
+      index: true
+      nullable: false
+      type: CHAR(3)
+    vaccination_county_id:
+      nullable: false
+      primary_key: true
+    vaccination_county_name:
+      nullable: false
+      unique: true
+process:
+  materialization: table
+  mode: drop
+
