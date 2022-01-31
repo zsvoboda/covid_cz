@@ -12,6 +12,7 @@ table:
       primary_key: true
     wdf__county_id:
       nullable: false
+      index: true
       type: CHAR(5)
     county_name:
       nullable: false

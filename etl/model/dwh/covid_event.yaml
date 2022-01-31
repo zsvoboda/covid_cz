@@ -6,10 +6,12 @@ table:
       type: DECIMAL(1,0)
     covid_event_person_age:
       type: CHAR(3)
+      index: true
     covid_event_person_age_num:
       type: DECIMAL(3,0)
     covid_event_person_gender:
       type: CHAR(1)
+      index: true
     covid_event_date:
       index: true
       nullable: false
@@ -18,6 +20,9 @@ table:
       nullable: false
       primary_key: true
       type: INTEGER
+    wdf__county_id:
+      index: true
+      type: CHAR(5)
     covid_event_type:
       index: true
       nullable: false

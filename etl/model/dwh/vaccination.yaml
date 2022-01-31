@@ -12,6 +12,17 @@ table:
       nullable: false
       foreign_keys:
         - vaccine.vaccine_id
+    wdf__county_id:
+      nullable: false
+      index: true
+      type: CHAR(5)
+    vaccination_age_group:
+      nullable: false
+      index: true
+    vaccination_date:
+      index: true
+      nullable: false
+      type: DATE
 process:
   materialization: table
   mode: drop

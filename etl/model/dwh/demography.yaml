@@ -6,6 +6,10 @@ table:
         - city.city_id
       index: true
       nullable: false
+    wdf__county_id:
+      nullable: false
+      index: true
+      type: CHAR(5)
     demography_id:
       nullable: false
       primary_key: true

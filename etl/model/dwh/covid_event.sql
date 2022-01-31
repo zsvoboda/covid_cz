@@ -1,7 +1,7 @@
 select (row_number() over ())                                                       as covid_event_id,
        datum                                                                        as covid_event_date,
        covid_event_type,
-       cast(vek as CHAR(3))                                                         as covid_event_person_age,
+       lpad(cast(vek as CHAR(3)), 3, '0')                                           as covid_event_person_age,
        vek                                                                          as covid_event_person_age_num,
        (case when pohlavi = 'Z' then 'F' when pohlavi = 'M' then 'M' end)           as covid_event_person_gender,
        okres_lau_kod                                                                as district_id,

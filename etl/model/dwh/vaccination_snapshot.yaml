@@ -12,6 +12,17 @@ table:
       nullable: false
       foreign_keys:
         - county.county_id
+    wdf__county_id:
+      nullable: false
+      index: true
+      type: CHAR(5)
+    vaccination_snapshot_age_group:
+      index: true
+    vaccination_snapshot_gender:
+      index: true
+    vaccination_snapshot_dose_order:
+      nullable: false
+      index: true
     vaccination_county_id:
       nullable: false
       foreign_keys:

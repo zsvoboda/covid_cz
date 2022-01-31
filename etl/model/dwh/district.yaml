@@ -6,6 +6,10 @@ table:
         - county.county_id
       index: true
       nullable: false
+    wdf__county_id:
+      nullable: false
+      index: true
+      type: CHAR(5)
     district_id:
       nullable: false
       primary_key: true

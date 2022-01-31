@@ -6,7 +6,6 @@ table:
       primary_key: true
     vaccine_name:
       nullable: false
-      index: true
 process:
   materialization: table
   mode: drop
