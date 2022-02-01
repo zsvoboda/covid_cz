@@ -220,15 +220,24 @@ Authorization: Bearer {{token}}
 < ./analytics_model.json
 
 ### Get measures
-# @name getMeasures
+# @name getMetrics
 GET {{endpoint}}/api/entities/workspaces/covid.cz/metrics/
 Content-Type: application/json
 Authorization: Bearer {{token}}
 
-### Create metrics
-# @name createMetrics
+### Create Deaths metrics
+# @name createDeathsMetrics
 POST {{endpoint}}/api/entities/workspaces/covid.cz/metrics/
 Content-Type: application/vnd.gooddata.api+json
 Authorization: Bearer {{token}}
 
-< ./metrics.json
+< ./metric_deaths.json
+
+### Create Infections metrics
+# @name createInfectionsMetrics
+POST {{endpoint}}/api/entities/workspaces/covid.cz/metrics/
+Content-Type: application/vnd.gooddata.api+json
+Authorization: Bearer {{token}}
+
+< ./metric_infections.json
+
