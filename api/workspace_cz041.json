@@ -1,6 +1,6 @@
 {
   "data": {
-      "id": "covid.cz_cz041",
+      "id": "covid_cz_cz041",
       "type": "workspace",
       "attributes": {
           "name": "Karlovarský kraj"
@@ -8,7 +8,7 @@
       "relationships": {
           "parent": {
             "data": {
-              "id": "covid.cz",
+              "id": "covid_cz",
               "type": "workspace"
             }
           }

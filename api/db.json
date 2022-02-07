@@ -1,6 +1,6 @@
 {
     "data": {
-      "id": "covid.cz",
+      "id": "covid_cz",
       "type": "dataSource",
       "attributes": {
         "name": "COVID CZ DB connection",

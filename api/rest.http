@@ -17,19 +17,19 @@ Authorization: Bearer {{token}}
 
 ### GET Postgres connection
 # @name getDataSource
-GET {{endpoint}}/api/entities/dataSources/covid.cz
+GET {{endpoint}}/api/entities/dataSources/covid_cz
 Content-Type: application/vnd.gooddata.api+json
 Authorization: Bearer {{token}}
 
 ### Get Physical Model
 # @name getPhysicalModel
-GET {{endpoint}}/api/layout/dataSources/covid.cz/physicalModel
+GET {{endpoint}}/api/layout/dataSources/covid_cz/physicalModel
 Content-Type: application/json
 Authorization: Bearer {{token}}
 
 ### Store Physical Model
 # @name storePhysicalModel
-PUT {{endpoint}}/api/layout/dataSources/covid.cz/physicalModel
+PUT {{endpoint}}/api/layout/dataSources/covid_cz/physicalModel
 Content-Type: application/json
 Authorization: Bearer {{token}}
 
@@ -181,7 +181,7 @@ Authorization: Bearer {{token}}
 
 ### GET workspace
 # @name getWorkspace
-GET {{endpoint}}/api/entities/workspaces/covid.cz
+GET {{endpoint}}/api/entities/workspaces/covid_cz
 Content-Type: application/vnd.gooddata.api+json
 Authorization: Bearer {{token}}
 
@@ -193,13 +193,13 @@ Authorization: Bearer {{token}}
 
 ### Get semantic model
 # @name getSemanticModel
-GET {{endpoint}}/api/layout/workspaces/covid.cz/logicalModel/
+GET {{endpoint}}/api/layout/workspaces/covid_cz/logicalModel/
 Content-Type: application/json
 Authorization: Bearer {{token}}
 
 ### Publish semantic model
 # @name publishSemanticModel
-PUT {{endpoint}}/api/layout/workspaces/covid.cz/logicalModel/
+PUT {{endpoint}}/api/layout/workspaces/covid_cz/logicalModel/
 Content-Type: application/json
 Authorization: Bearer {{token}}
 
@@ -207,13 +207,13 @@ Authorization: Bearer {{token}}
 
 ### Get analytics model objects
 # @name getAnalyticsModelObjects
-GET {{endpoint}}/api/layout/workspaces/covid.cz/analyticsModel/
+GET {{endpoint}}/api/layout/workspaces/covid_cz/analyticsModel/
 Content-Type: application/json
 Authorization: Bearer {{token}}
 
 ### Create analytics model objects
 # @name createAnalyticsModelObjects
-PUT {{endpoint}}/api/layout/workspaces/covid.cz/analyticsModel/
+PUT {{endpoint}}/api/layout/workspaces/covid_cz/analyticsModel/
 Content-Type: application/json
 Authorization: Bearer {{token}}
 
@@ -221,13 +221,13 @@ Authorization: Bearer {{token}}
 
 ### Get measures
 # @name getMetrics
-GET {{endpoint}}/api/entities/workspaces/covid.cz/metrics/
+GET {{endpoint}}/api/entities/workspaces/covid_cz/metrics/
 Content-Type: application/json
 Authorization: Bearer {{token}}
 
 ### Create Deaths metrics
 # @name createDeathsMetrics
-POST {{endpoint}}/api/entities/workspaces/covid.cz/metrics/
+POST {{endpoint}}/api/entities/workspaces/covid_cz/metrics/
 Content-Type: application/vnd.gooddata.api+json
 Authorization: Bearer {{token}}
 
@@ -235,7 +235,7 @@ Authorization: Bearer {{token}}
 
 ### Create Infections metrics
 # @name createInfectionsMetrics
-POST {{endpoint}}/api/entities/workspaces/covid.cz/metrics/
+POST {{endpoint}}/api/entities/workspaces/covid_cz/metrics/
 Content-Type: application/vnd.gooddata.api+json
 Authorization: Bearer {{token}}
 

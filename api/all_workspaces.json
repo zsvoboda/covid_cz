@@ -5,7 +5,7 @@
             "id": "county",
             "title": "County",
             "workspace": {
-                "id": "covid.cz",
+                "id": "covid_cz",
                 "type": "workspace"
             },
             "workspaceDataFilterSettings": [
@@ -16,7 +16,7 @@
                     "id": "CZ010",
                     "title": "Hlavní město Praha",
                     "workspace": {
-                        "id": "covid.cz_cz010",
+                        "id": "covid_cz_cz010",
                         "type": "workspace"
                     }
                 },
@@ -27,7 +27,7 @@
                     "id": "CZ020",
                     "title": "Středočeský kraj",
                     "workspace": {
-                        "id": "covid.cz_cz020",
+                        "id": "covid_cz_cz020",
                         "type": "workspace"
                     }
                 },
@@ -38,7 +38,7 @@
                     "id": "CZ031",
                     "title": "Jihočeský kraj",
                     "workspace": {
-                        "id": "covid.cz_cz031",
+                        "id": "covid_cz_cz031",
                         "type": "workspace"
                     }
                 },
@@ -49,7 +49,7 @@
                     "id": "CZ032",
                     "title": "Plzeňský kraj",
                     "workspace": {
-                        "id": "covid.cz_cz032",
+                        "id": "covid_cz_cz032",
                         "type": "workspace"
                     }
                 },
@@ -60,7 +60,7 @@
                     "id": "CZ041",
                     "title": "Karlovarský kraj",
                     "workspace": {
-                        "id": "covid.cz_cz041",
+                        "id": "covid_cz_cz041",
                         "type": "workspace"
                     }
                 },
@@ -71,7 +71,7 @@
                     "id": "CZ042",
                     "title": "Ústecký kraj",
                     "workspace": {
-                        "id": "covid.cz_cz042",
+                        "id": "covid_cz_cz042",
                         "type": "workspace"
                     }
                 },
@@ -82,7 +82,7 @@
                     "id": "CZ051",
                     "title": "Liberecký kraj",
                     "workspace": {
-                        "id": "covid.cz_cz051",
+                        "id": "covid_cz_cz051",
                         "type": "workspace"
                     }
                 },
@@ -93,7 +93,7 @@
                     "id": "CZ052",
                     "title": "Královéhradecký kraj",
                     "workspace": {
-                        "id": "covid.cz_cz052",
+                        "id": "covid_cz_cz052",
                         "type": "workspace"
                     }
                 },
@@ -104,7 +104,7 @@
                     "id": "CZ053",
                     "title": "Pardubický kraj",
                     "workspace": {
-                        "id": "covid.cz_cz053",
+                        "id": "covid_cz_cz053",
                         "type": "workspace"
                     }
                 },
@@ -115,7 +115,7 @@
                     "id": "CZ063",
                     "title": "Kraj Vysočina",
                     "workspace": {
-                        "id": "covid.cz_cz063",
+                        "id": "covid_cz_cz063",
                         "type": "workspace"
                     }
                 },
@@ -126,7 +126,7 @@
                     "id": "CZ064",
                     "title": "Jihomoravský kraj",
                     "workspace": {
-                        "id": "covid.cz_cz064",
+                        "id": "covid_cz_cz064",
                         "type": "workspace"
                     }
                 },
@@ -137,7 +137,7 @@
                     "id": "CZ071",
                     "title": "Olomoucký kraj",
                     "workspace": {
-                        "id": "covid.cz_cz071",
+                        "id": "covid_cz_cz071",
                         "type": "workspace"
                     }
                 },
@@ -148,7 +148,7 @@
                     "id": "CZ072",
                     "title": "Zlínský kraj",
                     "workspace": {
-                        "id": "covid.cz_cz072",
+                        "id": "covid_cz_cz072",
                         "type": "workspace"
                     }
                 },
@@ -159,7 +159,7 @@
                     "id": "CZ080",
                     "title": "Moravskoslezský kraj",
                     "workspace": {
-                        "id": "covid.cz_cz080",
+                        "id": "covid_cz_cz080",
                         "type": "workspace"
                     }
                 }
@@ -168,7 +168,7 @@
     ],
     "workspaces": [
         {
-            "id": "covid.cz",
+            "id": "covid_cz",
             "model": {
                 "analytics": {
                     "analyticalDashboards": [
@@ -1837,7 +1837,7 @@
                                 }
                             ],
                             "dataSourceTableId": {
-                                "dataSourceId": "covid.cz",
+                                "dataSourceId": "covid_cz",
                                 "id": "city",
                                 "type": "dataSource"
                             },
@@ -1911,7 +1911,7 @@
                                 }
                             ],
                             "dataSourceTableId": {
-                                "dataSourceId": "covid.cz",
+                                "dataSourceId": "covid_cz",
                                 "id": "country",
                                 "type": "dataSource"
                             },
@@ -1974,7 +1974,7 @@
                                 }
                             ],
                             "dataSourceTableId": {
-                                "dataSourceId": "covid.cz",
+                                "dataSourceId": "covid_cz",
                                 "id": "county",
                                 "type": "dataSource"
                             },
@@ -2088,7 +2088,7 @@
                                 }
                             ],
                             "dataSourceTableId": {
-                                "dataSourceId": "covid.cz",
+                                "dataSourceId": "covid_cz",
                                 "id": "covid_event",
                                 "type": "dataSource"
                             },
@@ -2171,7 +2171,7 @@
                                 }
                             ],
                             "dataSourceTableId": {
-                                "dataSourceId": "covid.cz",
+                                "dataSourceId": "covid_cz",
                                 "id": "covid_hospitalisation",
                                 "type": "dataSource"
                             },
@@ -2353,7 +2353,7 @@
                                 }
                             ],
                             "dataSourceTableId": {
-                                "dataSourceId": "covid.cz",
+                                "dataSourceId": "covid_cz",
                                 "id": "covid_testing",
                                 "type": "dataSource"
                             },
@@ -2436,7 +2436,7 @@
                                 }
                             ],
                             "dataSourceTableId": {
-                                "dataSourceId": "covid.cz",
+                                "dataSourceId": "covid_cz",
                                 "id": "demography",
                                 "type": "dataSource"
                             },
@@ -2565,7 +2565,7 @@
                                 }
                             ],
                             "dataSourceTableId": {
-                                "dataSourceId": "covid.cz",
+                                "dataSourceId": "covid_cz",
                                 "id": "district",
                                 "type": "dataSource"
                             },
@@ -2659,7 +2659,7 @@
                                 }
                             ],
                             "dataSourceTableId": {
-                                "dataSourceId": "covid.cz",
+                                "dataSourceId": "covid_cz",
                                 "id": "vaccination",
                                 "type": "dataSource"
                             },
@@ -2781,7 +2781,7 @@
                                 }
                             ],
                             "dataSourceTableId": {
-                                "dataSourceId": "covid.cz",
+                                "dataSourceId": "covid_cz",
                                 "id": "vaccination_country",
                                 "type": "dataSource"
                             },
@@ -2844,7 +2844,7 @@
                                 }
                             ],
                             "dataSourceTableId": {
-                                "dataSourceId": "covid.cz",
+                                "dataSourceId": "covid_cz",
                                 "id": "vaccination_county",
                                 "type": "dataSource"
                             },
@@ -2978,7 +2978,7 @@
                                 }
                             ],
                             "dataSourceTableId": {
-                                "dataSourceId": "covid.cz",
+                                "dataSourceId": "covid_cz",
                                 "id": "vaccination_snapshot",
                                 "type": "dataSource"
                             },
@@ -3082,7 +3082,7 @@
                                 }
                             ],
                             "dataSourceTableId": {
-                                "dataSourceId": "covid.cz",
+                                "dataSourceId": "covid_cz",
                                 "id": "vaccine",
                                 "type": "dataSource"
                             },
@@ -3128,7 +3128,7 @@
             "name": "Česká republika (All data)"
         },
         {
-            "id": "covid.cz_cz010",
+            "id": "covid_cz_cz010",
             "model": {
                 "analytics": {
                     "analyticalDashboards": [],
@@ -3148,7 +3148,7 @@
                                                         "measureDefinition": {
                                                             "item": {
                                                                 "identifier": {
-                                                                    "id": "covid.cz:city_population",
+                                                                    "id": "covid_cz:city_population",
                                                                     "type": "fact"
                                                                 }
                                                             },
@@ -3171,7 +3171,7 @@
                                                     "localIdentifier": "3c49f5f66c004f91afa766666f8c27b8",
                                                     "displayForm": {
                                                         "identifier": {
-                                                            "id": "covid.cz:city_name",
+                                                            "id": "covid_cz:city_name",
                                                             "type": "label"
                                                         }
                                                     }
@@ -3200,12 +3200,12 @@
             },
             "name": "Praha",
             "parent": {
-                "id": "covid.cz",
+                "id": "covid_cz",
                 "type": "workspace"
             }
         },
         {
-            "id": "covid.cz_cz020",
+            "id": "covid_cz_cz020",
             "model": {
                 "analytics": {
                     "analyticalDashboards": [],
@@ -3221,12 +3221,12 @@
             },
             "name": "Středočeský kraj",
             "parent": {
-                "id": "covid.cz",
+                "id": "covid_cz",
                 "type": "workspace"
             }
         },
         {
-            "id": "covid.cz_cz031",
+            "id": "covid_cz_cz031",
             "model": {
                 "analytics": {
                     "analyticalDashboards": [],
@@ -3242,12 +3242,12 @@
             },
             "name": "Jihočeský kraj",
             "parent": {
-                "id": "covid.cz",
+                "id": "covid_cz",
                 "type": "workspace"
             }
         },
         {
-            "id": "covid.cz_cz032",
+            "id": "covid_cz_cz032",
             "model": {
                 "analytics": {
                     "analyticalDashboards": [],
@@ -3263,12 +3263,12 @@
             },
             "name": "Plzeňský kraj",
             "parent": {
-                "id": "covid.cz",
+                "id": "covid_cz",
                 "type": "workspace"
             }
         },
         {
-            "id": "covid.cz_cz041",
+            "id": "covid_cz_cz041",
             "model": {
                 "analytics": {
                     "analyticalDashboards": [],
@@ -3284,12 +3284,12 @@
             },
             "name": "Karlovarský kraj",
             "parent": {
-                "id": "covid.cz",
+                "id": "covid_cz",
                 "type": "workspace"
             }
         },
         {
-            "id": "covid.cz_cz042",
+            "id": "covid_cz_cz042",
             "model": {
                 "analytics": {
                     "analyticalDashboards": [],
@@ -3305,12 +3305,12 @@
             },
             "name": "Ústecký kraj",
             "parent": {
-                "id": "covid.cz",
+                "id": "covid_cz",
                 "type": "workspace"
             }
         },
         {
-            "id": "covid.cz_cz051",
+            "id": "covid_cz_cz051",
             "model": {
                 "analytics": {
                     "analyticalDashboards": [],
@@ -3326,12 +3326,12 @@
             },
             "name": "Liberecký kraj",
             "parent": {
-                "id": "covid.cz",
+                "id": "covid_cz",
                 "type": "workspace"
             }
         },
         {
-            "id": "covid.cz_cz052",
+            "id": "covid_cz_cz052",
             "model": {
                 "analytics": {
                     "analyticalDashboards": [],
@@ -3347,12 +3347,12 @@
             },
             "name": "Královéhradecký kraj",
             "parent": {
-                "id": "covid.cz",
+                "id": "covid_cz",
                 "type": "workspace"
             }
         },
         {
-            "id": "covid.cz_cz053",
+            "id": "covid_cz_cz053",
             "model": {
                 "analytics": {
                     "analyticalDashboards": [],
@@ -3368,12 +3368,12 @@
             },
             "name": "Pardubický kraj",
             "parent": {
-                "id": "covid.cz",
+                "id": "covid_cz",
                 "type": "workspace"
             }
         },
         {
-            "id": "covid.cz_cz063",
+            "id": "covid_cz_cz063",
             "model": {
                 "analytics": {
                     "analyticalDashboards": [],
@@ -3389,12 +3389,12 @@
             },
             "name": "Kraj Vysočina",
             "parent": {
-                "id": "covid.cz",
+                "id": "covid_cz",
                 "type": "workspace"
             }
         },
         {
-            "id": "covid.cz_cz064",
+            "id": "covid_cz_cz064",
             "model": {
                 "analytics": {
                     "analyticalDashboards": [],
@@ -3410,12 +3410,12 @@
             },
             "name": "Jihomoravský kraj",
             "parent": {
-                "id": "covid.cz",
+                "id": "covid_cz",
                 "type": "workspace"
             }
         },
         {
-            "id": "covid.cz_cz071",
+            "id": "covid_cz_cz071",
             "model": {
                 "analytics": {
                     "analyticalDashboards": [],
@@ -3431,12 +3431,12 @@
             },
             "name": "Olomoucký kraj",
             "parent": {
-                "id": "covid.cz",
+                "id": "covid_cz",
                 "type": "workspace"
             }
         },
         {
-            "id": "covid.cz_cz072",
+            "id": "covid_cz_cz072",
             "model": {
                 "analytics": {
                     "analyticalDashboards": [],
@@ -3452,12 +3452,12 @@
             },
             "name": "Zlínský kraj",
             "parent": {
-                "id": "covid.cz",
+                "id": "covid_cz",
                 "type": "workspace"
             }
         },
         {
-            "id": "covid.cz_cz080",
+            "id": "covid_cz_cz080",
             "model": {
                 "analytics": {
                     "analyticalDashboards": [],
@@ -3473,7 +3473,7 @@
             },
             "name": "Moravskoslezský kraj",
             "parent": {
-                "id": "covid.cz",
+                "id": "covid_cz",
                 "type": "workspace"
             }
         }

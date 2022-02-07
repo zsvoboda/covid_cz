@@ -10,7 +10,7 @@
         },
         "id": "infections",
         "links": {
-            "self": "http://localhost:3000/api/entities/workspaces/covid.cz/metrics/infections"
+            "self": "http://localhost:3000/api/entities/workspaces/covid_cz/metrics/infections"
         },
         "type": "metric"
     }

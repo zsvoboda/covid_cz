@@ -7,14 +7,14 @@ Data are loaded to Postgres database that is part of GoodData.CN Docker image. T
 
 You'll get this initial COVID-19 dashboard out of the box. 
 
-![COVID CZ Dashboard](https://raw.githubusercontent.com/zsvoboda/covid_cz/main/img/covid.cz.dashboard.png)
+![COVID CZ Dashboard](https://raw.githubusercontent.com/zsvoboda/covid_cz/main/img/covid_cz.dashboard.png)
 
 Then you can visually create your own data visualizations and interactive dasboards. You should be able to complete this in less than 15 minutes. 
 
 # Multitenancy
 This project sets up 15 workspaces. One of them named `Česká republika (All data)` contains complete Czech Republic data. There are additional 14 workspaces (e.g. `Praha` or `Jihomoravský kraj`), one per each Czech county, that contain data for a specific county.  
 
-![Workspaces per CZ county](https://raw.githubusercontent.com/zsvoboda/covid_cz/main/img/covid.cz.lcm.png)
+![Workspaces per CZ county](https://raw.githubusercontent.com/zsvoboda/covid_cz/main/img/covid_cz.lcm.png)
 
 # Installation steps
 

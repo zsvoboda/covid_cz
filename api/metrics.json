@@ -11,7 +11,7 @@
             },
             "id": "deaths",
             "links": {
-                "self": "http://localhost:3000/api/entities/workspaces/covid.cz/metrics/deaths"
+                "self": "http://localhost:3000/api/entities/workspaces/covid_cz/metrics/deaths"
             },
             "type": "metric"
         },
@@ -26,7 +26,7 @@
             },
             "id": "deaths_per_capita",
             "links": {
-                "self": "http://localhost:3000/api/entities/workspaces/covid.cz/metrics/deaths_per_capita"
+                "self": "http://localhost:3000/api/entities/workspaces/covid_cz/metrics/deaths_per_capita"
             },
             "type": "metric"
         },
@@ -41,7 +41,7 @@
             },
             "id": "deaths_per_capita_2",
             "links": {
-                "self": "http://localhost:3000/api/entities/workspaces/covid.cz/metrics/deaths_per_capita_2"
+                "self": "http://localhost:3000/api/entities/workspaces/covid_cz/metrics/deaths_per_capita_2"
             },
             "type": "metric"
         },
@@ -56,7 +56,7 @@
             },
             "id": "deaths_per_day",
             "links": {
-                "self": "http://localhost:3000/api/entities/workspaces/covid.cz/metrics/deaths_per_day"
+                "self": "http://localhost:3000/api/entities/workspaces/covid_cz/metrics/deaths_per_day"
             },
             "type": "metric"
         },
@@ -71,7 +71,7 @@
             },
             "id": "deaths_per_day_and_capita",
             "links": {
-                "self": "http://localhost:3000/api/entities/workspaces/covid.cz/metrics/deaths_per_day_and_capita"
+                "self": "http://localhost:3000/api/entities/workspaces/covid_cz/metrics/deaths_per_day_and_capita"
             },
             "type": "metric"
         },
@@ -86,7 +86,7 @@
             },
             "id": "deaths_per_day_and_capita_2",
             "links": {
-                "self": "http://localhost:3000/api/entities/workspaces/covid.cz/metrics/deaths_per_day_and_capita_2"
+                "self": "http://localhost:3000/api/entities/workspaces/covid_cz/metrics/deaths_per_day_and_capita_2"
             },
             "type": "metric"
         },
@@ -101,7 +101,7 @@
             },
             "id": "infections",
             "links": {
-                "self": "http://localhost:3000/api/entities/workspaces/covid.cz/metrics/infections"
+                "self": "http://localhost:3000/api/entities/workspaces/covid_cz/metrics/infections"
             },
             "type": "metric"
         },
@@ -116,7 +116,7 @@
             },
             "id": "infections_per_capita",
             "links": {
-                "self": "http://localhost:3000/api/entities/workspaces/covid.cz/metrics/infections_per_capita"
+                "self": "http://localhost:3000/api/entities/workspaces/covid_cz/metrics/infections_per_capita"
             },
             "type": "metric"
         },
@@ -131,7 +131,7 @@
             },
             "id": "infections_per_day",
             "links": {
-                "self": "http://localhost:3000/api/entities/workspaces/covid.cz/metrics/infections_per_day"
+                "self": "http://localhost:3000/api/entities/workspaces/covid_cz/metrics/infections_per_day"
             },
             "type": "metric"
         },
@@ -146,7 +146,7 @@
             },
             "id": "population",
             "links": {
-                "self": "http://localhost:3000/api/entities/workspaces/covid.cz/metrics/population"
+                "self": "http://localhost:3000/api/entities/workspaces/covid_cz/metrics/population"
             },
             "type": "metric"
         },
@@ -161,7 +161,7 @@
             },
             "id": "vaccinations",
             "links": {
-                "self": "http://localhost:3000/api/entities/workspaces/covid.cz/metrics/vaccinations"
+                "self": "http://localhost:3000/api/entities/workspaces/covid_cz/metrics/vaccinations"
             },
             "type": "metric"
         },
@@ -176,7 +176,7 @@
             },
             "id": "vaccinations_per_capita",
             "links": {
-                "self": "http://localhost:3000/api/entities/workspaces/covid.cz/metrics/vaccinations_per_capita"
+                "self": "http://localhost:3000/api/entities/workspaces/covid_cz/metrics/vaccinations_per_capita"
             },
             "type": "metric"
         },
@@ -191,7 +191,7 @@
             },
             "id": "vaccinations_per_day",
             "links": {
-                "self": "http://localhost:3000/api/entities/workspaces/covid.cz/metrics/vaccinations_per_day"
+                "self": "http://localhost:3000/api/entities/workspaces/covid_cz/metrics/vaccinations_per_day"
             },
             "type": "metric"
         }

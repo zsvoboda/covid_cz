@@ -10,7 +10,7 @@
         },
         "id": "deaths",
         "links": {
-            "self": "http://localhost:3000/api/entities/workspaces/covid.cz/metrics/deaths"
+            "self": "http://localhost:3000/api/entities/workspaces/covid_cz/metrics/deaths"
         },
         "type": "metric"
     }

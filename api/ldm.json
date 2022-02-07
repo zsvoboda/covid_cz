@@ -85,7 +85,7 @@
                     }
                 ],
                 "dataSourceTableId": {
-                    "dataSourceId": "covid.cz",
+                    "dataSourceId": "covid_cz",
                     "id": "city",
                     "type": "dataSource"
                 },
@@ -159,7 +159,7 @@
                     }
                 ],
                 "dataSourceTableId": {
-                    "dataSourceId": "covid.cz",
+                    "dataSourceId": "covid_cz",
                     "id": "country",
                     "type": "dataSource"
                 },
@@ -222,7 +222,7 @@
                     }
                 ],
                 "dataSourceTableId": {
-                    "dataSourceId": "covid.cz",
+                    "dataSourceId": "covid_cz",
                     "id": "county",
                     "type": "dataSource"
                 },
@@ -336,7 +336,7 @@
                     }
                 ],
                 "dataSourceTableId": {
-                    "dataSourceId": "covid.cz",
+                    "dataSourceId": "covid_cz",
                     "id": "covid_event",
                     "type": "dataSource"
                 },
@@ -419,7 +419,7 @@
                     }
                 ],
                 "dataSourceTableId": {
-                    "dataSourceId": "covid.cz",
+                    "dataSourceId": "covid_cz",
                     "id": "covid_hospitalisation",
                     "type": "dataSource"
                 },
@@ -601,7 +601,7 @@
                     }
                 ],
                 "dataSourceTableId": {
-                    "dataSourceId": "covid.cz",
+                    "dataSourceId": "covid_cz",
                     "id": "covid_testing",
                     "type": "dataSource"
                 },
@@ -684,7 +684,7 @@
                     }
                 ],
                 "dataSourceTableId": {
-                    "dataSourceId": "covid.cz",
+                    "dataSourceId": "covid_cz",
                     "id": "demography",
                     "type": "dataSource"
                 },
@@ -813,7 +813,7 @@
                     }
                 ],
                 "dataSourceTableId": {
-                    "dataSourceId": "covid.cz",
+                    "dataSourceId": "covid_cz",
                     "id": "district",
                     "type": "dataSource"
                 },
@@ -907,7 +907,7 @@
                     }
                 ],
                 "dataSourceTableId": {
-                    "dataSourceId": "covid.cz",
+                    "dataSourceId": "covid_cz",
                     "id": "vaccination",
                     "type": "dataSource"
                 },
@@ -1029,7 +1029,7 @@
                     }
                 ],
                 "dataSourceTableId": {
-                    "dataSourceId": "covid.cz",
+                    "dataSourceId": "covid_cz",
                     "id": "vaccination_country",
                     "type": "dataSource"
                 },
@@ -1092,7 +1092,7 @@
                     }
                 ],
                 "dataSourceTableId": {
-                    "dataSourceId": "covid.cz",
+                    "dataSourceId": "covid_cz",
                     "id": "vaccination_county",
                     "type": "dataSource"
                 },
@@ -1226,7 +1226,7 @@
                     }
                 ],
                 "dataSourceTableId": {
-                    "dataSourceId": "covid.cz",
+                    "dataSourceId": "covid_cz",
                     "id": "vaccination_snapshot",
                     "type": "dataSource"
                 },
@@ -1330,7 +1330,7 @@
                     }
                 ],
                 "dataSourceTableId": {
-                    "dataSourceId": "covid.cz",
+                    "dataSourceId": "covid_cz",
                     "id": "vaccine",
                     "type": "dataSource"
                 },

@@ -5,7 +5,7 @@
         "title": "County",
         "columnName": "wdf__county_id",
         "workspace": {
-          "id": "covid.cz",
+          "id": "covid_cz",
           "type": "workspace"
         },
         "workspaceDataFilterSettings": [
@@ -16,7 +16,7 @@
               "CZ010"
             ],
             "workspace": {
-              "id": "covid.cz_cz010",
+              "id": "covid_cz_cz010",
               "type": "workspace"
             }
           },
@@ -27,7 +27,7 @@
               "CZ020"
             ],
             "workspace": {
-              "id": "covid.cz_cz020",
+              "id": "covid_cz_cz020",
               "type": "workspace"
             }
           },
@@ -38,7 +38,7 @@
               "CZ031"
             ],
             "workspace": {
-              "id": "covid.cz_cz031",
+              "id": "covid_cz_cz031",
               "type": "workspace"
             }
           },
@@ -49,7 +49,7 @@
               "CZ032"
             ],
             "workspace": {
-              "id": "covid.cz_cz032",
+              "id": "covid_cz_cz032",
               "type": "workspace"
             }
           },
@@ -60,7 +60,7 @@
               "CZ041"
             ],
             "workspace": {
-              "id": "covid.cz_cz041",
+              "id": "covid_cz_cz041",
               "type": "workspace"
             }
           },
@@ -71,7 +71,7 @@
               "CZ042"
             ],
             "workspace": {
-              "id": "covid.cz_cz042",
+              "id": "covid_cz_cz042",
               "type": "workspace"
             }
           },
@@ -82,7 +82,7 @@
               "CZ051"
             ],
             "workspace": {
-              "id": "covid.cz_cz051",
+              "id": "covid_cz_cz051",
               "type": "workspace"
             }
           },
@@ -93,7 +93,7 @@
               "CZ052"
             ],
             "workspace": {
-              "id": "covid.cz_cz052",
+              "id": "covid_cz_cz052",
               "type": "workspace"
             }
           },
@@ -104,7 +104,7 @@
               "CZ053"
             ],
             "workspace": {
-              "id": "covid.cz_cz053",
+              "id": "covid_cz_cz053",
               "type": "workspace"
             }
           },
@@ -115,7 +115,7 @@
               "CZ063"
             ],
             "workspace": {
-              "id": "covid.cz_cz063",
+              "id": "covid_cz_cz063",
               "type": "workspace"
             }
           },
@@ -126,7 +126,7 @@
               "CZ064"
             ],
             "workspace": {
-              "id": "covid.cz_cz064",
+              "id": "covid_cz_cz064",
               "type": "workspace"
             }
           },
@@ -137,7 +137,7 @@
               "CZ071"
             ],
             "workspace": {
-              "id": "covid.cz_cz071",
+              "id": "covid_cz_cz071",
               "type": "workspace"
             }
           },
@@ -148,7 +148,7 @@
               "CZ072"
             ],
             "workspace": {
-              "id": "covid.cz_cz072",
+              "id": "covid_cz_cz072",
               "type": "workspace"
             }
           },
@@ -159,7 +159,7 @@
               "CZ080"
             ],
             "workspace": {
-              "id": "covid.cz_cz080",
+              "id": "covid_cz_cz080",
               "type": "workspace"
             }
           }
