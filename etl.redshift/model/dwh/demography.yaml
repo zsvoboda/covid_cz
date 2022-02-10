@@ -1,0 +1,16 @@
+---
+table:
+  columns:
+    city_id:
+      foreign_keys:
+        - city.city_id
+      nullable: false
+    wdf__county_id:
+      nullable: false
+      type: CHAR(5)
+    demography_id:
+      nullable: false
+      primary_key: true
+process:
+  materialization: table
+  mode: drop

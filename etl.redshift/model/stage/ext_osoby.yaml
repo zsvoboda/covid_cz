@@ -1,0 +1,22 @@
+table:
+  columns:
+    id:
+      type: CHAR(36)
+      primary_key: true
+    pohlavi:
+      type: CHAR(1)
+    kraj_nuts_kod:
+      type: CHAR(5)
+    datum:
+      type: DATE
+    vek:
+      type: DECIMAL(3,0)
+    nakaza_v_zahranici:
+      type: DECIMAL(13,0)
+    reportovano_khs:
+      type: DECIMAL(13,0)
+    okres_lau_kod:
+      type: CHAR(6)
+process:
+  materialization: table
+  mode: drop

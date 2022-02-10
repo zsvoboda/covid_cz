@@ -1,0 +1,16 @@
+---
+table:
+  columns:
+    county_id:
+      foreign_keys:
+        - county.county_id
+      nullable: false
+    wdf__county_id:
+      nullable: false
+      type: CHAR(5)
+    district_id:
+      nullable: false
+      primary_key: true
+process:
+  materialization: table
+  mode: drop

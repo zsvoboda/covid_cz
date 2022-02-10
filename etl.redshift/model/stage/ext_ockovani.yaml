@@ -1,0 +1,24 @@
+table:
+  columns:
+    id:
+      type: CHAR(36)
+      primary_key: true
+    datum:
+      type: DATE
+    kraj_nuts_kod:
+      type: CHAR(5)
+    kraj_nazev:
+      type: VARCHAR(50)
+    vakcina:
+      type: VARCHAR(50)
+    vekova_skupina:
+      type: VARCHAR(15)
+    prvnich_davek:
+      type: DECIMAL(13,0)
+    druhych_davek:
+      type: DECIMAL(13,0)
+    celkem_davek:
+      type: DECIMAL(13,0)
+process:
+  materialization: table
+  mode: drop

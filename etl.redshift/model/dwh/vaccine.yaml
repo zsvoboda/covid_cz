@@ -1,0 +1,11 @@
+---
+table:
+  columns:
+    vaccine_id:
+      nullable: false
+      primary_key: true
+    vaccine_name:
+      nullable: false
+process:
+  materialization: table
+  mode: drop

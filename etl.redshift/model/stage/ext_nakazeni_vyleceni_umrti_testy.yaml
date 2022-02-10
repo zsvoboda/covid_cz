@@ -1,0 +1,28 @@
+table:
+  columns:
+    datum:
+      primary_key: true
+      type: DATE
+    kumulativni_pocet_nakazenych:
+      type: DECIMAL(13,0)
+    kumulativni_pocet_vylecenych:
+      type: DECIMAL(13,0)
+    kumulativni_pocet_umrti:
+      type: DECIMAL(13,0)
+    kumulativni_pocet_testu:
+      type: DECIMAL(13,0)
+    kumulativni_pocet_ag_testu:
+      type: DECIMAL(13,0)
+    prirustkovy_pocet_nakazenych:
+      type: DECIMAL(13,0)
+    prirustkovy_pocet_vylecenych:
+      type: DECIMAL(13,0)
+    prirustkovy_pocet_umrti:
+      type: DECIMAL(13,0)
+    prirustkovy_pocet_provedenych_testu:
+      type: DECIMAL(13,0)
+    prirustkovy_pocet_provedenych_ag_testu:
+      type: DECIMAL(13,0)
+process:
+  materialization: table
+  mode: drop

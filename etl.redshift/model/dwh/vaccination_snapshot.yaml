@@ -1,0 +1,26 @@
+---
+table:
+  columns:
+    vaccination_snapshot_id:
+      nullable: false
+      primary_key: true
+    vaccine_id:
+      nullable: false
+      foreign_keys:
+        - vaccine.vaccine_id
+    county_id:
+      nullable: false
+      foreign_keys:
+        - county.county_id
+    wdf__county_id:
+      nullable: false
+      type: CHAR(5)
+    vaccination_snapshot_dose_order:
+      nullable: false
+    vaccination_county_id:
+      nullable: false
+      foreign_keys:
+        - vaccination_county.vaccination_county_id
+process:
+  materialization: table
+  mode: drop

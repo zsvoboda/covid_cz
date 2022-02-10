@@ -1,0 +1,11 @@
+---
+table:
+  columns:
+    vaccination_country_id:
+      nullable: false
+      primary_key: true
+    vaccination_country_name:
+      nullable: false
+process:
+  materialization: table
+  mode: drop
