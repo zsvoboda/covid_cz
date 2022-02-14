@@ -1,0 +1,18 @@
+{
+  "data": {
+      "id": "covid_cz_cz051",
+      "type": "workspace",
+      "attributes": {
+          "name": "Liberecký kraj"
+      },
+      "relationships": {
+          "parent": {
+            "data": {
+              "id": "covid_cz",
+              "type": "workspace"
+            }
+          }
+        }
+
+  }
+}

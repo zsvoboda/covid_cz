@@ -1,0 +1,18 @@
+{
+    "data": {
+        "id": "covid_cz_cz010",
+        "type": "workspace",
+        "attributes": {
+            "name": "Praha"
+        },
+        "relationships": {
+            "parent": {
+              "data": {
+                "id": "covid_cz",
+                "type": "workspace"
+              }
+            }
+          }
+
+    }
+}

@@ -1,0 +1,18 @@
+{
+  "data": {
+      "id": "covid_cz_cz063",
+      "type": "workspace",
+      "attributes": {
+          "name": "Kraj Vysočina"
+      },
+      "relationships": {
+          "parent": {
+            "data": {
+              "id": "covid_cz",
+              "type": "workspace"
+            }
+          }
+        }
+
+  }
+}

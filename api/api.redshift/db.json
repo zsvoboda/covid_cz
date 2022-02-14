@@ -1,0 +1,14 @@
+{
+    "data": {
+      "id": "covid_cz",
+      "type": "dataSource",
+      "attributes": {
+        "name": "COVID CZ DB connection",
+        "type": "REDSHIFT",
+        "url": "jdbc:redshift://{{$processEnv REDSHIFT_HOST}}:{{$processEnv REDSHIFT_PORT}}/{{$processEnv REDSHIFT_DB}}",
+        "schema": "dwh",
+        "username": "{{$processEnv REDSHIFT_USER}}",
+        "password": "{{$processEnv REDSHIFT_PASSWORD}}"
+      }
+    }
+  }

@@ -1,0 +1,199 @@
+{
+    "data": [
+        {
+            "attributes": {
+                "title": "Deaths",
+                "description": "",
+                "content": {
+                    "format": "[>=1000000000000]#,,,,.0 T;\n[>=1000000000]#,,,.0 B;\n[>=1000000]#,,.0 M;\n[>=1000]#,.0 K;\n[>=0]#,##0;\n[<=-1000000000000]-#,,,,.0 T;\n[<=-1000000000]-#,,,.0 B;\n[<=-1000000]-#,,.0 M;\n[<=-1000]-#,.0 K;\n[<0]-#,##0",
+                    "maql": "SELECT SUM({fact/covid_event_cnt})\n    WHERE {label/covid_event_type} = \"D\""
+                }
+            },
+            "id": "deaths",
+            "links": {
+                "self": "http://localhost:3000/api/entities/workspaces/covid_cz/metrics/deaths"
+            },
+            "type": "metric"
+        },
+        {
+            "attributes": {
+                "title": "Deaths per capita (%)",
+                "description": "",
+                "content": {
+                    "format": "#,##0.00%",
+                    "maql": "SELECT {metric/deaths} / (SELECT SUM({metric/population} ) BY {label/district_id} ALL OTHER )\nBY {label/district_id}, {label/date.day}, ALL OTHER "
+                }
+            },
+            "id": "deaths_per_capita",
+            "links": {
+                "self": "http://localhost:3000/api/entities/workspaces/covid_cz/metrics/deaths_per_capita"
+            },
+            "type": "metric"
+        },
+        {
+            "attributes": {
+                "title": "Deaths per day and capita (%)",
+                "description": "",
+                "content": {
+                    "format": "#,##0.00000%",
+                    "maql": "SELECT {metric/deaths_per_day} / (SELECT SUM({metric/population} ) BY {label/district_id} ALL OTHER )\nBY {label/district_id}, {label/date.day}, ALL OTHER "
+                }
+            },
+            "id": "deaths_per_capita_2",
+            "links": {
+                "self": "http://localhost:3000/api/entities/workspaces/covid_cz/metrics/deaths_per_capita_2"
+            },
+            "type": "metric"
+        },
+        {
+            "attributes": {
+                "title": "Deaths per day",
+                "description": "",
+                "content": {
+                    "format": "#,##0",
+                    "maql": "SELECT AVG(SELECT{metric/deaths} BY {label/date.day}, {label/district_id} ALL OTHER )"
+                }
+            },
+            "id": "deaths_per_day",
+            "links": {
+                "self": "http://localhost:3000/api/entities/workspaces/covid_cz/metrics/deaths_per_day"
+            },
+            "type": "metric"
+        },
+        {
+            "attributes": {
+                "title": "Infections per day and capita (%)",
+                "description": "",
+                "content": {
+                    "format": "#,##0.00000%",
+                    "maql": "SELECT {metric/infections_per_day} / (SELECT SUM({metric/population} ) BY {label/district_id} ALL OTHER )\nBY {label/district_id}, {label/date.day}, ALL OTHER "
+                }
+            },
+            "id": "deaths_per_day_and_capita",
+            "links": {
+                "self": "http://localhost:3000/api/entities/workspaces/covid_cz/metrics/deaths_per_day_and_capita"
+            },
+            "type": "metric"
+        },
+        {
+            "attributes": {
+                "title": "Vaccinations per day and capita (%)",
+                "description": "",
+                "content": {
+                    "format": "#,##0.00000%",
+                    "maql": "SELECT {metric/vaccinations_per_day} / (SELECT SUM({metric/population} ) BY {label/county_id} ALL OTHER )\nBY {label/county_id}, {label/date.day}, ALL OTHER "
+                }
+            },
+            "id": "deaths_per_day_and_capita_2",
+            "links": {
+                "self": "http://localhost:3000/api/entities/workspaces/covid_cz/metrics/deaths_per_day_and_capita_2"
+            },
+            "type": "metric"
+        },
+        {
+            "attributes": {
+                "title": "Infections",
+                "description": "",
+                "content": {
+                    "format": "[>=1000000000000]#,,,,.0 T;\n[>=1000000000]#,,,.0 B;\n[>=1000000]#,,.0 M;\n[>=1000]#,.0 K;\n[>=0]#,##0;\n[<=-1000000000000]-#,,,,.0 T;\n[<=-1000000000]-#,,,.0 B;\n[<=-1000000]-#,,.0 M;\n[<=-1000]-#,.0 K;\n[<0]-#,##0",
+                    "maql": "SELECT SUM({fact/covid_event_cnt})\n    WHERE {label/covid_event_type} = \"I\""
+                }
+            },
+            "id": "infections",
+            "links": {
+                "self": "http://localhost:3000/api/entities/workspaces/covid_cz/metrics/infections"
+            },
+            "type": "metric"
+        },
+        {
+            "attributes": {
+                "title": "Infections per capita (%)",
+                "description": "",
+                "content": {
+                    "format": "#,##0.00%",
+                    "maql": "SELECT {metric/infections} / (SELECT SUM({metric/population} ) BY {label/district_id} ALL OTHER )\nBY {label/district_id}, {label/date.day}, ALL OTHER "
+                }
+            },
+            "id": "infections_per_capita",
+            "links": {
+                "self": "http://localhost:3000/api/entities/workspaces/covid_cz/metrics/infections_per_capita"
+            },
+            "type": "metric"
+        },
+        {
+            "attributes": {
+                "title": "Infections per day",
+                "description": "",
+                "content": {
+                    "format": "#,##0",
+                    "maql": "SELECT AVG(SELECT {metric/infections} BY {label/date.day}, {label/district_id} ALL OTHER )"
+                }
+            },
+            "id": "infections_per_day",
+            "links": {
+                "self": "http://localhost:3000/api/entities/workspaces/covid_cz/metrics/infections_per_day"
+            },
+            "type": "metric"
+        },
+        {
+            "attributes": {
+                "title": "Population",
+                "description": "",
+                "content": {
+                    "format": "[>=1000000000000][green]#,,,,.0 T;\n[>=1000000000][green]#,,,.0 B;\n[>=1000000][green]#,,.0 M;\n[>=1000][black]#,.0 K;\n[>=0][black]#,##0;\n[<=-1000000000000][red]-#,,,,.0 T;\n[<=-1000000000][red]-#,,,.0 B;\n[<=-1000000][red]-#,,.0 M;\n[<=-1000][red]-#,.0 K;\n[<0][black]-#,##0",
+                    "maql": "SELECT SUM({fact/city_population})"
+                }
+            },
+            "id": "population",
+            "links": {
+                "self": "http://localhost:3000/api/entities/workspaces/covid_cz/metrics/population"
+            },
+            "type": "metric"
+        },
+        {
+            "attributes": {
+                "title": "Vaccinations",
+                "description": "",
+                "content": {
+                    "format": "[>=1000000000000]#,,,,.0 T;\n[>=1000000000]#,,,.0 B;\n[>=1000000]#,,.0 M;\n[>=1000]#,.0 K;\n[>=0]#,##0;\n[<=-1000000000000]-#,,,,.0 T;\n[<=-1000000000]-#,,,.0 B;\n[<=-1000000]-#,,.0 M;\n[<=-1000]-#,.0 K;\n[<0]-#,##0",
+                    "maql": "SELECT SUM({fact/vaccination_total_doses})"
+                }
+            },
+            "id": "vaccinations",
+            "links": {
+                "self": "http://localhost:3000/api/entities/workspaces/covid_cz/metrics/vaccinations"
+            },
+            "type": "metric"
+        },
+        {
+            "attributes": {
+                "title": "Vaccinations per capita (%)",
+                "description": "",
+                "content": {
+                    "format": "#,##0.00%",
+                    "maql": "SELECT {metric/vaccinations} / (SELECT SUM({metric/population} ) BY {label/county_id} ALL OTHER )\nBY {label/county_id}, {label/date.day}, ALL OTHER "
+                }
+            },
+            "id": "vaccinations_per_capita",
+            "links": {
+                "self": "http://localhost:3000/api/entities/workspaces/covid_cz/metrics/vaccinations_per_capita"
+            },
+            "type": "metric"
+        },
+        {
+            "attributes": {
+                "title": "Vaccinations per day",
+                "description": "",
+                "content": {
+                    "format": "#,##0",
+                    "maql": "SELECT AVG(SELECT {metric/vaccinations} BY {label/date.day}, {label/county_id} ALL OTHER )"
+                }
+            },
+            "id": "vaccinations_per_day",
+            "links": {
+                "self": "http://localhost:3000/api/entities/workspaces/covid_cz/metrics/vaccinations_per_day"
+            },
+            "type": "metric"
+        }
+    ]
+}

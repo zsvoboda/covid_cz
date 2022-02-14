@@ -1,0 +1,18 @@
+{
+    "data": {
+        "id": "covid_cz_cz064",
+        "type": "workspace",
+        "attributes": {
+            "name": "Jihomoravský kraj"
+        },
+        "relationships": {
+            "parent": {
+              "data": {
+                "id": "covid_cz",
+                "type": "workspace"
+              }
+            }
+          }
+
+    }
+}

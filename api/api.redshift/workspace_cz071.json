@@ -1,0 +1,18 @@
+{
+    "data": {
+        "id": "covid_cz_cz071",
+        "type": "workspace",
+        "attributes": {
+            "name": "Olomoucký kraj"
+        },
+        "relationships": {
+            "parent": {
+              "data": {
+                "id": "covid_cz",
+                "type": "workspace"
+              }
+            }
+          }
+
+    }
+}

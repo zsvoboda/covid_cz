@@ -1,0 +1,248 @@
+# These variables are defined in workspace.code-workspace
+# Update according to your setup
+# Then, choose an REST Client Environment (Ctrl+Alt+E)
+# @endpoint (Base URL of your organization) = http://localhost:3000
+# @token (Auth token) = YWRtaW46Ym9vdHN0cmFwOmFkbWluMTIz
+# @ds_host (hostname:port of Pg DataSource) = localhost:5432
+# @ds_user (Pg user) = demouser
+# @dh_pass (Pg password) = demopass
+
+### Create Redshift connection
+# @name createDataSource
+POST {{$processEnv DEMO_ENDPOINT}}/api/entities/dataSources/
+Content-Type: application/vnd.gooddata.api+json
+Authorization: Bearer {{$processEnv DEMO_TOKEN}}
+
+<@ ./db.json
+
+### GET Redshift connection
+# @name getDataSource
+GET {{$processEnv DEMO_ENDPOINT}}/api/entities/dataSources/covid_cz
+Content-Type: application/vnd.gooddata.api+json
+Authorization: Bearer {{$processEnv DEMO_TOKEN}}
+
+### Get Physical Model
+# @name getPhysicalModel
+GET {{$processEnv DEMO_ENDPOINT}}/api/layout/dataSources/covid_cz/physicalModel
+Content-Type: application/json
+Authorization: Bearer {{$processEnv DEMO_TOKEN}}
+
+### Store Physical Model
+# @name storePhysicalModel
+PUT {{$processEnv DEMO_ENDPOINT}}/api/layout/dataSources/covid_cz/physicalModel
+Content-Type: application/json
+Authorization: Bearer {{$processEnv DEMO_TOKEN}}
+
+< ./pdm.json
+
+### Get all workspaces
+# @name getAllWorkspaces
+GET {{$processEnv DEMO_ENDPOINT}}/api/layout/workspaces
+Content-Type: application/json
+Authorization: Bearer {{$processEnv DEMO_TOKEN}}
+
+### Store all workspaces
+# @name storeAllWorkspaces
+PUT {{$processEnv DEMO_ENDPOINT}}/api/layout/workspaces
+Content-Type: application/json
+Authorization: Bearer {{$processEnv DEMO_TOKEN}}
+
+< ./all_workspaces.json
+
+### Create workspace
+# @name createWorkspace
+POST {{$processEnv DEMO_ENDPOINT}}/api/entities/workspaces/
+Content-Type: application/vnd.gooddata.api+json
+Authorization: Bearer {{$processEnv DEMO_TOKEN}}
+
+< ./workspace.json
+
+### Create workspace CZ010
+# @name createWorkspace CZ010
+POST {{$processEnv DEMO_ENDPOINT}}/api/entities/workspaces/
+Content-Type: application/vnd.gooddata.api+json
+Authorization: Bearer {{$processEnv DEMO_TOKEN}}
+
+< ./workspace_cz010.json
+
+### Create workspace CZ020
+# @name createWorkspace CZ020
+POST {{$processEnv DEMO_ENDPOINT}}/api/entities/workspaces/
+Content-Type: application/vnd.gooddata.api+json
+Authorization: Bearer {{$processEnv DEMO_TOKEN}}
+
+< ./workspace_cz020.json
+
+### Create workspace CZ031
+# @name createWorkspace CZ031
+POST {{$processEnv DEMO_ENDPOINT}}/api/entities/workspaces/
+Content-Type: application/vnd.gooddata.api+json
+Authorization: Bearer {{$processEnv DEMO_TOKEN}}
+
+< ./workspace_cz031.json
+
+### Create workspace CZ032
+# @name createWorkspace CZ032
+POST {{$processEnv DEMO_ENDPOINT}}/api/entities/workspaces/
+Content-Type: application/vnd.gooddata.api+json
+Authorization: Bearer {{$processEnv DEMO_TOKEN}}
+
+< ./workspace_cz032.json
+
+### Create workspace CZ041
+# @name createWorkspace CZ041
+POST {{$processEnv DEMO_ENDPOINT}}/api/entities/workspaces/
+Content-Type: application/vnd.gooddata.api+json
+Authorization: Bearer {{$processEnv DEMO_TOKEN}}
+
+< ./workspace_cz041.json
+
+### Create workspace CZ042
+# @name createWorkspace CZ042
+POST {{$processEnv DEMO_ENDPOINT}}/api/entities/workspaces/
+Content-Type: application/vnd.gooddata.api+json
+Authorization: Bearer {{$processEnv DEMO_TOKEN}}
+
+< ./workspace_cz042.json
+
+### Create workspace CZ051
+# @name createWorkspace CZ051
+POST {{$processEnv DEMO_ENDPOINT}}/api/entities/workspaces/
+Content-Type: application/vnd.gooddata.api+json
+Authorization: Bearer {{$processEnv DEMO_TOKEN}}
+
+< ./workspace_cz051.json
+
+### Create workspace CZ052
+# @name createWorkspace CZ052
+POST {{$processEnv DEMO_ENDPOINT}}/api/entities/workspaces/
+Content-Type: application/vnd.gooddata.api+json
+Authorization: Bearer {{$processEnv DEMO_TOKEN}}
+
+< ./workspace_cz052.json
+
+### Create workspace CZ053
+# @name createWorkspace CZ053
+POST {{$processEnv DEMO_ENDPOINT}}/api/entities/workspaces/
+Content-Type: application/vnd.gooddata.api+json
+Authorization: Bearer {{$processEnv DEMO_TOKEN}}
+
+< ./workspace_cz053.json
+
+### Create workspace CZ063
+# @name createWorkspace CZ063
+POST {{$processEnv DEMO_ENDPOINT}}/api/entities/workspaces/
+Content-Type: application/vnd.gooddata.api+json
+Authorization: Bearer {{$processEnv DEMO_TOKEN}}
+
+< ./workspace_cz063.json
+
+### Create workspace CZ064
+# @name createWorkspace CZ064
+POST {{$processEnv DEMO_ENDPOINT}}/api/entities/workspaces/
+Content-Type: application/vnd.gooddata.api+json
+Authorization: Bearer {{$processEnv DEMO_TOKEN}}
+
+< ./workspace_cz064.json
+
+
+### Create workspace CZ071
+# @name createWorkspace CZ071
+POST {{$processEnv DEMO_ENDPOINT}}/api/entities/workspaces/
+Content-Type: application/vnd.gooddata.api+json
+Authorization: Bearer {{$processEnv DEMO_TOKEN}}
+
+< ./workspace_cz071.json
+
+### Create workspace CZ072
+# @name createWorkspace CZ072
+POST {{$processEnv DEMO_ENDPOINT}}/api/entities/workspaces/
+Content-Type: application/vnd.gooddata.api+json
+Authorization: Bearer {{$processEnv DEMO_TOKEN}}
+
+< ./workspace_cz072.json
+
+### Create workspace CZ080
+# @name createWorkspace CZ080
+POST {{$processEnv DEMO_ENDPOINT}}/api/entities/workspaces/
+Content-Type: application/vnd.gooddata.api+json
+Authorization: Bearer {{$processEnv DEMO_TOKEN}}
+
+< ./workspace_cz080.json
+
+### Store Workspace Data Filters
+# @name storeWorkspaceDataFilters
+PUT {{$processEnv DEMO_ENDPOINT}}/api/layout/workspaceDataFilters
+Content-Type: application/json
+Authorization: Bearer {{$processEnv DEMO_TOKEN}}
+
+< ./workspace_filters.json
+
+### GET workspaces
+# @name getWorkspaces
+GET {{$processEnv DEMO_ENDPOINT}}/api/layout/workspaces
+Content-Type: application/vnd.gooddata.api+json
+Authorization: Bearer {{$processEnv DEMO_TOKEN}}
+
+### GET workspace
+# @name getWorkspace
+GET {{$processEnv DEMO_ENDPOINT}}/api/entities/workspaces/covid_cz
+Content-Type: application/vnd.gooddata.api+json
+Authorization: Bearer {{$processEnv DEMO_TOKEN}}
+
+### DELETE workspace
+# @name deleteWorkspace
+DELETE {{$processEnv DEMO_ENDPOINT}}/api/entities/workspaces/84cc34d7091843ceab611823394ac9a3
+Content-Type: application/vnd.gooddata.api+json
+Authorization: Bearer {{$processEnv DEMO_TOKEN}}
+
+### Get semantic model
+# @name getSemanticModel
+GET {{$processEnv DEMO_ENDPOINT}}/api/layout/workspaces/covid_cz/logicalModel/
+Content-Type: application/json
+Authorization: Bearer {{$processEnv DEMO_TOKEN}}
+
+### Publish semantic model
+# @name publishSemanticModel
+PUT {{$processEnv DEMO_ENDPOINT}}/api/layout/workspaces/covid_cz/logicalModel/
+Content-Type: application/json
+Authorization: Bearer {{$processEnv DEMO_TOKEN}}
+
+< ./ldm.json
+
+### Get analytics model objects
+# @name getAnalyticsModelObjects
+GET {{$processEnv DEMO_ENDPOINT}}/api/layout/workspaces/covid_cz/analyticsModel/
+Content-Type: application/json
+Authorization: Bearer {{$processEnv DEMO_TOKEN}}
+
+### Create analytics model objects
+# @name createAnalyticsModelObjects
+PUT {{$processEnv DEMO_ENDPOINT}}/api/layout/workspaces/covid_cz/analyticsModel/
+Content-Type: application/json
+Authorization: Bearer {{$processEnv DEMO_TOKEN}}
+
+< ./analytics_model.json
+
+### Get measures
+# @name getMetrics
+GET {{$processEnv DEMO_ENDPOINT}}/api/entities/workspaces/covid_cz/metrics/
+Content-Type: application/json
+Authorization: Bearer {{$processEnv DEMO_TOKEN}}
+
+### Create Deaths metrics
+# @name createDeathsMetrics
+POST {{$processEnv DEMO_ENDPOINT}}/api/entities/workspaces/covid_cz/metrics/
+Content-Type: application/vnd.gooddata.api+json
+Authorization: Bearer {{$processEnv DEMO_TOKEN}}
+
+< ./metric_deaths.json
+
+### Create Infections metrics
+# @name createInfectionsMetrics
+POST {{$processEnv DEMO_ENDPOINT}}/api/entities/workspaces/covid_cz/metrics/
+Content-Type: application/vnd.gooddata.api+json
+Authorization: Bearer {{$processEnv DEMO_TOKEN}}
+
+< ./metric_infections.json
+

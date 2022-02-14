@@ -1,0 +1,18 @@
+{
+    "data": {
+        "id": "covid_cz_cz072",
+        "type": "workspace",
+        "attributes": {
+            "name": "Zlínský kraj"
+        },
+        "relationships": {
+            "parent": {
+              "data": {
+                "id": "covid_cz",
+                "type": "workspace"
+              }
+            }
+          }
+
+    }
+}

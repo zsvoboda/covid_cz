@@ -1,0 +1,562 @@
+{
+    "pdm": {
+        "tables": [
+            {
+                "columns": [
+                    {
+                        "dataType": "STRING",
+                        "isPrimaryKey": true,
+                        "name": "city_id"
+                    },
+                    {
+                        "dataType": "STRING",
+                        "isPrimaryKey": false,
+                        "name": "city_latitude"
+                    },
+                    {
+                        "dataType": "STRING",
+                        "isPrimaryKey": false,
+                        "name": "city_longitude"
+                    },
+                    {
+                        "dataType": "STRING",
+                        "isPrimaryKey": false,
+                        "name": "city_name"
+                    },
+                    {
+                        "dataType": "STRING",
+                        "isPrimaryKey": false,
+                        "name": "district_id",
+                        "referencedTableColumn": "district_id",
+                        "referencedTableId": "district"
+                    },
+                    {
+                        "dataType": "STRING",
+                        "isPrimaryKey": false,
+                        "name": "wdf__county_id"
+                    }
+                ],
+                "id": "city",
+                "path": [
+                    "dwh",
+                    "city"
+                ],
+                "type": "TABLE"
+            },
+            {
+                "columns": [
+                    {
+                        "dataType": "STRING",
+                        "isPrimaryKey": true,
+                        "name": "country_id"
+                    },
+                    {
+                        "dataType": "STRING",
+                        "isPrimaryKey": false,
+                        "name": "country_name"
+                    }
+                ],
+                "id": "country",
+                "path": [
+                    "dwh",
+                    "country"
+                ],
+                "type": "TABLE"
+            },
+            {
+                "columns": [
+                    {
+                        "dataType": "STRING",
+                        "isPrimaryKey": false,
+                        "name": "country_id",
+                        "referencedTableColumn": "country_id",
+                        "referencedTableId": "country"
+                    },
+                    {
+                        "dataType": "STRING",
+                        "isPrimaryKey": true,
+                        "name": "county_id"
+                    },
+                    {
+                        "dataType": "STRING",
+                        "isPrimaryKey": false,
+                        "name": "county_name"
+                    },
+                    {
+                        "dataType": "STRING",
+                        "isPrimaryKey": false,
+                        "name": "wdf__county_id"
+                    }
+                ],
+                "id": "county",
+                "path": [
+                    "dwh",
+                    "county"
+                ],
+                "type": "TABLE"
+            },
+            {
+                "columns": [
+                    {
+                        "dataType": "NUMERIC",
+                        "isPrimaryKey": false,
+                        "name": "covid_event_cnt"
+                    },
+                    {
+                        "dataType": "DATE",
+                        "isPrimaryKey": false,
+                        "name": "covid_event_date"
+                    },
+                    {
+                        "dataType": "INT",
+                        "isPrimaryKey": true,
+                        "name": "covid_event_id"
+                    },
+                    {
+                        "dataType": "STRING",
+                        "isPrimaryKey": false,
+                        "name": "covid_event_person_age"
+                    },
+                    {
+                        "dataType": "NUMERIC",
+                        "isPrimaryKey": false,
+                        "name": "covid_event_person_age_num"
+                    },
+                    {
+                        "dataType": "STRING",
+                        "isPrimaryKey": false,
+                        "name": "covid_event_person_gender"
+                    },
+                    {
+                        "dataType": "STRING",
+                        "isPrimaryKey": false,
+                        "name": "covid_event_type"
+                    },
+                    {
+                        "dataType": "STRING",
+                        "isPrimaryKey": false,
+                        "name": "district_id",
+                        "referencedTableColumn": "district_id",
+                        "referencedTableId": "district"
+                    },
+                    {
+                        "dataType": "STRING",
+                        "isPrimaryKey": false,
+                        "name": "wdf__county_id"
+                    }
+                ],
+                "id": "covid_event",
+                "path": [
+                    "dwh",
+                    "covid_event"
+                ],
+                "type": "TABLE"
+            },
+            {
+                "columns": [
+                    {
+                        "dataType": "STRING",
+                        "isPrimaryKey": false,
+                        "name": "country_id",
+                        "referencedTableColumn": "country_id",
+                        "referencedTableId": "country"
+                    },
+                    {
+                        "dataType": "NUMERIC",
+                        "isPrimaryKey": false,
+                        "name": "covid_hospitalisation_admissions"
+                    },
+                    {
+                        "dataType": "NUMERIC",
+                        "isPrimaryKey": false,
+                        "name": "covid_hospitalisation_current"
+                    },
+                    {
+                        "dataType": "DATE",
+                        "isPrimaryKey": false,
+                        "name": "covid_hospitalisation_date"
+                    },
+                    {
+                        "dataType": "NUMERIC",
+                        "isPrimaryKey": false,
+                        "name": "covid_hospitalisation_deaths"
+                    },
+                    {
+                        "dataType": "NUMERIC",
+                        "isPrimaryKey": false,
+                        "name": "covid_hospitalisation_ecmo"
+                    },
+                    {
+                        "dataType": "NUMERIC",
+                        "isPrimaryKey": false,
+                        "name": "covid_hospitalisation_ecmo_ventilation"
+                    },
+                    {
+                        "dataType": "NUMERIC",
+                        "isPrimaryKey": false,
+                        "name": "covid_hospitalisation_hfno"
+                    },
+                    {
+                        "dataType": "INT",
+                        "isPrimaryKey": true,
+                        "name": "covid_hospitalisation_id"
+                    },
+                    {
+                        "dataType": "NUMERIC",
+                        "isPrimaryKey": false,
+                        "name": "covid_hospitalisation_intensive_care"
+                    },
+                    {
+                        "dataType": "NUMERIC",
+                        "isPrimaryKey": false,
+                        "name": "covid_hospitalisation_light_symptoms"
+                    },
+                    {
+                        "dataType": "NUMERIC",
+                        "isPrimaryKey": false,
+                        "name": "covid_hospitalisation_medium_symptoms"
+                    },
+                    {
+                        "dataType": "NUMERIC",
+                        "isPrimaryKey": false,
+                        "name": "covid_hospitalisation_no_symptoms"
+                    },
+                    {
+                        "dataType": "NUMERIC",
+                        "isPrimaryKey": false,
+                        "name": "covid_hospitalisation_oxygen"
+                    },
+                    {
+                        "dataType": "NUMERIC",
+                        "isPrimaryKey": false,
+                        "name": "covid_hospitalisation_severe_symptoms"
+                    },
+                    {
+                        "dataType": "NUMERIC",
+                        "isPrimaryKey": false,
+                        "name": "covid_hospitalisation_ventilation"
+                    }
+                ],
+                "id": "covid_hospitalisation",
+                "path": [
+                    "dwh",
+                    "covid_hospitalisation"
+                ],
+                "type": "TABLE"
+            },
+            {
+                "columns": [
+                    {
+                        "dataType": "STRING",
+                        "isPrimaryKey": false,
+                        "name": "country_id",
+                        "referencedTableColumn": "country_id",
+                        "referencedTableId": "country"
+                    },
+                    {
+                        "dataType": "DATE",
+                        "isPrimaryKey": false,
+                        "name": "covid_testing_date"
+                    },
+                    {
+                        "dataType": "INT",
+                        "isPrimaryKey": true,
+                        "name": "covid_testing_id"
+                    },
+                    {
+                        "dataType": "NUMERIC",
+                        "isPrimaryKey": false,
+                        "name": "covid_testing_type_ag"
+                    },
+                    {
+                        "dataType": "NUMERIC",
+                        "isPrimaryKey": false,
+                        "name": "covid_testing_type_pcr"
+                    }
+                ],
+                "id": "covid_testing",
+                "path": [
+                    "dwh",
+                    "covid_testing"
+                ],
+                "type": "TABLE"
+            },
+            {
+                "columns": [
+                    {
+                        "dataType": "NUMERIC",
+                        "isPrimaryKey": false,
+                        "name": "city_average_age"
+                    },
+                    {
+                        "dataType": "NUMERIC",
+                        "isPrimaryKey": false,
+                        "name": "city_average_age_female"
+                    },
+                    {
+                        "dataType": "NUMERIC",
+                        "isPrimaryKey": false,
+                        "name": "city_average_age_male"
+                    },
+                    {
+                        "dataType": "STRING",
+                        "isPrimaryKey": false,
+                        "name": "city_id",
+                        "referencedTableColumn": "city_id",
+                        "referencedTableId": "city"
+                    },
+                    {
+                        "dataType": "NUMERIC",
+                        "isPrimaryKey": false,
+                        "name": "city_population"
+                    },
+                    {
+                        "dataType": "NUMERIC",
+                        "isPrimaryKey": false,
+                        "name": "city_population_female"
+                    },
+                    {
+                        "dataType": "NUMERIC",
+                        "isPrimaryKey": false,
+                        "name": "city_population_male"
+                    },
+                    {
+                        "dataType": "STRING",
+                        "isPrimaryKey": true,
+                        "name": "demography_id"
+                    },
+                    {
+                        "dataType": "STRING",
+                        "isPrimaryKey": false,
+                        "name": "wdf__county_id"
+                    }
+                ],
+                "id": "demography",
+                "path": [
+                    "dwh",
+                    "demography"
+                ],
+                "type": "TABLE"
+            },
+            {
+                "columns": [
+                    {
+                        "dataType": "STRING",
+                        "isPrimaryKey": false,
+                        "name": "county_id",
+                        "referencedTableColumn": "county_id",
+                        "referencedTableId": "county"
+                    },
+                    {
+                        "dataType": "STRING",
+                        "isPrimaryKey": true,
+                        "name": "district_id"
+                    },
+                    {
+                        "dataType": "STRING",
+                        "isPrimaryKey": false,
+                        "name": "district_name"
+                    },
+                    {
+                        "dataType": "STRING",
+                        "isPrimaryKey": false,
+                        "name": "wdf__county_id"
+                    }
+                ],
+                "id": "district",
+                "path": [
+                    "dwh",
+                    "district"
+                ],
+                "type": "TABLE"
+            },
+            {
+                "columns": [
+                    {
+                        "dataType": "STRING",
+                        "isPrimaryKey": false,
+                        "name": "vaccination_age_group"
+                    },
+                    {
+                        "dataType": "STRING",
+                        "isPrimaryKey": false,
+                        "name": "vaccination_county_id",
+                        "referencedTableColumn": "county_id",
+                        "referencedTableId": "county"
+                    },
+                    {
+                        "dataType": "DATE",
+                        "isPrimaryKey": false,
+                        "name": "vaccination_date"
+                    },
+                    {
+                        "dataType": "NUMERIC",
+                        "isPrimaryKey": false,
+                        "name": "vaccination_first_doses"
+                    },
+                    {
+                        "dataType": "INT",
+                        "isPrimaryKey": true,
+                        "name": "vaccination_id"
+                    },
+                    {
+                        "dataType": "NUMERIC",
+                        "isPrimaryKey": false,
+                        "name": "vaccination_second_doses"
+                    },
+                    {
+                        "dataType": "NUMERIC",
+                        "isPrimaryKey": false,
+                        "name": "vaccination_total_doses"
+                    },
+                    {
+                        "dataType": "STRING",
+                        "isPrimaryKey": false,
+                        "name": "vaccine_id",
+                        "referencedTableColumn": "vaccine_id",
+                        "referencedTableId": "vaccine"
+                    },
+                    {
+                        "dataType": "STRING",
+                        "isPrimaryKey": false,
+                        "name": "wdf__county_id"
+                    }
+                ],
+                "id": "vaccination",
+                "path": [
+                    "dwh",
+                    "vaccination"
+                ],
+                "type": "TABLE"
+            },
+            {
+                "columns": [
+                    {
+                        "dataType": "STRING",
+                        "isPrimaryKey": true,
+                        "name": "vaccination_country_id"
+                    },
+                    {
+                        "dataType": "STRING",
+                        "isPrimaryKey": false,
+                        "name": "vaccination_country_name"
+                    }
+                ],
+                "id": "vaccination_country",
+                "path": [
+                    "dwh",
+                    "vaccination_country"
+                ],
+                "type": "TABLE"
+            },
+            {
+                "columns": [
+                    {
+                        "dataType": "STRING",
+                        "isPrimaryKey": false,
+                        "name": "vaccination_country_id",
+                        "referencedTableColumn": "vaccination_country_id",
+                        "referencedTableId": "vaccination_country"
+                    },
+                    {
+                        "dataType": "STRING",
+                        "isPrimaryKey": true,
+                        "name": "vaccination_county_id"
+                    },
+                    {
+                        "dataType": "STRING",
+                        "isPrimaryKey": false,
+                        "name": "vaccination_county_name"
+                    }
+                ],
+                "id": "vaccination_county",
+                "path": [
+                    "dwh",
+                    "vaccination_county"
+                ],
+                "type": "TABLE"
+            },
+            {
+                "columns": [
+                    {
+                        "dataType": "STRING",
+                        "isPrimaryKey": false,
+                        "name": "county_id",
+                        "referencedTableColumn": "county_id",
+                        "referencedTableId": "county"
+                    },
+                    {
+                        "dataType": "STRING",
+                        "isPrimaryKey": false,
+                        "name": "vaccination_county_id",
+                        "referencedTableColumn": "vaccination_county_id",
+                        "referencedTableId": "vaccination_county"
+                    },
+                    {
+                        "dataType": "STRING",
+                        "isPrimaryKey": false,
+                        "name": "vaccination_snapshot_age_group"
+                    },
+                    {
+                        "dataType": "NUMERIC",
+                        "isPrimaryKey": false,
+                        "name": "vaccination_snapshot_count"
+                    },
+                    {
+                        "dataType": "STRING",
+                        "isPrimaryKey": false,
+                        "name": "vaccination_snapshot_dose_order"
+                    },
+                    {
+                        "dataType": "STRING",
+                        "isPrimaryKey": false,
+                        "name": "vaccination_snapshot_gender"
+                    },
+                    {
+                        "dataType": "INT",
+                        "isPrimaryKey": true,
+                        "name": "vaccination_snapshot_id"
+                    },
+                    {
+                        "dataType": "STRING",
+                        "isPrimaryKey": false,
+                        "name": "vaccine_id",
+                        "referencedTableColumn": "vaccine_id",
+                        "referencedTableId": "vaccine"
+                    },
+                    {
+                        "dataType": "STRING",
+                        "isPrimaryKey": false,
+                        "name": "wdf__county_id"
+                    }
+                ],
+                "id": "vaccination_snapshot",
+                "path": [
+                    "dwh",
+                    "vaccination_snapshot"
+                ],
+                "type": "TABLE"
+            },
+            {
+                "columns": [
+                    {
+                        "dataType": "STRING",
+                        "isPrimaryKey": true,
+                        "name": "vaccine_id"
+                    },
+                    {
+                        "dataType": "STRING",
+                        "isPrimaryKey": false,
+                        "name": "vaccine_name"
+                    }
+                ],
+                "id": "vaccine",
+                "path": [
+                    "dwh",
+                    "vaccine"
+                ],
+                "type": "TABLE"
+            }
+        ]
+    }
+}

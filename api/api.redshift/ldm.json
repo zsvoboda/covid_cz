@@ -1,0 +1,1375 @@
+{
+    "ldm": {
+        "datasets": [
+            {
+                "attributes": [
+                    {
+                        "description": "City id",
+                        "id": "city_id",
+                        "labels": [
+                            {
+                                "description": "City id",
+                                "id": "city_id",
+                                "primary": true,
+                                "sourceColumn": "city_id",
+                                "tags": [
+                                    "City"
+                                ],
+                                "title": "City id"
+                            }
+                        ],
+                        "tags": [
+                            "City"
+                        ],
+                        "title": "City id"
+                    },
+                    {
+                        "description": "City latitude",
+                        "id": "city_latitude",
+                        "labels": [
+                            {
+                                "description": "City latitude",
+                                "id": "city_latitude",
+                                "primary": true,
+                                "sourceColumn": "city_latitude",
+                                "tags": [
+                                    "City"
+                                ],
+                                "title": "City latitude"
+                            }
+                        ],
+                        "tags": [
+                            "City"
+                        ],
+                        "title": "City latitude"
+                    },
+                    {
+                        "description": "City longitude",
+                        "id": "city_longitude",
+                        "labels": [
+                            {
+                                "description": "City longitude",
+                                "id": "city_longitude",
+                                "primary": true,
+                                "sourceColumn": "city_longitude",
+                                "tags": [
+                                    "City"
+                                ],
+                                "title": "City longitude"
+                            }
+                        ],
+                        "tags": [
+                            "City"
+                        ],
+                        "title": "City longitude"
+                    },
+                    {
+                        "description": "City name",
+                        "id": "city_name",
+                        "labels": [
+                            {
+                                "description": "City name",
+                                "id": "city_name",
+                                "primary": true,
+                                "sourceColumn": "city_name",
+                                "tags": [
+                                    "City"
+                                ],
+                                "title": "City name"
+                            }
+                        ],
+                        "tags": [
+                            "City"
+                        ],
+                        "title": "City name"
+                    }
+                ],
+                "dataSourceTableId": {
+                    "dataSourceId": "covid_cz",
+                    "id": "city",
+                    "type": "dataSource"
+                },
+                "description": "",
+                "facts": [],
+                "grain": [
+                    {
+                        "id": "city_id",
+                        "type": "attribute"
+                    }
+                ],
+                "id": "city",
+                "references": [
+                    {
+                        "identifier": {
+                            "id": "district",
+                            "type": "dataset"
+                        },
+                        "multivalue": false,
+                        "sourceColumns": [
+                            "district_id"
+                        ]
+                    }
+                ],
+                "tags": [
+                    "City"
+                ],
+                "title": "City"
+            },
+            {
+                "attributes": [
+                    {
+                        "description": "Country id",
+                        "id": "country_id",
+                        "labels": [
+                            {
+                                "description": "Country id",
+                                "id": "country_id",
+                                "primary": true,
+                                "sourceColumn": "country_id",
+                                "tags": [
+                                    "Country"
+                                ],
+                                "title": "Country id"
+                            }
+                        ],
+                        "tags": [
+                            "Country"
+                        ],
+                        "title": "Country id"
+                    },
+                    {
+                        "description": "Country name",
+                        "id": "country_name",
+                        "labels": [
+                            {
+                                "description": "Country name",
+                                "id": "country_name",
+                                "primary": true,
+                                "sourceColumn": "country_name",
+                                "tags": [
+                                    "Country"
+                                ],
+                                "title": "Country name"
+                            }
+                        ],
+                        "tags": [
+                            "Country"
+                        ],
+                        "title": "Country name"
+                    }
+                ],
+                "dataSourceTableId": {
+                    "dataSourceId": "covid_cz",
+                    "id": "country",
+                    "type": "dataSource"
+                },
+                "description": "",
+                "facts": [],
+                "grain": [
+                    {
+                        "id": "country_id",
+                        "type": "attribute"
+                    }
+                ],
+                "id": "country",
+                "references": [],
+                "tags": [
+                    "Country"
+                ],
+                "title": "Country"
+            },
+            {
+                "attributes": [
+                    {
+                        "description": "County id",
+                        "id": "county_id",
+                        "labels": [
+                            {
+                                "description": "County id",
+                                "id": "county_id",
+                                "primary": true,
+                                "sourceColumn": "county_id",
+                                "tags": [
+                                    "County"
+                                ],
+                                "title": "County id"
+                            }
+                        ],
+                        "tags": [
+                            "County"
+                        ],
+                        "title": "County id"
+                    },
+                    {
+                        "description": "County name",
+                        "id": "county_name",
+                        "labels": [
+                            {
+                                "description": "County name",
+                                "id": "county_name",
+                                "primary": true,
+                                "sourceColumn": "county_name",
+                                "tags": [
+                                    "County"
+                                ],
+                                "title": "County name"
+                            }
+                        ],
+                        "tags": [
+                            "County"
+                        ],
+                        "title": "County name"
+                    }
+                ],
+                "dataSourceTableId": {
+                    "dataSourceId": "covid_cz",
+                    "id": "county",
+                    "type": "dataSource"
+                },
+                "description": "",
+                "facts": [],
+                "grain": [
+                    {
+                        "id": "county_id",
+                        "type": "attribute"
+                    }
+                ],
+                "id": "county",
+                "references": [
+                    {
+                        "identifier": {
+                            "id": "country",
+                            "type": "dataset"
+                        },
+                        "multivalue": false,
+                        "sourceColumns": [
+                            "country_id"
+                        ]
+                    }
+                ],
+                "tags": [
+                    "County"
+                ],
+                "title": "County"
+            },
+            {
+                "attributes": [
+                    {
+                        "description": "Covid event id",
+                        "id": "covid_event_id",
+                        "labels": [
+                            {
+                                "description": "Covid event id",
+                                "id": "covid_event_id",
+                                "primary": true,
+                                "sourceColumn": "covid_event_id",
+                                "tags": [
+                                    "Covid event"
+                                ],
+                                "title": "Covid event id"
+                            }
+                        ],
+                        "tags": [
+                            "Covid event"
+                        ],
+                        "title": "Covid event id"
+                    },
+                    {
+                        "description": "Covid event person age",
+                        "id": "covid_event_person_age",
+                        "labels": [
+                            {
+                                "description": "Covid event person age",
+                                "id": "covid_event_person_age",
+                                "primary": true,
+                                "sourceColumn": "covid_event_person_age",
+                                "tags": [
+                                    "Covid event"
+                                ],
+                                "title": "Covid event person age"
+                            }
+                        ],
+                        "tags": [
+                            "Covid event"
+                        ],
+                        "title": "Covid event person age"
+                    },
+                    {
+                        "description": "Covid event person gender",
+                        "id": "covid_event_person_gender",
+                        "labels": [
+                            {
+                                "description": "Covid event person gender",
+                                "id": "covid_event_person_gender",
+                                "primary": true,
+                                "sourceColumn": "covid_event_person_gender",
+                                "tags": [
+                                    "Covid event"
+                                ],
+                                "title": "Covid event person gender"
+                            }
+                        ],
+                        "tags": [
+                            "Covid event"
+                        ],
+                        "title": "Covid event person gender"
+                    },
+                    {
+                        "description": "Covid event type",
+                        "id": "covid_event_type",
+                        "labels": [
+                            {
+                                "description": "Covid event type",
+                                "id": "covid_event_type",
+                                "primary": true,
+                                "sourceColumn": "covid_event_type",
+                                "tags": [
+                                    "Covid event"
+                                ],
+                                "title": "Covid event type"
+                            }
+                        ],
+                        "tags": [
+                            "Covid event"
+                        ],
+                        "title": "Covid event type"
+                    }
+                ],
+                "dataSourceTableId": {
+                    "dataSourceId": "covid_cz",
+                    "id": "covid_event",
+                    "type": "dataSource"
+                },
+                "description": "",
+                "facts": [
+                    {
+                        "description": "Covid event cnt",
+                        "id": "covid_event_cnt",
+                        "sourceColumn": "covid_event_cnt",
+                        "tags": [
+                            "Covid event"
+                        ],
+                        "title": "Covid event cnt"
+                    },
+                    {
+                        "description": "Covid event person age num",
+                        "id": "covid_event_person_age_num",
+                        "sourceColumn": "covid_event_person_age_num",
+                        "tags": [
+                            "Covid event"
+                        ],
+                        "title": "Covid event person age num"
+                    }
+                ],
+                "grain": [
+                    {
+                        "id": "covid_event_id",
+                        "type": "attribute"
+                    }
+                ],
+                "id": "covid_event",
+                "references": [
+                    {
+                        "identifier": {
+                            "id": "date",
+                            "type": "dataset"
+                        },
+                        "multivalue": false,
+                        "sourceColumns": [
+                            "covid_event_date"
+                        ]
+                    },
+                    {
+                        "identifier": {
+                            "id": "district",
+                            "type": "dataset"
+                        },
+                        "multivalue": false,
+                        "sourceColumns": [
+                            "district_id"
+                        ]
+                    }
+                ],
+                "tags": [
+                    "Covid event"
+                ],
+                "title": "Covid event"
+            },
+            {
+                "attributes": [
+                    {
+                        "description": "Covid hospitalisation id",
+                        "id": "covid_hospitalisation_id",
+                        "labels": [
+                            {
+                                "description": "Covid hospitalisation id",
+                                "id": "covid_hospitalisation_id",
+                                "primary": true,
+                                "sourceColumn": "covid_hospitalisation_id",
+                                "tags": [
+                                    "Covid hospitalisation"
+                                ],
+                                "title": "Covid hospitalisation id"
+                            }
+                        ],
+                        "tags": [
+                            "Covid hospitalisation"
+                        ],
+                        "title": "Covid hospitalisation id"
+                    }
+                ],
+                "dataSourceTableId": {
+                    "dataSourceId": "covid_cz",
+                    "id": "covid_hospitalisation",
+                    "type": "dataSource"
+                },
+                "description": "",
+                "facts": [
+                    {
+                        "description": "Covid hospitalisation admissions",
+                        "id": "covid_hospitalisation_admissions",
+                        "sourceColumn": "covid_hospitalisation_admissions",
+                        "tags": [
+                            "Covid hospitalisation"
+                        ],
+                        "title": "Covid hospitalisation admissions"
+                    },
+                    {
+                        "description": "Covid hospitalisation current",
+                        "id": "covid_hospitalisation_current",
+                        "sourceColumn": "covid_hospitalisation_current",
+                        "tags": [
+                            "Covid hospitalisation"
+                        ],
+                        "title": "Covid hospitalisation current"
+                    },
+                    {
+                        "description": "Covid hospitalisation deaths",
+                        "id": "covid_hospitalisation_deaths",
+                        "sourceColumn": "covid_hospitalisation_deaths",
+                        "tags": [
+                            "Covid hospitalisation"
+                        ],
+                        "title": "Covid hospitalisation deaths"
+                    },
+                    {
+                        "description": "Covid hospitalisation ecmo",
+                        "id": "covid_hospitalisation_ecmo",
+                        "sourceColumn": "covid_hospitalisation_ecmo",
+                        "tags": [
+                            "Covid hospitalisation"
+                        ],
+                        "title": "Covid hospitalisation ecmo"
+                    },
+                    {
+                        "description": "Covid hospitalisation ecmo ventilation",
+                        "id": "covid_hospitalisation_ecmo_ventilation",
+                        "sourceColumn": "covid_hospitalisation_ecmo_ventilation",
+                        "tags": [
+                            "Covid hospitalisation"
+                        ],
+                        "title": "Covid hospitalisation ecmo ventilation"
+                    },
+                    {
+                        "description": "Covid hospitalisation hfno",
+                        "id": "covid_hospitalisation_hfno",
+                        "sourceColumn": "covid_hospitalisation_hfno",
+                        "tags": [
+                            "Covid hospitalisation"
+                        ],
+                        "title": "Covid hospitalisation hfno"
+                    },
+                    {
+                        "description": "Covid hospitalisation intensive care",
+                        "id": "covid_hospitalisation_intensive_care",
+                        "sourceColumn": "covid_hospitalisation_intensive_care",
+                        "tags": [
+                            "Covid hospitalisation"
+                        ],
+                        "title": "Covid hospitalisation intensive care"
+                    },
+                    {
+                        "description": "Covid hospitalisation light symptoms",
+                        "id": "covid_hospitalisation_light_symptoms",
+                        "sourceColumn": "covid_hospitalisation_light_symptoms",
+                        "tags": [
+                            "Covid hospitalisation"
+                        ],
+                        "title": "Covid hospitalisation light symptoms"
+                    },
+                    {
+                        "description": "Covid hospitalisation medium symptoms",
+                        "id": "covid_hospitalisation_medium_symptoms",
+                        "sourceColumn": "covid_hospitalisation_medium_symptoms",
+                        "tags": [
+                            "Covid hospitalisation"
+                        ],
+                        "title": "Covid hospitalisation medium symptoms"
+                    },
+                    {
+                        "description": "Covid hospitalisation no symptoms",
+                        "id": "covid_hospitalisation_no_symptoms",
+                        "sourceColumn": "covid_hospitalisation_no_symptoms",
+                        "tags": [
+                            "Covid hospitalisation"
+                        ],
+                        "title": "Covid hospitalisation no symptoms"
+                    },
+                    {
+                        "description": "Covid hospitalisation oxygen",
+                        "id": "covid_hospitalisation_oxygen",
+                        "sourceColumn": "covid_hospitalisation_oxygen",
+                        "tags": [
+                            "Covid hospitalisation"
+                        ],
+                        "title": "Covid hospitalisation oxygen"
+                    },
+                    {
+                        "description": "Covid hospitalisation severe symptoms",
+                        "id": "covid_hospitalisation_severe_symptoms",
+                        "sourceColumn": "covid_hospitalisation_severe_symptoms",
+                        "tags": [
+                            "Covid hospitalisation"
+                        ],
+                        "title": "Covid hospitalisation severe symptoms"
+                    },
+                    {
+                        "description": "Covid hospitalisation ventilation",
+                        "id": "covid_hospitalisation_ventilation",
+                        "sourceColumn": "covid_hospitalisation_ventilation",
+                        "tags": [
+                            "Covid hospitalisation"
+                        ],
+                        "title": "Covid hospitalisation ventilation"
+                    }
+                ],
+                "grain": [
+                    {
+                        "id": "covid_hospitalisation_id",
+                        "type": "attribute"
+                    }
+                ],
+                "id": "covid_hospitalisation",
+                "references": [
+                    {
+                        "identifier": {
+                            "id": "country",
+                            "type": "dataset"
+                        },
+                        "multivalue": false,
+                        "sourceColumns": [
+                            "country_id"
+                        ]
+                    },
+                    {
+                        "identifier": {
+                            "id": "date",
+                            "type": "dataset"
+                        },
+                        "multivalue": false,
+                        "sourceColumns": [
+                            "covid_hospitalisation_date"
+                        ]
+                    }
+                ],
+                "tags": [
+                    "Covid hospitalisation"
+                ],
+                "title": "Covid hospitalisation"
+            },
+            {
+                "attributes": [
+                    {
+                        "description": "Covid testing id",
+                        "id": "covid_testing_id",
+                        "labels": [
+                            {
+                                "description": "Covid testing id",
+                                "id": "covid_testing_id",
+                                "primary": true,
+                                "sourceColumn": "covid_testing_id",
+                                "tags": [
+                                    "Covid testing"
+                                ],
+                                "title": "Covid testing id"
+                            }
+                        ],
+                        "tags": [
+                            "Covid testing"
+                        ],
+                        "title": "Covid testing id"
+                    }
+                ],
+                "dataSourceTableId": {
+                    "dataSourceId": "covid_cz",
+                    "id": "covid_testing",
+                    "type": "dataSource"
+                },
+                "description": "",
+                "facts": [
+                    {
+                        "description": "Covid testing type ag",
+                        "id": "covid_testing_type_ag",
+                        "sourceColumn": "covid_testing_type_ag",
+                        "tags": [
+                            "Covid testing"
+                        ],
+                        "title": "Covid testing type ag"
+                    },
+                    {
+                        "description": "Covid testing type pcr",
+                        "id": "covid_testing_type_pcr",
+                        "sourceColumn": "covid_testing_type_pcr",
+                        "tags": [
+                            "Covid testing"
+                        ],
+                        "title": "Covid testing type pcr"
+                    }
+                ],
+                "grain": [
+                    {
+                        "id": "covid_testing_id",
+                        "type": "attribute"
+                    }
+                ],
+                "id": "covid_testing",
+                "references": [
+                    {
+                        "identifier": {
+                            "id": "country",
+                            "type": "dataset"
+                        },
+                        "multivalue": false,
+                        "sourceColumns": [
+                            "country_id"
+                        ]
+                    },
+                    {
+                        "identifier": {
+                            "id": "date",
+                            "type": "dataset"
+                        },
+                        "multivalue": false,
+                        "sourceColumns": [
+                            "covid_testing_date"
+                        ]
+                    }
+                ],
+                "tags": [
+                    "Covid testing"
+                ],
+                "title": "Covid testing"
+            },
+            {
+                "attributes": [
+                    {
+                        "description": "Demography id",
+                        "id": "demography_id",
+                        "labels": [
+                            {
+                                "description": "Demography id",
+                                "id": "demography_id",
+                                "primary": true,
+                                "sourceColumn": "demography_id",
+                                "tags": [
+                                    "Demography"
+                                ],
+                                "title": "Demography id"
+                            }
+                        ],
+                        "tags": [
+                            "Demography"
+                        ],
+                        "title": "Demography id"
+                    }
+                ],
+                "dataSourceTableId": {
+                    "dataSourceId": "covid_cz",
+                    "id": "demography",
+                    "type": "dataSource"
+                },
+                "description": "",
+                "facts": [
+                    {
+                        "description": "City average age",
+                        "id": "city_average_age",
+                        "sourceColumn": "city_average_age",
+                        "tags": [
+                            "Demography"
+                        ],
+                        "title": "City average age"
+                    },
+                    {
+                        "description": "City average age female",
+                        "id": "city_average_age_female",
+                        "sourceColumn": "city_average_age_female",
+                        "tags": [
+                            "Demography"
+                        ],
+                        "title": "City average age female"
+                    },
+                    {
+                        "description": "City average age male",
+                        "id": "city_average_age_male",
+                        "sourceColumn": "city_average_age_male",
+                        "tags": [
+                            "Demography"
+                        ],
+                        "title": "City average age male"
+                    },
+                    {
+                        "description": "City population",
+                        "id": "city_population",
+                        "sourceColumn": "city_population",
+                        "tags": [
+                            "Demography"
+                        ],
+                        "title": "City population"
+                    },
+                    {
+                        "description": "City population female",
+                        "id": "city_population_female",
+                        "sourceColumn": "city_population_female",
+                        "tags": [
+                            "Demography"
+                        ],
+                        "title": "City population female"
+                    },
+                    {
+                        "description": "City population male",
+                        "id": "city_population_male",
+                        "sourceColumn": "city_population_male",
+                        "tags": [
+                            "Demography"
+                        ],
+                        "title": "City population male"
+                    }
+                ],
+                "grain": [
+                    {
+                        "id": "demography_id",
+                        "type": "attribute"
+                    }
+                ],
+                "id": "demography",
+                "references": [
+                    {
+                        "identifier": {
+                            "id": "city",
+                            "type": "dataset"
+                        },
+                        "multivalue": false,
+                        "sourceColumns": [
+                            "city_id"
+                        ]
+                    }
+                ],
+                "tags": [
+                    "Demography"
+                ],
+                "title": "Demography"
+            },
+            {
+                "attributes": [
+                    {
+                        "description": "District id",
+                        "id": "district_id",
+                        "labels": [
+                            {
+                                "description": "District id",
+                                "id": "district_id",
+                                "primary": true,
+                                "sourceColumn": "district_id",
+                                "tags": [
+                                    "District"
+                                ],
+                                "title": "District id"
+                            }
+                        ],
+                        "tags": [
+                            "District"
+                        ],
+                        "title": "District id"
+                    },
+                    {
+                        "description": "District name",
+                        "id": "district_name",
+                        "labels": [
+                            {
+                                "description": "District name",
+                                "id": "district_name",
+                                "primary": true,
+                                "sourceColumn": "district_name",
+                                "tags": [
+                                    "District"
+                                ],
+                                "title": "District name"
+                            }
+                        ],
+                        "tags": [
+                            "District"
+                        ],
+                        "title": "District name"
+                    }
+                ],
+                "dataSourceTableId": {
+                    "dataSourceId": "covid_cz",
+                    "id": "district",
+                    "type": "dataSource"
+                },
+                "description": "",
+                "facts": [],
+                "grain": [
+                    {
+                        "id": "district_id",
+                        "type": "attribute"
+                    }
+                ],
+                "id": "district",
+                "references": [
+                    {
+                        "identifier": {
+                            "id": "county",
+                            "type": "dataset"
+                        },
+                        "multivalue": false,
+                        "sourceColumns": [
+                            "county_id"
+                        ]
+                    }
+                ],
+                "tags": [
+                    "District"
+                ],
+                "title": "District"
+            },
+            {
+                "attributes": [
+                    {
+                        "description": "County id",
+                        "id": "vaccination.county_id",
+                        "labels": [
+                            {
+                                "description": "County id",
+                                "id": "vaccination.county_id",
+                                "primary": true,
+                                "sourceColumn": "wdf__county_id",
+                                "tags": [
+                                    "Vaccination"
+                                ],
+                                "title": "County id"
+                            }
+                        ],
+                        "tags": [
+                            "Vaccination"
+                        ],
+                        "title": "County id"
+                    },
+                    {
+                        "description": "Vaccination age group",
+                        "id": "vaccination_age_group",
+                        "labels": [
+                            {
+                                "description": "Vaccination age group",
+                                "id": "vaccination_age_group",
+                                "primary": true,
+                                "sourceColumn": "vaccination_age_group",
+                                "tags": [
+                                    "Vaccination"
+                                ],
+                                "title": "Vaccination age group"
+                            }
+                        ],
+                        "tags": [
+                            "Vaccination"
+                        ],
+                        "title": "Vaccination age group"
+                    },
+                    {
+                        "description": "Vaccination id",
+                        "id": "vaccination_id",
+                        "labels": [
+                            {
+                                "description": "Vaccination id",
+                                "id": "vaccination_id",
+                                "primary": true,
+                                "sourceColumn": "vaccination_id",
+                                "tags": [
+                                    "Vaccination"
+                                ],
+                                "title": "Vaccination id"
+                            }
+                        ],
+                        "tags": [
+                            "Vaccination"
+                        ],
+                        "title": "Vaccination id"
+                    }
+                ],
+                "dataSourceTableId": {
+                    "dataSourceId": "covid_cz",
+                    "id": "vaccination",
+                    "type": "dataSource"
+                },
+                "description": "",
+                "facts": [
+                    {
+                        "description": "Vaccination first doses",
+                        "id": "vaccination_first_doses",
+                        "sourceColumn": "vaccination_first_doses",
+                        "tags": [
+                            "Vaccination"
+                        ],
+                        "title": "Vaccination first doses"
+                    },
+                    {
+                        "description": "Vaccination second doses",
+                        "id": "vaccination_second_doses",
+                        "sourceColumn": "vaccination_second_doses",
+                        "tags": [
+                            "Vaccination"
+                        ],
+                        "title": "Vaccination second doses"
+                    },
+                    {
+                        "description": "Vaccination total doses",
+                        "id": "vaccination_total_doses",
+                        "sourceColumn": "vaccination_total_doses",
+                        "tags": [
+                            "Vaccination"
+                        ],
+                        "title": "Vaccination total doses"
+                    }
+                ],
+                "grain": [
+                    {
+                        "id": "vaccination_id",
+                        "type": "attribute"
+                    }
+                ],
+                "id": "vaccination",
+                "references": [
+                    {
+                        "identifier": {
+                            "id": "county",
+                            "type": "dataset"
+                        },
+                        "multivalue": false,
+                        "sourceColumns": [
+                            "vaccination_county_id"
+                        ]
+                    },
+                    {
+                        "identifier": {
+                            "id": "date",
+                            "type": "dataset"
+                        },
+                        "multivalue": false,
+                        "sourceColumns": [
+                            "vaccination_date"
+                        ]
+                    },
+                    {
+                        "identifier": {
+                            "id": "vaccine",
+                            "type": "dataset"
+                        },
+                        "multivalue": false,
+                        "sourceColumns": [
+                            "vaccine_id"
+                        ]
+                    }
+                ],
+                "tags": [
+                    "Vaccination"
+                ],
+                "title": "Vaccination"
+            },
+            {
+                "attributes": [
+                    {
+                        "description": "Vaccination country id",
+                        "id": "vaccination_country_id",
+                        "labels": [
+                            {
+                                "description": "Vaccination country id",
+                                "id": "vaccination_country_id",
+                                "primary": true,
+                                "sourceColumn": "vaccination_country_id",
+                                "tags": [
+                                    "Vaccination country"
+                                ],
+                                "title": "Vaccination country id"
+                            }
+                        ],
+                        "tags": [
+                            "Vaccination country"
+                        ],
+                        "title": "Vaccination country id"
+                    },
+                    {
+                        "description": "Vaccination country name",
+                        "id": "vaccination_country_name",
+                        "labels": [
+                            {
+                                "description": "Vaccination country name",
+                                "id": "vaccination_country_name",
+                                "primary": true,
+                                "sourceColumn": "vaccination_country_name",
+                                "tags": [
+                                    "Vaccination country"
+                                ],
+                                "title": "Vaccination country name"
+                            }
+                        ],
+                        "tags": [
+                            "Vaccination country"
+                        ],
+                        "title": "Vaccination country name"
+                    }
+                ],
+                "dataSourceTableId": {
+                    "dataSourceId": "covid_cz",
+                    "id": "vaccination_country",
+                    "type": "dataSource"
+                },
+                "description": "",
+                "facts": [],
+                "grain": [
+                    {
+                        "id": "vaccination_country_id",
+                        "type": "attribute"
+                    }
+                ],
+                "id": "vaccination_country",
+                "references": [],
+                "tags": [
+                    "Vaccination country"
+                ],
+                "title": "Vaccination country"
+            },
+            {
+                "attributes": [
+                    {
+                        "description": "Vaccination county id",
+                        "id": "vaccination_county_id",
+                        "labels": [
+                            {
+                                "description": "Vaccination county id",
+                                "id": "vaccination_county_id",
+                                "primary": true,
+                                "sourceColumn": "vaccination_county_id",
+                                "tags": [
+                                    "Vaccination county"
+                                ],
+                                "title": "Vaccination county id"
+                            }
+                        ],
+                        "tags": [
+                            "Vaccination county"
+                        ],
+                        "title": "Vaccination county id"
+                    },
+                    {
+                        "description": "Vaccination county name",
+                        "id": "vaccination_county_name",
+                        "labels": [
+                            {
+                                "description": "Vaccination county name",
+                                "id": "vaccination_county_name",
+                                "primary": true,
+                                "sourceColumn": "vaccination_county_name",
+                                "tags": [
+                                    "Vaccination county"
+                                ],
+                                "title": "Vaccination county name"
+                            }
+                        ],
+                        "tags": [
+                            "Vaccination county"
+                        ],
+                        "title": "Vaccination county name"
+                    }
+                ],
+                "dataSourceTableId": {
+                    "dataSourceId": "covid_cz",
+                    "id": "vaccination_county",
+                    "type": "dataSource"
+                },
+                "description": "",
+                "facts": [],
+                "grain": [
+                    {
+                        "id": "vaccination_county_id",
+                        "type": "attribute"
+                    }
+                ],
+                "id": "vaccination_county",
+                "references": [
+                    {
+                        "identifier": {
+                            "id": "vaccination_country",
+                            "type": "dataset"
+                        },
+                        "multivalue": false,
+                        "sourceColumns": [
+                            "vaccination_country_id"
+                        ]
+                    }
+                ],
+                "tags": [
+                    "Vaccination county"
+                ],
+                "title": "Vaccination county"
+            },
+            {
+                "attributes": [
+                    {
+                        "description": "County id",
+                        "id": "vaccination_snapshot.county_id",
+                        "labels": [
+                            {
+                                "description": "County id",
+                                "id": "vaccination_snapshot.county_id",
+                                "primary": true,
+                                "sourceColumn": "wdf__county_id",
+                                "tags": [
+                                    "Vaccination snapshot"
+                                ],
+                                "title": "County id"
+                            }
+                        ],
+                        "tags": [
+                            "Vaccination snapshot"
+                        ],
+                        "title": "County id"
+                    },
+                    {
+                        "description": "Vaccination snapshot age group",
+                        "id": "vaccination_snapshot_age_group",
+                        "labels": [
+                            {
+                                "description": "Vaccination snapshot age group",
+                                "id": "vaccination_snapshot_age_group",
+                                "primary": true,
+                                "sourceColumn": "vaccination_snapshot_age_group",
+                                "tags": [
+                                    "Vaccination snapshot"
+                                ],
+                                "title": "Vaccination snapshot age group"
+                            }
+                        ],
+                        "tags": [
+                            "Vaccination snapshot"
+                        ],
+                        "title": "Vaccination snapshot age group"
+                    },
+                    {
+                        "description": "Vaccination snapshot gender",
+                        "id": "vaccination_snapshot_gender",
+                        "labels": [
+                            {
+                                "description": "Vaccination snapshot gender",
+                                "id": "vaccination_snapshot_gender",
+                                "primary": true,
+                                "sourceColumn": "vaccination_snapshot_gender",
+                                "tags": [
+                                    "Vaccination snapshot"
+                                ],
+                                "title": "Vaccination snapshot gender"
+                            }
+                        ],
+                        "tags": [
+                            "Vaccination snapshot"
+                        ],
+                        "title": "Vaccination snapshot gender"
+                    },
+                    {
+                        "description": "Vaccination snapshot id",
+                        "id": "vaccination_snapshot_id",
+                        "labels": [
+                            {
+                                "description": "Vaccination snapshot id",
+                                "id": "vaccination_snapshot_id",
+                                "primary": true,
+                                "sourceColumn": "vaccination_snapshot_id",
+                                "tags": [
+                                    "Vaccination snapshot"
+                                ],
+                                "title": "Vaccination snapshot id"
+                            }
+                        ],
+                        "tags": [
+                            "Vaccination snapshot"
+                        ],
+                        "title": "Vaccination snapshot id"
+                    },
+                    {
+                        "description": "",
+                        "id": "vaccinationsnapshotorder",
+                        "labels": [
+                            {
+                                "description": "",
+                                "id": "vaccinationsnapshotorder",
+                                "primary": true,
+                                "sourceColumn": "vaccination_snapshot_dose_order",
+                                "tags": [
+                                    "Vaccination snapshot"
+                                ],
+                                "title": "Vaccination snapshot order"
+                            }
+                        ],
+                        "tags": [
+                            "Vaccination snapshot"
+                        ],
+                        "title": "Vaccination snapshot order"
+                    }
+                ],
+                "dataSourceTableId": {
+                    "dataSourceId": "covid_cz",
+                    "id": "vaccination_snapshot",
+                    "type": "dataSource"
+                },
+                "description": "",
+                "facts": [
+                    {
+                        "description": "Vaccination snapshot count",
+                        "id": "vaccination_snapshot_count",
+                        "sourceColumn": "vaccination_snapshot_count",
+                        "tags": [
+                            "Vaccination snapshot"
+                        ],
+                        "title": "Vaccination snapshot count"
+                    }
+                ],
+                "grain": [
+                    {
+                        "id": "vaccination_snapshot_id",
+                        "type": "attribute"
+                    }
+                ],
+                "id": "vaccination_snapshot",
+                "references": [
+                    {
+                        "identifier": {
+                            "id": "county",
+                            "type": "dataset"
+                        },
+                        "multivalue": false,
+                        "sourceColumns": [
+                            "county_id"
+                        ]
+                    },
+                    {
+                        "identifier": {
+                            "id": "vaccination_county",
+                            "type": "dataset"
+                        },
+                        "multivalue": false,
+                        "sourceColumns": [
+                            "vaccination_county_id"
+                        ]
+                    },
+                    {
+                        "identifier": {
+                            "id": "vaccine",
+                            "type": "dataset"
+                        },
+                        "multivalue": false,
+                        "sourceColumns": [
+                            "vaccine_id"
+                        ]
+                    }
+                ],
+                "tags": [
+                    "Vaccination snapshot"
+                ],
+                "title": "Vaccination snapshot"
+            },
+            {
+                "attributes": [
+                    {
+                        "description": "Vaccine id",
+                        "id": "vaccine_id",
+                        "labels": [
+                            {
+                                "description": "Vaccine id",
+                                "id": "vaccine_id",
+                                "primary": true,
+                                "sourceColumn": "vaccine_id",
+                                "tags": [
+                                    "Vaccine"
+                                ],
+                                "title": "Vaccine id"
+                            }
+                        ],
+                        "tags": [
+                            "Vaccine"
+                        ],
+                        "title": "Vaccine id"
+                    },
+                    {
+                        "description": "Vaccine name",
+                        "id": "vaccine_name",
+                        "labels": [
+                            {
+                                "description": "Vaccine name",
+                                "id": "vaccine_name",
+                                "primary": true,
+                                "sourceColumn": "vaccine_name",
+                                "tags": [
+                                    "Vaccine"
+                                ],
+                                "title": "Vaccine name"
+                            }
+                        ],
+                        "tags": [
+                            "Vaccine"
+                        ],
+                        "title": "Vaccine name"
+                    }
+                ],
+                "dataSourceTableId": {
+                    "dataSourceId": "covid_cz",
+                    "id": "vaccine",
+                    "type": "dataSource"
+                },
+                "description": "",
+                "facts": [],
+                "grain": [
+                    {
+                        "id": "vaccine_id",
+                        "type": "attribute"
+                    }
+                ],
+                "id": "vaccine",
+                "references": [],
+                "tags": [
+                    "Vaccine"
+                ],
+                "title": "Vaccine"
+            }
+        ],
+        "dateInstances": [
+            {
+                "description": "",
+                "granularities": [
+                    "DAY",
+                    "WEEK",
+                    "MONTH",
+                    "QUARTER",
+                    "YEAR"
+                ],
+                "granularitiesFormatting": {
+                    "titleBase": "Date",
+                    "titlePattern": "%titleBase - %granularityTitle"
+                },
+                "id": "date",
+                "tags": [
+                    "Date"
+                ],
+                "title": "Date"
+            }
+        ]
+    }
+}

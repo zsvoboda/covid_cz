@@ -1,0 +1,169 @@
+{
+    "workspaceDataFilters": [
+      {
+        "id": "county",
+        "title": "County",
+        "columnName": "wdf__county_id",
+        "workspace": {
+          "id": "covid_cz",
+          "type": "workspace"
+        },
+        "workspaceDataFilterSettings": [
+          {
+            "id": "CZ010",
+            "title": "Hlavní město Praha",
+            "filterValues": [
+              "CZ010"
+            ],
+            "workspace": {
+              "id": "covid_cz_cz010",
+              "type": "workspace"
+            }
+          },
+          {
+            "id": "CZ020",
+            "title": "Středočeský kraj",
+            "filterValues": [
+              "CZ020"
+            ],
+            "workspace": {
+              "id": "covid_cz_cz020",
+              "type": "workspace"
+            }
+          },
+          {
+            "id": "CZ031",
+            "title": "Jihočeský kraj",
+            "filterValues": [
+              "CZ031"
+            ],
+            "workspace": {
+              "id": "covid_cz_cz031",
+              "type": "workspace"
+            }
+          },
+          {
+            "id": "CZ032",
+            "title": "Plzeňský kraj",
+            "filterValues": [
+              "CZ032"
+            ],
+            "workspace": {
+              "id": "covid_cz_cz032",
+              "type": "workspace"
+            }
+          },
+          {
+            "id": "CZ041",
+            "title": "Karlovarský kraj",
+            "filterValues": [
+              "CZ041"
+            ],
+            "workspace": {
+              "id": "covid_cz_cz041",
+              "type": "workspace"
+            }
+          },
+          {
+            "id": "CZ042",
+            "title": "Ústecký kraj",
+            "filterValues": [
+              "CZ042"
+            ],
+            "workspace": {
+              "id": "covid_cz_cz042",
+              "type": "workspace"
+            }
+          },
+          {
+            "id": "CZ051",
+            "title": "Liberecký kraj",
+            "filterValues": [
+              "CZ051"
+            ],
+            "workspace": {
+              "id": "covid_cz_cz051",
+              "type": "workspace"
+            }
+          },
+          {
+            "id": "CZ052",
+            "title": "Královéhradecký kraj",
+            "filterValues": [
+              "CZ052"
+            ],
+            "workspace": {
+              "id": "covid_cz_cz052",
+              "type": "workspace"
+            }
+          },
+          {
+            "id": "CZ053",
+            "title": "Pardubický kraj",
+            "filterValues": [
+              "CZ053"
+            ],
+            "workspace": {
+              "id": "covid_cz_cz053",
+              "type": "workspace"
+            }
+          },
+          {
+            "id": "CZ063",
+            "title": "Kraj Vysočina",
+            "filterValues": [
+              "CZ063"
+            ],
+            "workspace": {
+              "id": "covid_cz_cz063",
+              "type": "workspace"
+            }
+          },
+          {
+            "id": "CZ064",
+            "title": "Jihomoravský kraj",
+            "filterValues": [
+              "CZ064"
+            ],
+            "workspace": {
+              "id": "covid_cz_cz064",
+              "type": "workspace"
+            }
+          },
+          {
+            "id": "CZ071",
+            "title": "Olomoucký kraj",
+            "filterValues": [
+              "CZ071"
+            ],
+            "workspace": {
+              "id": "covid_cz_cz071",
+              "type": "workspace"
+            }
+          },
+          {
+            "id": "CZ072",
+            "title": "Zlínský kraj",
+            "filterValues": [
+              "CZ072"
+            ],
+            "workspace": {
+              "id": "covid_cz_cz072",
+              "type": "workspace"
+            }
+          },
+          {
+            "id": "CZ080",
+            "title": "Moravskoslezský kraj",
+            "filterValues": [
+              "CZ080"
+            ],
+            "workspace": {
+              "id": "covid_cz_cz080",
+              "type": "workspace"
+            }
+          }
+        ]
+      }
+    ]
+  }
