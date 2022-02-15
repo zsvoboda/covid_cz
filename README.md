@@ -9,7 +9,7 @@ You'll get this initial COVID-19 dashboard out of the box.
 
 ![COVID CZ Dashboard](https://raw.githubusercontent.com/zsvoboda/covid_cz/main/img/covid_cz.dashboard.png)
 
-Then you can visually create your own data visualizations and interactive dasboards. You should be able to complete this in less than 15 minutes. 
+Then you can visually create your own data visualizations and interactive dashboards. You should be able to complete this in less than 15 minutes. 
 
 # Multitenancy
 This project sets up 15 workspaces. One of them named `Česká republika (All data)` contains complete Czech Republic data. There are additional 14 workspaces (e.g. `Praha` or `Jihomoravský kraj`), one per each Czech county, that contain data for a specific county.  
@@ -40,7 +40,7 @@ Install [REST Client extension](https://marketplace.visualstudio.com/items?itemN
 
 Answer 'yes' when prompted. 
 
-5. Download the COVID data to Postgres that runs in the GoodData.CM container
+5. Download the COVID data to Postgres that runs in the GoodData.CN container
 
 ```shell
 cd etl 
@@ -79,4 +79,4 @@ Find the `# @name storeAllWorkspaces` on line 45 and click on the small link `Se
 
 Username is `demo@example.com`, password `demo123`.
 
-There are quite a few courses on GoodData University. You can talk to us on our Slack community if you have a question or run into issues. Visit University and community on [GoodData website](https://www.gooddata.com/learn/) if you need a jumpstart. 
+There are quite a few courses on GoodData University. You can talk to us on our Slack community if you have a question or run into issues. Visit University and community on [GoodData website](https://www.gooddata.com/learn/?utm_source=mediumcom&utm_medium=referral&utm_campaign=gdcn&utm_content=zd-dbd) if you need a jumpstart. 
