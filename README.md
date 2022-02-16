@@ -1,18 +1,18 @@
 # Czech Republic COVID-19 data 
-This project downloads the complete COVID-19 tracking data from the [Czech Ministry of Health site](https://onemocneni-aktualne.mzcr.cz/api/v2/covid-19) and transform it to a simple analytical data model.  
+This project downloads the complete COVID-19 tracking data from the [Czech Ministry of Health site](https://onemocneni-aktualne.mzcr.cz/api/v2/covid-19) and transform it to a [GoodData.CN](https://www.gooddata.com/developers/cloud-native?utm_source=mediumcom&utm_medium=referral&utm_campaign=gdcn&utm_content=zd-dbd) semantic data model.
 
 ![COVID CZ data model](https://raw.githubusercontent.com/zsvoboda/covid_cz/main/img/pdm.png)
 
-Data are loaded to Postgres database that is part of GoodData.CN Docker image. This project contains declarative definitions of GoodData metrics, insights, and dashboards that you can import to your local GoodData.CN Docker container. 
+Data are loaded to Postgres database that is part of the GoodData.CN Docker image. This project contains declarative definitions of GoodData metrics, insights, and dashboards that you can import to your local GoodData.CN instance running in a local Docker container. 
 
-You'll get this initial COVID-19 dashboard out of the box. 
+You'll get this initial COVID-19 dashboard out of the box: 
 
 ![COVID CZ Dashboard](https://raw.githubusercontent.com/zsvoboda/covid_cz/main/img/covid_cz.dashboard.png)
 
-Then you can visually create your own data visualizations and interactive dashboards. You should be able to complete this in less than 15 minutes. 
+Then you can create your own data visualizations and interactive dashboards using the visual GoodData.CN analytics tools or APIs. You should be able to have everything up and running in less than 15 minutes. 
 
 # Multitenancy
-This project sets up 15 workspaces. One of them named `Česká republika (All data)` contains complete Czech Republic data. There are additional 14 workspaces (e.g. `Praha` or `Jihomoravský kraj`), one per each Czech county, that contain data for a specific county.  
+This project sets up 15 workspaces. One of them named `Česká republika (All data)` contains complete Czech Republic data. There are additional 14 workspaces (e.g. `Praha` or `Jihomoravský kraj`), one per each Czech county, that contain data for the county.  
 
 ![Workspaces per CZ county](https://raw.githubusercontent.com/zsvoboda/covid_cz/main/img/covid_cz.lcm.png)
 
@@ -32,7 +32,7 @@ pip3 install dbd
 
 3. Install [Visual Studio Code](https://code.visualstudio.com) on your computer
 
-Install [REST Client extension](https://marketplace.visualstudio.com/items?itemName=humao.rest-client). You'll use it for convenient GoodData.CM API invocation. 
+Install [REST Client extension](https://marketplace.visualstudio.com/items?itemName=humao.rest-client). You'll use it for the GoodData.CN API invocation.  
 
 4. Start GoodData.CN Community Edition
 
@@ -40,20 +40,20 @@ Install [REST Client extension](https://marketplace.visualstudio.com/items?itemN
 
 Answer 'yes' when prompted. 
 
-5. Download the COVID data to Postgres that runs in the GoodData.CN container
+5. Load the COVID data to the Postgres database that runs in the GoodData.CN container
 
 ```shell
 cd etl 
 dbd run .
 ```
 
-6. Open the project in the Visual Studio Code editor
+6. Open this project's files in the Visual Studio Code editor. Invoke the `code` command from the project root directory.
 
 `code .`
 
-7. Load `workspace.code-workspace` file in VSCode (press blue botton in the bottom right area of the file editor)
+7. Load `workspace.code-workspace` file in VSCode (press the blue button in the bottom right area of the file editor)
 
-VSCode shouls reload.
+VSCode should reload.
 
 8. Open the `api/rest.http`
 
@@ -63,7 +63,7 @@ Make sure that your environment is set to `GoodData.CN CE` in the bottom right s
 
 Find the `# @name createDataSource` on line 11 and click on the small link `Send Request` between line 11 and 12
 
-Sometimes I must click the `Send Request` link twice. Not sure why. I hope that you don't have the same issue. 
+Sometimes I must click the `Send Request` link twice. A new VSCode editor tab with a good HTTP result code (2xx) should open as result of the invocation.
 
 10. Create physical data model
 
@@ -79,4 +79,5 @@ Find the `# @name storeAllWorkspaces` on line 45 and click on the small link `Se
 
 Username is `demo@example.com`, password `demo123`.
 
-There are quite a few courses on GoodData University. You can talk to us on our Slack community if you have a question or run into issues. Visit University and community on [GoodData website](https://www.gooddata.com/learn/?utm_source=mediumcom&utm_medium=referral&utm_campaign=gdcn&utm_content=zd-dbd) if you need a jumpstart. 
+You can reach GoodData support on their [Slack community channel](https://www.gooddata.com/slack/?utm_source=mediumcom&utm_medium=referral&utm_campaign=gdcn&utm_content=zd-dbd) if you have a question or run into issues. 
+There are also useful GoodData University courses available on the [GoodData website](https://www.gooddata.com/learn/?utm_source=mediumcom&utm_medium=referral&utm_campaign=gdcn&utm_content=zd-dbd).
